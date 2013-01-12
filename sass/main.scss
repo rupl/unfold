@@ -1,6 +1,8 @@
 /* Normalize --------------------------------------------------------------- */
 
 @import 'base';
-@import '_normalize';
+@import 'partials/global/normalize';
 
-/* Layout ------------------------------------------------------------------ */
+/* Global styles ------------------------------------------------------------ */
+
+@import 'partials/global/styles';

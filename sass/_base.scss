@@ -1,6 +1,7 @@
 // Imports -------------------------------------------------------------------
 
-@import "susy";
+@import 'compass';
+@import 'susy';
 
 // Grid ----------------------------------------------------------------------
 
@@ -10,3 +11,7 @@ $gutter-width           : 1em;
 $side-gutter-width      : $gutter-width;
 
 $show-grid-backgrounds  : true;
+
+// Colors --------------------------------------------------------------------
+
+$offwhite: #f0f7ff;
