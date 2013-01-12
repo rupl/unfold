@@ -1,0 +1,5 @@
+; 2-space soft tabs
+
+[*]
+indent_style = space
+indent_size = 2
