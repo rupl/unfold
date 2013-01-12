@@ -520,4 +520,15 @@ footer {
   position: absolute;
   bottom: 0;
   right: 0;
+  opacity: .4;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  cursor: default;
+}
+footer:hover {
+  opacity: 1;
 }

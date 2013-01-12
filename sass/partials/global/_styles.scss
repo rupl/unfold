@@ -28,4 +28,12 @@ footer {
   position: absolute;
   bottom: 0;
   right: 0;
+  opacity: .4;
+  @include transition(all .25s ease-in-out);
+  -webkit-font-smoothing: antialiased;
+  cursor: default;
+  
+  &:hover {
+    opacity: 1;
+  }
 }
