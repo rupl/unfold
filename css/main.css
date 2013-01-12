@@ -478,3 +478,46 @@ table {
 }
 
 /* Global styles ------------------------------------------------------------ */
+.it {
+  display: inline-block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1260px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  background: #567;
+  color: #f0f7ff;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-perspective: 600;
+  -moz-perspective: 600;
+  -ms-perspective: 600;
+  -o-perspective: 600;
+  perspective: 600;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+a {
+  color: #f0f7ff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

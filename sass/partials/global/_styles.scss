@@ -2,3 +2,30 @@
 // Global styles. Provides overall branding for the skeleton.
 // - The content is contained in the other folder
 //
+
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  width: 1260px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  background: #567;
+  color: $offwhite;
+
+  @include transition(all .25s ease-in-out);
+  @include perspective(600);
+  @include backface-visibility(visible);
+}
+
+a {
+  color: $offwhite;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
