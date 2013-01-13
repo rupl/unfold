@@ -12,8 +12,8 @@ body {
   height: 800px;
   margin: 0 auto;
   padding: 2em;
-  background: #567;
-  color: $offwhite;
+  background: #fff;
+  color: #444;
 
   @include transition(all .25s ease-in-out);
   @include perspective(600);
@@ -21,7 +21,9 @@ body {
 }
 
 a {
-  color: $offwhite;
+  color: $blue-dk;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 footer {
@@ -29,9 +31,8 @@ footer {
   bottom: 0;
   right: 0;
   opacity: .4;
-  @include transition(all .25s ease-in-out);
-  -webkit-font-smoothing: antialiased;
   cursor: default;
+  @include transition(all .25s ease-in-out);
   
   &:hover {
     opacity: 1;
