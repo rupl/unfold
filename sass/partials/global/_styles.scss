@@ -8,22 +8,37 @@
 }
 
 body {
-  width: 1260px;
-  height: 800px;
-  margin: 0 auto;
   padding: 2em;
   background: #fff;
   color: #444;
-
-  @include transition(all .25s ease-in-out);
-  @include perspective(600);
-  @include backface-visibility(visible);
 }
 
 a {
   color: $blue-dk;
   text-decoration: none;
   font-weight: 700;
+}
+
+.main {
+  width: 100%;
+
+  article {
+    width: 100%;
+    height: $slideHeight;
+    padding: 1em;
+    margin: 16% 0;
+    box-shadow: 0 5px 10px rgba(#333, 0.1);
+
+    @include transition(all .25s ease-in-out);
+    @include perspective(600);
+    @include backface-visibility(visible);
+  }
+  article:first-child {
+    margin-top: 0;
+  }
+  article:last-child {
+    margin-bottom: 0;
+  }
 }
 
 footer {
