@@ -653,11 +653,11 @@ footer:hover {
   -ms-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-  -webkit-transform: translateX(-1em) translateY(-1.5em) translateZ(14em);
-  -moz-transform: translateX(-1em) translateY(-1.5em) translateZ(14em);
-  -ms-transform: translateX(-1em) translateY(-1.5em) translateZ(14em);
-  -o-transform: translateX(-1em) translateY(-1.5em) translateZ(14em);
-  transform: translateX(-1em) translateY(-1.5em) translateZ(14em);
+  -webkit-transform: rotateY(16deg) translateX(-4.4em) translateY(-1.7em) translateZ(14em);
+  -moz-transform: rotateY(16deg) translateX(-4.4em) translateY(-1.7em) translateZ(14em);
+  -ms-transform: rotateY(16deg) translateX(-4.4em) translateY(-1.7em) translateZ(14em);
+  -o-transform: rotateY(16deg) translateX(-4.4em) translateY(-1.7em) translateZ(14em);
+  transform: rotateY(16deg) translateX(-4.4em) translateY(-1.7em) translateZ(14em);
   -webkit-transform-style: preserve3d;
   -moz-transform-style: preserve3d;
   -ms-transform-style: preserve3d;

@@ -59,7 +59,7 @@
 
     span {
       @include transition(.6s);
-      @include transform(translateX(-1em) translateY(-1.5em) translateZ(14em));
+      @include transform(rotateY(16deg) translateX(-4.4em) translateY(-1.7em) translateZ(14em));
       @include transform-style(preserve3d);
     }
   }
