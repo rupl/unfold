@@ -1,0 +1,76 @@
+//
+// Styles for each slide
+//
+
+
+/*
+ * Title slide
+ */
+#s1 {
+
+  // "Unfolding the Box Model"
+  h1 {
+    font-size: 5em;
+    line-height: .9em;
+    position: absolute;
+    top: 1em;
+    left: 3em;
+
+    // "Unfolding"
+    .fold {
+      .un {
+        @include transform-origin(100%, 100%);
+        @include transform(rotateZ(-180deg));
+      }
+      .ing {
+        @include transform-origin(0%, 100%);
+        @include transform(rotateZ(90deg) translateX(0.05em) translateY(0.43em));
+      }
+    }
+    // "the Box Model"
+    .the {
+      .b {
+        @include transform-origin(-6%, 94%);
+        @include transform(rotateZ(180deg));
+
+        .ox {
+          @include transform-origin(-43%, 48%);
+          @include transform(rotateZ(-90deg));
+        }
+      }
+      .m {
+        @include transform-origin(0%, 94%);
+        @include transform(rotateZ(90deg) translateY(3.64em));
+
+        .odel {
+          @include transform-origin(0%, 0%);
+          @include transform(rotateY(90deg));
+        }
+      }
+    }
+  }
+
+  // "Exploring CSS 3D Transforms"
+  h2 {
+    font-size: 3em;
+    position: absolute;
+    bottom: 32%;
+    right: 19%;
+
+    span {
+      @include transition(.6s);
+      @include transform(translateX(-1em) translateY(-1.5em) translateZ(14em));
+      @include transform-style(preserve3d);
+    }
+  }
+
+  // Active state disables all transforms
+  span {
+    @extend .it;
+    @include transition(all .2s ease-in-out);
+
+    &.active {
+      @include transform(rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important);
+    }
+  }
+}

@@ -3,7 +3,11 @@
 @import 'base';
 @import 'partials/global/normalize';
 
-/* Global styles ------------------------------------------------------------ */
+/* Global styles ----------------------------------------------------------- */
 
 @import 'partials/global/extendables';
 @import 'partials/global/styles';
+
+/* Slides ------------------------------------------------------------------ */
+
+@import 'partials/slides/slides';
