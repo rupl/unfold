@@ -3,7 +3,11 @@
 // - Forms the basis for all the 3D transforms
 //
 
-// standard <span>
+// Standard transform container
+div.sandbox {
+}
+
+// Standard <span>
 // forms the basis for all text transforms
 span {
   @extend .it;
@@ -13,4 +17,12 @@ span {
   &.active {
     @include transform(rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important);
   }
+}
+
+// Standard DOM Element (DE)
+.de {
+  width: 200px;
+  height: 200px;
+  background: #9ab;
+  border: 2px solid #345;
 }

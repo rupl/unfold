@@ -18,6 +18,9 @@
       // Slide 2
       "scrollTo('#s2');",
 
+      // Slide 3
+      "scrollTo('#s3');",
+
     ],
     'reverse': [
 
@@ -32,6 +35,8 @@
       // Slide 2
       "scrollTo('#s1');",
 
+      // Slide 3
+      "scrollTo('#s2');",
     ]
   };
 

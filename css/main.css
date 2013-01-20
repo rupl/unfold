@@ -508,10 +508,10 @@ a {
   font-weight: 700;
 }
 
-.main {
+main {
   width: 100%;
 }
-.main article {
+main article {
   width: 100%;
   height: 840px;
   padding: 1em;
@@ -533,10 +533,10 @@ a {
   -o-backface-visibility: visible;
   backface-visibility: visible;
 }
-.main article:first-child {
+main article:first-child {
   margin-top: 0;
 }
-.main article:last-child {
+main article:last-child {
   margin-bottom: 0;
 }
 
@@ -571,6 +571,13 @@ span.active {
   -ms-transform: rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important;
   -o-transform: rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important;
   transform: rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important;
+}
+
+.de {
+  width: 200px;
+  height: 200px;
+  background: #9ab;
+  border: 2px solid #345;
 }
 
 /* Slides ------------------------------------------------------------------ */
@@ -679,3 +686,7 @@ span.active {
   -o-transform-style: preserve3d;
   transform-style: preserve3d;
 }
+
+/*
+ * Slide 2: Our friend, the DOM Element
+ */
