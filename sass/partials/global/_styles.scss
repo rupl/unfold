@@ -8,8 +8,8 @@
 }
 
 body {
-  padding: 2em;
-  background: #fff;
+  padding: 1em;
+  background: #e7e7e7;
   color: #444;
 }
 
@@ -21,13 +21,15 @@ a {
 
 main {
   width: 100%;
+  font-size: 1em * $slide-font-size;
 
   article {
     width: 100%;
-    height: $slideHeight;
+    height: $slide-height;
     padding: 1em;
     margin: 16% 0;
     box-shadow: 0 5px 10px rgba(#333, 0.1);
+    background: #fff;
 
     @include transition(all .25s ease-in-out);
     @include perspective(600);

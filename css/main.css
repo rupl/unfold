@@ -497,8 +497,8 @@ table {
 }
 
 body {
-  padding: 2em;
-  background: #fff;
+  padding: 1em;
+  background: #e7e7e7;
   color: #444;
 }
 
@@ -510,6 +510,7 @@ a {
 
 main {
   width: 100%;
+  font-size: 2.4em;
 }
 main article {
   width: 100%;
@@ -517,6 +518,7 @@ main article {
   padding: 1em;
   margin: 16% 0;
   box-shadow: 0 5px 10px rgba(51, 51, 51, 0.1);
+  background: #fff;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -585,7 +587,7 @@ span.active {
  * Title slide
  */
 #s1 h1 {
-  font-size: 5em;
+  font-size: 2.08333em;
   line-height: .9em;
   position: absolute;
   top: 1em;
@@ -664,7 +666,7 @@ span.active {
   transform: rotateY(90deg);
 }
 #s1 h2 {
-  font-size: 3em;
+  font-size: 1.25em;
   position: absolute;
   bottom: 32%;
   right: 19%;

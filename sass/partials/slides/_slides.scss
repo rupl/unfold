@@ -10,7 +10,7 @@
 
   // "Unfolding the Box Model"
   h1 {
-    font-size: 5em;
+    font-size: 5em / $slide-font-size;
     line-height: .9em;
     position: absolute;
     top: 1em;
@@ -52,7 +52,7 @@
 
   // "Exploring CSS 3D Transforms"
   h2 {
-    font-size: 3em;
+    font-size: 3em / $slide-font-size;
     position: absolute;
     bottom: 32%;
     right: 19%;
