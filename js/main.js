@@ -6,20 +6,32 @@
   // Story contains all the actions that bring the slides to life
   var story = {
     'forward': [
-      "// Slide 1",
+
+      // Slide 1
+      "",
       "$('.un, .fold, .ing').addClass('active'); ",
       "$('.the, .b').addClass('active'); ",
       "$('.ox, .m').addClass('active'); ",
       "$('.odel').addClass('active'); ",
       "$('#s1 h2 span').addClass('active'); ",
+
+      // Slide 2
+      "scrollTo('#s2');",
+
     ],
     'reverse': [
-      "// Slide 1",
+
+      // Slide 1
+      "",
       "$('.un, .fold, .ing').removeClass('active'); ",
       "$('.the, .b').removeClass('active'); ",
       "$('.ox, .m').removeClass('active'); ",
       "$('.odel').removeClass('active'); ",
       "$('#s1 h2 span').removeClass('active'); ",
+
+      // Slide 2
+      "scrollTo('#s1');",
+
     ]
   };
 
@@ -33,3 +45,11 @@
   });
 
 })(jQuery);
+
+/**
+ * Scrolls to a particular anchor
+ */
+function scrollTo(target){
+    var element = $(target);
+    $('html,body').animate({scrollTop: element.offset().top - 25}, 'fast');
+}
