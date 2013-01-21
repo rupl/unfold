@@ -23,6 +23,10 @@ main {
   width: 100%;
   font-size: 1em * $slide-font-size;
 
+  * {
+    @include transition(all .25s ease-in-out);
+  }
+
   article {
     width: 100%;
     height: $slide-height;
@@ -31,7 +35,6 @@ main {
     box-shadow: 0 5px 10px rgba(#333, 0.1);
     background: #fff;
 
-    @include transition(all .25s ease-in-out);
     @include perspective(600);
     @include backface-visibility(visible);
   }
@@ -39,8 +42,12 @@ main {
     margin-top: 0;
   }
   article:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
   }
+}
+
+p.intro {
+  margin-top: 2em;
 }
 
 footer {

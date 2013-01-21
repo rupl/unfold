@@ -69,5 +69,29 @@
  * Slide 2: Our friend, the DOM Element
  */
 #s2 {
+  p {
+    opacity: 0;
+  }
 
+  .de {
+    margin: 0 1em;
+  }
+
+  .p-up {
+    top: -200px;
+  }
+  .p-down {
+    top: 200px;
+  }
+  .p-left {
+    left: -400px;
+  }
+  .p-right {
+    left: 200px;
+  }
+
+  .floats.bold,
+  .pos.bold {
+    font-weight: 700;
+  }
 }

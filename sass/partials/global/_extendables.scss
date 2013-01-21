@@ -7,3 +7,13 @@
 .it {
   display: inline-block;
 }
+
+// Show an element
+.show {
+  opacity: 1 !important;
+}
+
+// Hide an element
+.hide {
+  opacity: 0 !important;
+}

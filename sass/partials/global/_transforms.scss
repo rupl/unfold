@@ -25,4 +25,17 @@ span {
   height: 200px;
   background: #9ab;
   border: 2px solid #345;
+  opacity: 0; // yes, invisible by default
+  
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  
+  @include transition(all .25s ease-in-out);
 }
+
+// Floats
+.f-left {float: left; clear: left; }
+.f-right {float: right; clear: right; }

@@ -10,6 +10,8 @@ For so long, our only options were to float 1%%left or 2%%right
 2. DE floats right
 
 Or using a coordinate system with position.
+1. DE moves up and down
+2. DE moves left and right
 
 However, all of the latest browsers have a new technology unlocking another dimension of possibility: CSS 3D Transforms.
 
@@ -27,6 +29,10 @@ These perspective settings go on the container of the 3D elements.
 1. {code} perspective
 2. {code} perspective-origin
 3. {code} backface-visibility
+
+These transforms go on the element you want to transform
+1. {code} translate
+2. {code} rotate
 
 Creating primitives
 

@@ -4,19 +4,31 @@
   var counter = 0;
 
   // Story contains all the actions that bring the slides to life
+  // It contains the narrative in both directions: forward and reverse.
+  // - feel free to explain to me how this could be accomplished with only one array
   var story = {
     'forward': [
 
       // Slide 1
       "",
-      "$('.un, .fold, .ing').addClass('active'); ",
-      "$('.the, .b').addClass('active'); ",
-      "$('.ox, .m').addClass('active'); ",
-      "$('.odel').addClass('active'); ",
-      "$('#s1 h2 span').addClass('active'); ",
+      "$('.un, .fold, .ing').toggleClass('active'); ",
+      "$('.the, .b').toggleClass('active'); ",
+      "$('.ox, .m').toggleClass('active'); ",
+      "$('.odel').toggleClass('active'); ",
+      "$('#s1 h2 span').toggleClass('active'); ",
 
       // Slide 2
       "scrollTo('#s2');",
+      "$('#s2 .de').toggleClass('show').toggleClass('f-left'); ",
+      "$('.friend, .limits', '#s2').toggleClass('show'); ",
+      "$('#s2 .sandbox p').toggleClass('show'); ",
+      "$('#s2 .de').toggleClass('f-left').toggleClass('f-right'); ",
+      "$('.floats, .pos', '#s2').toggleClass('bold'); ",
+      "$('#s2 .de').toggleClass('p-up'); ",
+      "$('#s2 .de').toggleClass('p-down'); ",
+      "$('#s2 .de').toggleClass('p-up').toggleClass('p-down'); ", // reset to center
+      "$('#s2 .de').toggleClass('p-left'); ",
+      "$('#s2 .de').toggleClass('p-left'); ", // reset to center
 
       // Slide 3
       "scrollTo('#s3');",
@@ -26,14 +38,24 @@
 
       // Slide 1
       "",
-      "$('.un, .fold, .ing').removeClass('active'); ",
-      "$('.the, .b').removeClass('active'); ",
-      "$('.ox, .m').removeClass('active'); ",
-      "$('.odel').removeClass('active'); ",
-      "$('#s1 h2 span').removeClass('active'); ",
+      "$('.un, .fold, .ing').toggleClass('active'); ",
+      "$('.the, .b').toggleClass('active'); ",
+      "$('.ox, .m').toggleClass('active'); ",
+      "$('.odel').toggleClass('active'); ",
+      "$('#s1 h2 span').toggleClass('active'); ",
 
       // Slide 2
       "scrollTo('#s1');",
+      "$('#s2 .de').toggleClass('show').toggleClass('f-left'); ",
+      "$('.friend, .limits', '#s2').toggleClass('show'); ",
+      "$('#s2 .sandbox p').toggleClass('show'); ",
+      "$('#s2 .de').toggleClass('f-left').toggleClass('f-right'); ",
+      "$('.floats, .pos', '#s2').toggleClass('bold'); ",
+      "$('#s2 .de').toggleClass('p-up'); ",
+      "$('#s2 .de').toggleClass('p-down'); ",
+      "$('#s2 .de').toggleClass('p-up').toggleClass('p-down'); ", // reset to center
+      "$('#s2 .de').toggleClass('p-left'); ",
+      "$('#s2 .de').toggleClass('p-left'); ", // reset to center
 
       // Slide 3
       "scrollTo('#s2');",
