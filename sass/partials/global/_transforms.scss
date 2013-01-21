@@ -24,7 +24,8 @@ span {
   width: 200px;
   height: 200px;
   background: #9ab;
-  border: 2px solid #345;
+  border: 8px solid #345;
+  border-radius: 3px;
   opacity: 0; // yes, invisible by default
   
   position: relative;
