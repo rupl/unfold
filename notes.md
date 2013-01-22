@@ -41,9 +41,10 @@ Since transforms are inherited by children, you can think of nested elements muc
 Just align the two <code>transform-origin</code>s of nested elements to a common edge, and it "folds" like paper:
 1. Show two DEs first in the same position then one folds 90° from a common edge
 2. Now another folds out from the second, also 90°
-3. Another folds out, starting to form a cube
-4. All six fold out, completing the cube
-5. The first and second joints open up more, revealing the "t" shape that an unfolded paper cube makes
+3. The fourth folds out from the third, connecting to the first
+4. The fifth folds out from the third, forming one side of the cube
+5. The sixth folds out from the third, forming the other side and completing the cube
+6. The first, second, and third joints open up more, revealing the "t" shape that an unfolded paper cube makes
 
 You can simulate other more complex objects. This slinky is not a spiral, but numerous nested <code><div>s</code>
 1. Demo slinky
