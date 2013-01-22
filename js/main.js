@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 0;
+  var counter = 16;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -35,6 +35,15 @@
       "$('h2, .intro', '#s3').toggleClass('hide'); ",
       "$('#s3 h2').toggleClass('glasses'); ",
       "$('#s3 h2').toggleClass('whoosh'); ",
+      "$('.sandbox, .sandbox2 .explain').toggleClass('hide'); ",
+      "$('#s3 .translate').toggleClass('highlight'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('t-x'); $('#s3 .x').toggleClass('red'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('t-x').toggleClass('t-y'); $('#s3 .x').toggleClass('red'); $('#s3 .y').toggleClass('green'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('t-y').toggleClass('t-z'); $('#s3 .y').toggleClass('green'); $('#s3 .z').toggleClass('blue'); ",
+      "$('#s3 .translate, #s3 .rotate').toggleClass('highlight'); $('#s3 .sandbox2 .de').toggleClass('t-z'); $('#s3 .z').toggleClass('blue'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('r-x'); $('#s3 .x').toggleClass('red'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('r-x').toggleClass('r-y'); $('#s3 .x').toggleClass('red'); $('#s3 .y').toggleClass('green'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('r-y').toggleClass('r-z'); $('#s3 .y').toggleClass('green'); $('#s3 .z').toggleClass('blue'); ",
 
     ],
     'reverse': [
@@ -65,6 +74,15 @@
       "$('h2, .intro', '#s3').toggleClass('hide'); ",
       "$('#s3 h2').toggleClass('glasses'); ",
       "$('#s3 h2').toggleClass('whoosh'); ",
+      "$('.sandbox, .sandbox2 .explain').toggleClass('hide'); ",
+      "$('#s3 .translate').toggleClass('highlight'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('t-x'); $('#s3 .x').toggleClass('red'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('t-x').toggleClass('t-y'); $('#s3 .x').toggleClass('red'); $('#s3 .y').toggleClass('green'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('t-y').toggleClass('t-z'); $('#s3 .y').toggleClass('green'); $('#s3 .z').toggleClass('blue'); ",
+      "$('#s3 .translate, #s3 .rotate').toggleClass('highlight'); $('#s3 .sandbox2 .de').toggleClass('t-z'); $('#s3 .z').toggleClass('blue'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('r-x'); $('#s3 .x').toggleClass('red'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('r-x').toggleClass('r-y'); $('#s3 .x').toggleClass('red'); $('#s3 .y').toggleClass('green'); ",
+      "$('#s3 .sandbox2 .de').toggleClass('r-y').toggleClass('r-z'); $('#s3 .y').toggleClass('green'); $('#s3 .z').toggleClass('blue'); ",
 
     ]
   };
