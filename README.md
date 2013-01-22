@@ -2,6 +2,7 @@
 
 Interactive slides that explore CSS 3D Transforms.
 Press left or right arrow key to advance.
+Watch in full-screen for best results.
 
 ## Modifying or re-using
 
