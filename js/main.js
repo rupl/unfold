@@ -45,6 +45,9 @@
       "$('#s3 .sandbox2 .de').toggleClass('r-x').toggleClass('r-y'); $('#s3 .x').toggleClass('red'); $('#s3 .y').toggleClass('green'); ",
       "$('#s3 .sandbox2 .de').toggleClass('r-y').toggleClass('r-z'); $('#s3 .y').toggleClass('green'); $('#s3 .z').toggleClass('blue'); ",
 
+      // Slide 4
+      "scrollTo('#s4'); ",
+
     ],
     'reverse': [
 
@@ -83,6 +86,9 @@
       "$('#s3 .sandbox2 .de').toggleClass('r-x'); $('#s3 .x').toggleClass('red'); ",
       "$('#s3 .sandbox2 .de').toggleClass('r-x').toggleClass('r-y'); $('#s3 .x').toggleClass('red'); $('#s3 .y').toggleClass('green'); ",
       "$('#s3 .sandbox2 .de').toggleClass('r-y').toggleClass('r-z'); $('#s3 .y').toggleClass('green'); $('#s3 .z').toggleClass('blue'); ",
+
+      // Slide 4
+      "scrollTo('#s3'); ",
 
     ]
   };
