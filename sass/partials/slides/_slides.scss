@@ -71,6 +71,13 @@
 #s2 {
   p {
     opacity: 0;
+    color: #888;
+  }
+  p.intro {
+    color: #444;
+  }
+  p.limits {
+    color: #666;
   }
 
   .de {
@@ -92,6 +99,42 @@
 
   .floats.bold,
   .pos.bold {
+    color: #444;
     font-weight: 700;
+  }
+}
+
+/*
+ * Introducing: CSS 3D Transforms
+ */
+#s3 {
+  .sandbox {
+    @include perspective(800);
+    text-align: center;
+
+    h2 {
+      @extend .it;
+      font-size: 4em;
+      font-family: $crete;
+      @include text-shadow(-.05em .05em 0.1em rgba(#000, 0.3));
+      @include transform(rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em));
+
+      &.hide {
+        @include transform(translateZ(-2000px));
+      }
+    }
+
+    h2.glasses {
+      @include text-shadow(
+        -.08em 0 0 rgba(#f00, 0.6),
+         .08em 0 0 rgba(#0ee, 0.6)
+      );
+    }
+
+    h2.whoosh {
+      @include transition(all 1s ease-in-out);
+      @include transform(rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateX(0em) translateY(-0.5em) translateZ(5em));
+      opacity: 0;
+    }
   }
 }

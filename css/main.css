@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Rambla:400,700,400italic|Crete+Round|Nunito:400,700|Quando|Andada");
+/* Libraries and Dependencies ---------------------------------------------- */
 /* Normalize --------------------------------------------------------------- */
 /* normalize.css v1.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -486,7 +488,7 @@ table {
 }
 
 /* Global styles ----------------------------------------------------------- */
-.it, span {
+.it, span, #s3 .sandbox h2 {
   display: inline-block;
 }
 
@@ -518,6 +520,7 @@ a {
 
 main {
   width: 100%;
+  font-family: "Rambla", sans-serif;
   font-size: 2.4em;
 }
 main * {
@@ -730,6 +733,13 @@ span.active {
  */
 #s2 p {
   opacity: 0;
+  color: #888;
+}
+#s2 p.intro {
+  color: #444;
+}
+#s2 p.limits {
+  color: #666;
 }
 #s2 .de {
   margin: 0 1em;
@@ -748,5 +758,51 @@ span.active {
 }
 #s2 .floats.bold,
 #s2 .pos.bold {
+  color: #444;
   font-weight: 700;
+}
+
+/*
+ * Introducing: CSS 3D Transforms
+ */
+#s3 .sandbox {
+  -webkit-perspective: 800;
+  -moz-perspective: 800;
+  -ms-perspective: 800;
+  -o-perspective: 800;
+  perspective: 800;
+  text-align: center;
+}
+#s3 .sandbox h2 {
+  font-size: 4em;
+  font-family: "Crete Round", serif;
+  text-shadow: -0.05em 0.05em 0.1em rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+  -moz-transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+  -ms-transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+  -o-transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+  transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+}
+#s3 .sandbox h2.hide {
+  -webkit-transform: translateZ(-2000px);
+  -moz-transform: translateZ(-2000px);
+  -ms-transform: translateZ(-2000px);
+  -o-transform: translateZ(-2000px);
+  transform: translateZ(-2000px);
+}
+#s3 .sandbox h2.glasses {
+  text-shadow: -0.08em 0 0 rgba(255, 0, 0, 0.6), 0.08em 0 0 rgba(0, 238, 238, 0.6);
+}
+#s3 .sandbox h2.whoosh {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateX(0em) translateY(-0.5em) translateZ(5em);
+  -moz-transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateX(0em) translateY(-0.5em) translateZ(5em);
+  -ms-transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateX(0em) translateY(-0.5em) translateZ(5em);
+  -o-transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateX(0em) translateY(-0.5em) translateZ(5em);
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateX(0em) translateY(-0.5em) translateZ(5em);
+  opacity: 0;
 }

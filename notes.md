@@ -28,11 +28,11 @@ When combined with some settings that control perspective, you can create 3D fig
 These perspective settings go on the container of the 3D elements.
 1. {code} perspective
 2. {code} perspective-origin
-3. {code} backface-visibility
 
 These transforms go on the element you want to transform
 1. {code} translate
 2. {code} rotate
+3. {code} backface-visibility
 
 Creating primitives
 

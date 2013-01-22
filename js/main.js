@@ -32,6 +32,9 @@
 
       // Slide 3
       "scrollTo('#s3');",
+      "$('h2, .intro', '#s3').toggleClass('hide'); ",
+      "$('#s3 h2').toggleClass('glasses'); ",
+      "$('#s3 h2').toggleClass('whoosh'); ",
 
     ],
     'reverse': [
@@ -59,6 +62,10 @@
 
       // Slide 3
       "scrollTo('#s2');",
+      "$('h2, .intro', '#s3').toggleClass('hide'); ",
+      "$('#s3 h2').toggleClass('glasses'); ",
+      "$('#s3 h2').toggleClass('whoosh'); ",
+
     ]
   };
 
