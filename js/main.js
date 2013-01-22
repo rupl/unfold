@@ -102,12 +102,12 @@
     if (e.keyCode == 39) { eval(story.forward[++counter]); }
   });
 
-})(jQuery);
+  /**
+   * Scrolls to a particular anchor
+   */
+  function scrollTo(target){
+      var element = $(target);
+      $('html,body').animate({scrollTop: element.offset().top - 25}, 'fast');
+  }
 
-/**
- * Scrolls to a particular anchor
- */
-function scrollTo(target){
-    var element = $(target);
-    $('html,body').animate({scrollTop: element.offset().top - 25}, 'fast');
-}
+})(jQuery);
