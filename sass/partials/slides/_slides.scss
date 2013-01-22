@@ -20,11 +20,11 @@
     .fold {
       .un {
         @include transform-origin(100%, 100%);
-        @include transform(rotateZ(-180deg));
+        @include transform(rotateZ(-180deg) translateX(-0.04em));
       }
       .ing {
         @include transform-origin(0%, 100%);
-        @include transform(rotateZ(90deg) translateX(0.05em) translateY(0.43em));
+        @include transform(rotateZ(90deg) translateX(0.07em) translateY(0.43em));
       }
     }
     // "the Box Model"
@@ -35,12 +35,12 @@
 
         .ox {
           @include transform-origin(-43%, 48%);
-          @include transform(rotateZ(-90deg));
+          @include transform(rotateZ(-90deg) translateY(0.14em));
         }
       }
       .m {
         @include transform-origin(0%, 94%);
-        @include transform(rotateZ(90deg) translateY(3.64em));
+        @include transform(rotateZ(90deg) translateY(3.30em));
 
         .odel {
           @include transform-origin(0%, 0%);
@@ -59,7 +59,7 @@
 
     span {
       @include transition(.6s);
-      @include transform(rotateY(16deg) translateX(-4.4em) translateY(-1.7em) translateZ(14em));
+      @include transform(rotateY(16deg) translateX(-5.2em) translateY(-1.8em) translateZ(14em));
       @include transform-style(preserve3d);
     }
   }
