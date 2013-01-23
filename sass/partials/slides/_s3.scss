@@ -68,24 +68,24 @@
 
       // translate
       &.t-x {
-        @include animation('t-x' 3s ease-out infinite);
+        @include animation('t-x' 3s ease-in-out infinite);
       }
       &.t-y {
-        @include animation('t-y' 3s ease-out infinite);
+        @include animation('t-y' 3s ease-in-out infinite);
       }
       &.t-z {
-        @include animation('t-z' 3s ease-out infinite);
+        @include animation('t-z' 3s ease-in-out infinite);
       }
 
       // rotate
       &.r-x {
-        @include animation('r-x' 3s ease-out infinite);
+        @include animation('r-x' 3s linear infinite);
       }
       &.r-y {
-        @include animation('r-y' 3s ease-out infinite);
+        @include animation('r-y' 3s linear infinite);
       }
       &.r-z {
-        @include animation('r-z' 3s ease-out infinite);
+        @include animation('r-z' 3s linear infinite);
       }
     }
   }
@@ -137,46 +137,28 @@
 }
 
 @include keyframes('r-x') {
-  0%, 100% {
+  0% {
     @include transform(rotateX(0deg));
   }
-  25% {
-    @include transform(rotateX(-180deg));
-  }
-  50% {
-    @include transform(rotateX(0deg));
-  }
-  75% {
-    @include transform(rotateX(180deg));
+  100% {
+    @include transform(rotateX(360deg));
   }
 }
 
 @include keyframes('r-y') {
-  0%, 100% {
+  0% {
     @include transform(rotateY(0deg));
   }
-  25% {
-    @include transform(rotateY(-180deg));
-  }
-  50% {
-    @include transform(rotateY(0deg));
-  }
-  75% {
-    @include transform(rotateY(180deg));
+  100% {
+    @include transform(rotateY(360deg));
   }
 }
 
 @include keyframes('r-z') {
-  0%, 100% {
+  0% {
     @include transform(rotateZ(0deg));
   }
-  25% {
-    @include transform(rotateZ(180deg));
-  }
-  50% {
-    @include transform(rotateZ(0deg));
-  }
-  75% {
-    @include transform(rotateZ(-180deg));
+  100% {
+    @include transform(rotateZ(360deg));
   }
 }
