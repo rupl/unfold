@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 16;
+  var counter = 29;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -20,10 +20,10 @@
       // Slide 2
       "scrollTo('#s2');",
       "$('#s2 .de').toggleClass('show').toggleClass('f-left'); ",
-      "$('.friend, .limits', '#s2').toggleClass('show'); ",
+      "$('#s2 .friend, #s2 .limits').toggleClass('show'); ",
       "$('#s2 .sandbox p').toggleClass('show'); ",
       "$('#s2 .de').toggleClass('f-left').toggleClass('f-right'); ",
-      "$('.floats, .pos', '#s2').toggleClass('bold'); ",
+      "$('#s2 .floats, #s2 .pos').toggleClass('bold'); ",
       "$('#s2 .de').toggleClass('p-up'); ",
       "$('#s2 .de').toggleClass('p-down'); ",
       "$('#s2 .de').toggleClass('p-up').toggleClass('p-down'); ", // reset to center
@@ -32,10 +32,10 @@
 
       // Slide 3
       "scrollTo('#s3');",
-      "$('h2, .intro', '#s3').toggleClass('hide'); ",
+      "$('#s3 h2, #s3 .intro').toggleClass('hide'); ",
       "$('#s3 h2').toggleClass('glasses'); ",
       "$('#s3 h2').toggleClass('whoosh'); ",
-      "$('.sandbox, .sandbox2 .explain').toggleClass('hide'); ",
+      "$('#s3 .sandbox, #s3 .sandbox2 .explain').toggleClass('hide'); ",
       "$('#s3 .translate').toggleClass('highlight'); ",
       "$('#s3 .sandbox2 .de').toggleClass('t-x'); $('#s3 .x').toggleClass('red'); ",
       "$('#s3 .sandbox2 .de').toggleClass('t-x').toggleClass('t-y'); $('#s3 .x').toggleClass('red'); $('#s3 .y').toggleClass('green'); ",
@@ -47,6 +47,10 @@
 
       // Slide 4
       "scrollTo('#s4'); ",
+      "$('#s4 .cube').toggleClass('hide'); ",
+      "$('#s4 .transform-style').toggleClass('hide'); ",
+      "$('#s4 .transform-style').toggleClass('dim').next().next().toggleClass('hide'); $('#s4 .sandbox').toggleClass('p-warp'); ",
+      "$('#s4 .perspective').toggleClass('dim').next().next().toggleClass('hide'); $('#s4 .sandbox').toggleClass('p-warp').toggleClass('po-warp'); ",
 
     ],
     'reverse': [
@@ -62,10 +66,10 @@
       // Slide 2
       "scrollTo('#s1');",
       "$('#s2 .de').toggleClass('show').toggleClass('f-left'); ",
-      "$('.friend, .limits', '#s2').toggleClass('show'); ",
+      "$('#s2 .friend, #s2 .limits').toggleClass('show'); ",
       "$('#s2 .sandbox p').toggleClass('show'); ",
       "$('#s2 .de').toggleClass('f-left').toggleClass('f-right'); ",
-      "$('.floats, .pos', '#s2').toggleClass('bold'); ",
+      "$('#s2 .floats, #s2 .pos').toggleClass('bold'); ",
       "$('#s2 .de').toggleClass('p-up'); ",
       "$('#s2 .de').toggleClass('p-down'); ",
       "$('#s2 .de').toggleClass('p-up').toggleClass('p-down'); ", // reset to center
@@ -74,10 +78,10 @@
 
       // Slide 3
       "scrollTo('#s2');",
-      "$('h2, .intro', '#s3').toggleClass('hide'); ",
+      "$('#s3 h2, #s3 .intro').toggleClass('hide'); ",
       "$('#s3 h2').toggleClass('glasses'); ",
       "$('#s3 h2').toggleClass('whoosh'); ",
-      "$('.sandbox, .sandbox2 .explain').toggleClass('hide'); ",
+      "$('#s3 .sandbox, #s3 .sandbox2 .explain').toggleClass('hide'); ",
       "$('#s3 .translate').toggleClass('highlight'); ",
       "$('#s3 .sandbox2 .de').toggleClass('t-x'); $('#s3 .x').toggleClass('red'); ",
       "$('#s3 .sandbox2 .de').toggleClass('t-x').toggleClass('t-y'); $('#s3 .x').toggleClass('red'); $('#s3 .y').toggleClass('green'); ",
@@ -89,6 +93,10 @@
 
       // Slide 4
       "scrollTo('#s3'); ",
+      "$('#s4 .cube').toggleClass('hide'); ",
+      "$('#s4 .transform-style').toggleClass('hide'); ",
+      "$('#s4 .transform-style').toggleClass('dim').next().next().toggleClass('hide'); $('#s4 .sandbox').toggleClass('p-warp'); ",
+      "$('#s4 .perspective').toggleClass('dim').next().next().toggleClass('hide'); $('#s4 .sandbox').toggleClass('p-warp').toggleClass('po-warp'); ",
 
     ]
   };

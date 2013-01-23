@@ -47,10 +47,6 @@ main {
   }
 }
 
-p.intro {
-  margin-top: 2em;
-}
-
 footer {
   position: fixed;
   bottom: 0;
@@ -64,4 +60,24 @@ footer {
   &:hover {
     opacity: 1;
   }
+}
+
+//
+// Global content styles
+//
+
+p.intro {
+  margin-top: 2em;
+}
+
+dl {
+  margin: 0 2em;
+
+  dt {
+    margin-top: 1em;
+  }
+}
+
+.dim {
+  opacity: .32;
 }

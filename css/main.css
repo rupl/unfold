@@ -488,7 +488,7 @@ table {
 }
 
 /* Global styles ----------------------------------------------------------- */
-.it, span, #s3 .sandbox1 h2 {
+.it, span, .cube span, #s3 .sandbox1 h2 {
   display: inline-block;
 }
 
@@ -555,10 +555,6 @@ main article:last-child {
   margin-bottom: 0.5em;
 }
 
-p.intro {
-  margin-top: 2em;
-}
-
 footer {
   position: fixed;
   bottom: 0;
@@ -575,6 +571,21 @@ footer {
 }
 footer:hover {
   opacity: 1;
+}
+
+p.intro {
+  margin-top: 2em;
+}
+
+dl {
+  margin: 0 2em;
+}
+dl dt {
+  margin-top: 1em;
+}
+
+.dim {
+  opacity: .32;
 }
 
 span {
@@ -619,6 +630,95 @@ span.active {
 .f-right {
   float: right;
   clear: right;
+}
+
+.cube,
+.cube span {
+  width: 5em;
+  height: 5em;
+  background: rgba(153, 170, 187, 0.8);
+  -webkit-box-shadow: inset 0 0 0 5px #334455, 0 0 1px 1px #334455;
+  -moz-box-shadow: inset 0 0 0 5px #334455, 0 0 1px 1px #334455;
+  box-shadow: inset 0 0 0 5px #334455, 0 0 1px 1px #334455;
+  border-radius: 3px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.cube {
+  -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0em) translateY(0em) translateZ(0em);
+  -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0em) translateY(0em) translateZ(0em);
+  -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0em) translateY(0em) translateZ(0em);
+  -o-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0em) translateY(0em) translateZ(0em);
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0em) translateY(0em) translateZ(0em);
+}
+.cube span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cube .top {
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+.cube .top .back {
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.cube .top .back .bottom {
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+.cube .top .back .left {
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+.cube .top .back .right {
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
 }
 
 /* Slides ------------------------------------------------------------------ */
@@ -721,11 +821,11 @@ span.active {
   -ms-transform: rotateY(16deg) translateX(-5.2em) translateY(-1.8em) translateZ(14em);
   -o-transform: rotateY(16deg) translateX(-5.2em) translateY(-1.8em) translateZ(14em);
   transform: rotateY(16deg) translateX(-5.2em) translateY(-1.8em) translateZ(14em);
-  -webkit-transform-style: preserve3d;
-  -moz-transform-style: preserve3d;
-  -ms-transform-style: preserve3d;
-  -o-transform-style: preserve3d;
-  transform-style: preserve3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 /*
@@ -736,10 +836,10 @@ span.active {
   color: #888;
 }
 #s2 p.intro {
-  color: #444;
+  color: #444444;
 }
 #s2 p.limits {
-  color: #666;
+  color: #666666;
 }
 #s2 .de {
   margin: 0 1em;
@@ -1371,5 +1471,198 @@ span.active {
 
   100% {
     transform: rotateZ(360deg);
+  }
+}
+
+/*
+ * Perspective
+ */
+#s4 dl {
+  width: 50%;
+  margin: 0;
+}
+#s4 .sandbox {
+  width: 60%;
+  float: right;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#s4 .sandbox .cube {
+  -webkit-transform: translateX(10em) translateY(6em) translateZ(0.25em);
+  -moz-transform: translateX(10em) translateY(6em) translateZ(0.25em);
+  -ms-transform: translateX(10em) translateY(6em) translateZ(0.25em);
+  -o-transform: translateX(10em) translateY(6em) translateZ(0.25em);
+  transform: translateX(10em) translateY(6em) translateZ(0.25em);
+}
+#s4 .sandbox .cube .bottom {
+  -webkit-box-shadow: 0 0 2em rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 2em rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.75);
+}
+#s4 .sandbox.p-warp {
+  -webkit-animation: "p-warp" 3s ease-in-out infinite;
+  -moz-animation: "p-warp" 3s ease-in-out infinite;
+  -ms-animation: "p-warp" 3s ease-in-out infinite;
+  -o-animation: "p-warp" 3s ease-in-out infinite;
+  animation: "p-warp" 3s ease-in-out infinite;
+}
+#s4 .sandbox.po-warp {
+  -webkit-animation: "po-warp" 5s ease-in-out infinite;
+  -moz-animation: "po-warp" 5s ease-in-out infinite;
+  -ms-animation: "po-warp" 5s ease-in-out infinite;
+  -o-animation: "po-warp" 5s ease-in-out infinite;
+  animation: "po-warp" 5s ease-in-out infinite;
+}
+
+@-moz-keyframes p-warp {
+  0%, 100% {
+    -moz-perspective: 1000;
+    perspective: 1000;
+  }
+
+  50% {
+    -moz-perspective: 100;
+    perspective: 100;
+  }
+}
+
+@-webkit-keyframes p-warp {
+  0%, 100% {
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  }
+
+  50% {
+    -webkit-perspective: 100;
+    perspective: 100;
+  }
+}
+
+@-o-keyframes p-warp {
+  0%, 100% {
+    -o-perspective: 1000;
+    perspective: 1000;
+  }
+
+  50% {
+    -o-perspective: 100;
+    perspective: 100;
+  }
+}
+
+@-ms-keyframes p-warp {
+  0%, 100% {
+    -ms-perspective: 1000;
+    perspective: 1000;
+  }
+
+  50% {
+    -ms-perspective: 100;
+    perspective: 100;
+  }
+}
+
+@keyframes p-warp {
+  0%, 100% {
+    perspective: 1000;
+  }
+
+  50% {
+    perspective: 100;
+  }
+}
+
+@-moz-keyframes po-warp {
+  0%, 100% {
+    -moz-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+
+  33% {
+    -moz-perspective-origin: -100% 50%;
+    perspective-origin: -100% 50%;
+  }
+
+  66% {
+    -moz-perspective-origin: 200% 50%;
+    perspective-origin: 200% 50%;
+  }
+}
+
+@-webkit-keyframes po-warp {
+  0%, 100% {
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+
+  33% {
+    -webkit-perspective-origin: -100% 50%;
+    perspective-origin: -100% 50%;
+  }
+
+  66% {
+    -webkit-perspective-origin: 200% 50%;
+    perspective-origin: 200% 50%;
+  }
+}
+
+@-o-keyframes po-warp {
+  0%, 100% {
+    -o-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+
+  33% {
+    -o-perspective-origin: -100% 50%;
+    perspective-origin: -100% 50%;
+  }
+
+  66% {
+    -o-perspective-origin: 200% 50%;
+    perspective-origin: 200% 50%;
+  }
+}
+
+@-ms-keyframes po-warp {
+  0%, 100% {
+    -ms-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+
+  33% {
+    -ms-perspective-origin: -100% 50%;
+    perspective-origin: -100% 50%;
+  }
+
+  66% {
+    -ms-perspective-origin: 200% 50%;
+    perspective-origin: 200% 50%;
+  }
+}
+
+@keyframes po-warp {
+  0%, 100% {
+    perspective-origin: 50% 50%;
+  }
+
+  33% {
+    perspective-origin: -100% 50%;
+  }
+
+  66% {
+    perspective-origin: 200% 50%;
   }
 }

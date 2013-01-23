@@ -26,8 +26,8 @@ Transforms let you move and rotate DOM elements along three axes of motion: 1%%4
 When combined with some settings that control perspective, you can create 3D figures out of regular DOM elements.
 
 These perspective settings go on the container of the 3D elements.
-1. {code} perspective
-2. {code} perspective-origin
+1. {code} perspective - (animate the perspctive value on a 3D-transformed primitive)
+2. {code} perspective-origin - (animate the perspctive value on a 3D-transformed primitive)
 
 These transforms go on the element you want to transform
 1. {code} translate

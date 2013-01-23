@@ -1,0 +1,59 @@
+/*
+ * Perspective
+ */
+
+#s4 {
+  .intro {
+    // @include transform(rotateY(10deg) translateX(3em));
+  }
+
+  dl {
+    width: 50%;
+    margin: 0;
+  }
+
+  .sandbox {
+    width: 60%;
+    float: right;
+    @include perspective(1000);
+    @include backface-visibility(visible);
+    @include transform-style(preserve-3d);
+
+    .cube {
+      @include transform(translateX(10em) translateY(6em) translateZ(0.25em));
+
+      .bottom {
+        @include box-shadow(0 0 2em rgba(#000, 0.75));
+      }
+    }
+
+    &.p-warp {
+      @include animation('p-warp' 3s ease-in-out infinite);
+    }
+    &.po-warp {
+      @include animation('po-warp' 5s ease-in-out infinite);
+    }
+
+  }
+}
+
+@include keyframes('p-warp') {
+  0%, 100% {
+    @include perspective(1000);
+  }
+  50% {
+    @include perspective(100);
+  }
+}
+
+@include keyframes('po-warp') {
+  0%, 100% {
+    @include perspective-origin(50% 50%);
+  }
+  33% {
+    @include perspective-origin(-100% 50%);
+  }
+  66% {
+    @include perspective-origin(200% 50%);
+  }
+}

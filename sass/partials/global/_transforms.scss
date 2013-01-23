@@ -40,3 +40,60 @@ span {
 // Floats
 .f-left {float: left; clear: left; }
 .f-right {float: right; clear: right; }
+
+// T-Cube
+// This cube unfolds to form a t-shape
+//     +---+
+//     | B | <- bottom
+// +---+---+---+
+// | L | B | R | <- back
+// +---+---+---+
+//     | T |
+//     +---+
+//     | F | <- .cube
+//     +---+
+.cube,
+.cube span {
+  width: 5em;
+  height: 5em;
+  background: rgba(#9ab, 0.8);
+  @include box-shadow(
+    inset 0 0 0 5px #345,
+    0 0 1px 1px #345
+  );
+  border-radius: 3px;
+  @include transform-style(preserve-3d);
+}
+.cube {
+  @include transform(rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0em) translateY(0em) translateZ(0em));
+
+  span {
+    @extend .it;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .top {
+    @include transform(rotateX(-90deg));
+    @include transform-origin(50%, 0%);
+
+    .back {
+      @include transform(rotateX(-90deg));
+      @include transform-origin(50%, 100%);
+
+      .bottom {
+        @include transform(rotateX(-90deg));
+        @include transform-origin(50%, 0%);
+      }
+      .left {
+        @include transform(rotateY(90deg));
+        @include transform-origin(0%, 0%);
+      }
+      .right {
+        @include transform(rotateY(-90deg));
+        @include transform-origin(100%, 100%);
+      }
+    }
+  }
+}
