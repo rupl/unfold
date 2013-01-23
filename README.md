@@ -10,6 +10,7 @@ CSS in this presentation is generated using Sass and Compass. Make sure you
 install the required gems before trying to make changes to the source.
 
     [sudo] gem install compass
+    [sudo] gem install animation --pre
 
 ## Presented at
 
