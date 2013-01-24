@@ -20,7 +20,7 @@
     @include transform-style(preserve-3d);
 
     .cube {
-      @include transform(translateX(10em) translateY(6em) translateZ(0.25em));
+      @include transform(translateX(10em) translateY(6em) translateZ(0.1em));
 
       .bottom {
         @include box-shadow(0 0 2em rgba(#000, 0.75));
@@ -51,9 +51,9 @@
     @include perspective-origin(50% 50%);
   }
   33% {
-    @include perspective-origin(-100% 50%);
+    @include perspective-origin(200% -200%);
   }
   66% {
-    @include perspective-origin(200% 50%);
+    @include perspective-origin(400% 250%);
   }
 }

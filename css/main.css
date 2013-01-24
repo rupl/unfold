@@ -1501,11 +1501,11 @@ span.active {
   transform-style: preserve-3d;
 }
 #s4 .sandbox .cube {
-  -webkit-transform: translateX(10em) translateY(6em) translateZ(0.25em);
-  -moz-transform: translateX(10em) translateY(6em) translateZ(0.25em);
-  -ms-transform: translateX(10em) translateY(6em) translateZ(0.25em);
-  -o-transform: translateX(10em) translateY(6em) translateZ(0.25em);
-  transform: translateX(10em) translateY(6em) translateZ(0.25em);
+  -webkit-transform: translateX(10em) translateY(6em) translateZ(0.1em);
+  -moz-transform: translateX(10em) translateY(6em) translateZ(0.1em);
+  -ms-transform: translateX(10em) translateY(6em) translateZ(0.1em);
+  -o-transform: translateX(10em) translateY(6em) translateZ(0.1em);
+  transform: translateX(10em) translateY(6em) translateZ(0.1em);
 }
 #s4 .sandbox .cube .bottom {
   -webkit-box-shadow: 0 0 2em rgba(0, 0, 0, 0.75);
@@ -1592,13 +1592,13 @@ span.active {
   }
 
   33% {
-    -moz-perspective-origin: -100% 50%;
-    perspective-origin: -100% 50%;
+    -moz-perspective-origin: 200% -200%;
+    perspective-origin: 200% -200%;
   }
 
   66% {
-    -moz-perspective-origin: 200% 50%;
-    perspective-origin: 200% 50%;
+    -moz-perspective-origin: 400% 250%;
+    perspective-origin: 400% 250%;
   }
 }
 
@@ -1609,13 +1609,13 @@ span.active {
   }
 
   33% {
-    -webkit-perspective-origin: -100% 50%;
-    perspective-origin: -100% 50%;
+    -webkit-perspective-origin: 200% -200%;
+    perspective-origin: 200% -200%;
   }
 
   66% {
-    -webkit-perspective-origin: 200% 50%;
-    perspective-origin: 200% 50%;
+    -webkit-perspective-origin: 400% 250%;
+    perspective-origin: 400% 250%;
   }
 }
 
@@ -1626,13 +1626,13 @@ span.active {
   }
 
   33% {
-    -o-perspective-origin: -100% 50%;
-    perspective-origin: -100% 50%;
+    -o-perspective-origin: 200% -200%;
+    perspective-origin: 200% -200%;
   }
 
   66% {
-    -o-perspective-origin: 200% 50%;
-    perspective-origin: 200% 50%;
+    -o-perspective-origin: 400% 250%;
+    perspective-origin: 400% 250%;
   }
 }
 
@@ -1643,13 +1643,13 @@ span.active {
   }
 
   33% {
-    -ms-perspective-origin: -100% 50%;
-    perspective-origin: -100% 50%;
+    -ms-perspective-origin: 200% -200%;
+    perspective-origin: 200% -200%;
   }
 
   66% {
-    -ms-perspective-origin: 200% 50%;
-    perspective-origin: 200% 50%;
+    -ms-perspective-origin: 400% 250%;
+    perspective-origin: 400% 250%;
   }
 }
 
@@ -1659,10 +1659,10 @@ span.active {
   }
 
   33% {
-    perspective-origin: -100% 50%;
+    perspective-origin: 200% -200%;
   }
 
   66% {
-    perspective-origin: 200% 50%;
+    perspective-origin: 400% 250%;
   }
 }
