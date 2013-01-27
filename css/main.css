@@ -866,11 +866,11 @@ span.active {
  * Introducing: CSS 3D Transforms
  */
 #s3 .sandbox {
-  -webkit-perspective: 800;
-  -moz-perspective: 800;
-  -ms-perspective: 800;
-  -o-perspective: 800;
-  perspective: 800;
+  -webkit-perspective: 600;
+  -moz-perspective: 600;
+  -ms-perspective: 600;
+  -o-perspective: 600;
+  perspective: 600;
   text-align: center;
   position: absolute;
 }
@@ -878,11 +878,11 @@ span.active {
   font-size: 4em;
   font-family: "Crete Round", serif;
   text-shadow: -0.05em 0.05em 0.1em rgba(0, 0, 0, 0.3);
-  -webkit-transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
-  -moz-transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
-  -ms-transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
-  -o-transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
-  transform: rotateX(0deg) rotateY(42deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+  -webkit-transform: rotateX(0deg) rotateY(52deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+  -moz-transform: rotateX(0deg) rotateY(52deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+  -ms-transform: rotateX(0deg) rotateY(52deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+  -o-transform: rotateX(0deg) rotateY(52deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
+  transform: rotateX(0deg) rotateY(52deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
 }
 #s3 .sandbox1 h2.hide {
   -webkit-transform: translateZ(-2000px);
@@ -892,7 +892,7 @@ span.active {
   transform: translateZ(-2000px);
 }
 #s3 .sandbox1 h2.glasses {
-  text-shadow: -0.08em 0 0 rgba(255, 0, 0, 0.6), 0.08em 0 0 rgba(0, 238, 238, 0.6);
+  text-shadow: -0.08em 0 0 rgba(255, 0, 0, 0.74), 0.08em 0 0 rgba(0, 238, 238, 0.83);
 }
 #s3 .sandbox1 h2.whoosh {
   -webkit-transition: all 1s ease-in-out;
