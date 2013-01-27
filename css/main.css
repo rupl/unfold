@@ -537,11 +537,11 @@ main article {
   margin: 16% 0;
   box-shadow: 0 5px 10px rgba(51, 51, 51, 0.1);
   background: #fff;
-  -webkit-perspective: 600;
-  -moz-perspective: 600;
-  -ms-perspective: 600;
-  -o-perspective: 600;
-  perspective: 600;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
   -webkit-backface-visibility: visible;
   -moz-backface-visibility: visible;
   -ms-backface-visibility: visible;
@@ -866,11 +866,11 @@ span.active {
  * Introducing: CSS 3D Transforms
  */
 #s3 .sandbox {
-  -webkit-perspective: 600;
-  -moz-perspective: 600;
-  -ms-perspective: 600;
-  -o-perspective: 600;
-  perspective: 600;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
   text-align: center;
   position: absolute;
 }
@@ -1484,11 +1484,11 @@ span.active {
 #s4 .sandbox {
   width: 60%;
   float: right;
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -ms-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
   -webkit-backface-visibility: visible;
   -moz-backface-visibility: visible;
   -ms-backface-visibility: visible;
@@ -1529,59 +1529,59 @@ span.active {
 
 @-moz-keyframes p-warp {
   0%, 100% {
-    -moz-perspective: 1000;
-    perspective: 1000;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
   }
 
   50% {
-    -moz-perspective: 100;
-    perspective: 100;
+    -moz-perspective: 100px;
+    perspective: 100px;
   }
 }
 
 @-webkit-keyframes p-warp {
   0%, 100% {
-    -webkit-perspective: 1000;
-    perspective: 1000;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
   }
 
   50% {
-    -webkit-perspective: 100;
-    perspective: 100;
+    -webkit-perspective: 100px;
+    perspective: 100px;
   }
 }
 
 @-o-keyframes p-warp {
   0%, 100% {
-    -o-perspective: 1000;
-    perspective: 1000;
+    -o-perspective: 1000px;
+    perspective: 1000px;
   }
 
   50% {
-    -o-perspective: 100;
-    perspective: 100;
+    -o-perspective: 100px;
+    perspective: 100px;
   }
 }
 
 @-ms-keyframes p-warp {
   0%, 100% {
-    -ms-perspective: 1000;
-    perspective: 1000;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
   }
 
   50% {
-    -ms-perspective: 100;
-    perspective: 100;
+    -ms-perspective: 100px;
+    perspective: 100px;
   }
 }
 
 @keyframes p-warp {
   0%, 100% {
-    perspective: 1000;
+    perspective: 1000px;
   }
 
   50% {
-    perspective: 100;
+    perspective: 100px;
   }
 }
 

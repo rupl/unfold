@@ -36,7 +36,7 @@ main {
     box-shadow: 0 5px 10px rgba(#333, 0.1);
     background: #fff;
 
-    @include perspective(600);
+    @include perspective(600px);
     @include backface-visibility(visible);
   }
   article:first-child {

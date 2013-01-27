@@ -15,7 +15,7 @@
   .sandbox {
     width: 60%;
     float: right;
-    @include perspective(1000);
+    @include perspective(1000px);
     @include backface-visibility(visible);
     @include transform-style(preserve-3d);
 
@@ -39,10 +39,10 @@
 
 @include keyframes('p-warp') {
   0%, 100% {
-    @include perspective(1000);
+    @include perspective(1000px);
   }
   50% {
-    @include perspective(100);
+    @include perspective(100px);
   }
 }
 

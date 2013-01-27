@@ -3,7 +3,7 @@
  */
 #s3 {
   .sandbox {
-    @include perspective(600);
+    @include perspective(600px);
     text-align: center;
     position: absolute;
   }
