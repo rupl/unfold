@@ -37,7 +37,6 @@ main {
     background: #fff;
 
     @include perspective(600px);
-    @include backface-visibility(visible);
   }
   article:first-child {
     margin-top: 0;

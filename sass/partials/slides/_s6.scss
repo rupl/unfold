@@ -1,0 +1,105 @@
+/*
+ * Primitives
+ */
+#s6 {
+  overflow: hidden;
+
+  .intro {
+    @include transform-style(preserve-3d);
+  }
+
+  .paper,
+  .folds {
+    @include transform-origin(0%, 50%);
+    @include transform-style(preserve-3d);
+    background: #fff;    
+  }
+  .paper {
+    width: 2.54em;
+    white-space: nowrap;
+  }
+
+  .paper.folded {
+    @include box-shadow(0.1em 0 0.3em rgba(#000, 0.4));
+    @include transform(rotateY(42deg));
+  }
+  .folds.folded {
+    @include box-shadow(0.1em 0 0.3em rgba(#000, 0.2));
+    @include transform(rotateY(-42deg));
+  }
+
+  .sandbox {
+    float: right;
+    width: 50%;
+
+    .cube {
+      @include transform(translateY(2em));
+      @include transform-origin(50%, 50%, ($cube-height / -2));
+
+      &.rotate {
+        @include animation('rotate-cube-slow' 8s linear infinite);
+      }
+      &.labels {
+        &:before,
+        .top:before,
+        .left:before,
+        .right:before,
+        .bottom:before,
+        .back:before {
+          display: block;
+          width: 100%;
+          text-align: center;
+          position: absolute;
+          top: 50px;
+        }
+
+        &:before {
+          content: 'Front';
+        }
+        .top:before {
+          content: 'Top';
+        }
+        .left:before {
+          content: 'Left';
+        }
+        .right:before {
+          content: 'Right';
+        }
+        .bottom:before {
+          content: 'Bottom';
+        }
+        .back:before {
+          content: 'Back';
+          top: 95px;
+          @extend .it;
+          @include transform(rotateZ(180deg));
+        }
+      }
+
+      .top.flat {
+        @include transform(rotateX(0deg));
+      }
+      .left.flat {
+        @include transform(rotateY(0deg));
+      }
+      .right.flat {
+        @include transform(rotateY(0deg));
+      }
+      .bottom.flat {
+        @include transform(rotateX(0deg));
+      }
+      .back.flat {
+        @include transform(rotateX(0deg));
+      }
+    }
+  }
+}
+
+@include keyframes('rotate-cube-slow') {
+  0% {
+    @include transform(rotateY(0deg) translateY(2em));
+  }
+  100% {
+    @include transform(rotateY(360deg) translateY(2em));
+  }
+}

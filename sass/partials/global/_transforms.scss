@@ -20,9 +20,11 @@ span {
 }
 
 // Standard DOM Element (DE)
+$de-side: 200px;
+
 .de {
-  width: 200px;
-  height: 200px;
+  width: $de-side;
+  height: $de-side;
   background: #9ab;
   border: 8px solid #345;
   border-radius: 3px;
@@ -35,7 +37,20 @@ span {
   left: 0px;
   
   @include transition(all .25s ease-in-out);
+
+  &.circle {
+    @include border-radius($de-side / 2);
+  }
+  &.triangle {
+    width: 0;
+    height: 0;
+    background: none;
+    border-color: transparent transparent rgba(#345, 0.6) transparent;
+    border-width: 0 ($de-side / 2) ($de-side / 2) ($de-side / 2);
+    @include border-radius(0);
+  }
 }
+
 
 // Floats
 .f-left {float: left; clear: left; }
@@ -78,25 +93,29 @@ $cube-height: 5em;
   }
 
   .top {
-    @include transform(rotateX(90deg) translateY(-$cube-height));
-    @include transform-origin(50%, 0%);
+    top: -$cube-height;
+    @include transform(rotateX(90deg));
+    @include transform-origin(50%, 100%);
   }
   .left {
-    @include transform(rotateY(-90deg) translateX(-$cube-height));
-    @include transform-origin(0%, 50%);
-  }
-  .right {
-    @include transform(rotateY(90deg) translateX($cube-height));
+    left: -$cube-height;
+    @include transform(rotateY(-90deg));
     @include transform-origin(100%, 50%);
   }
+  .right {
+    left: $cube-height;
+    @include transform(rotateY(90deg));
+    @include transform-origin(0%, 50%);
+  }
   .bottom {
-    @include transform(rotateX(-90deg) translateY($cube-height));
-    @include transform-origin(50%, 100%);
+    top: $cube-height;
+    @include transform(rotateX(-90deg));
+    @include transform-origin(50%, 0%);
 
     .back {
-      @include transform(rotateX(-90deg) translateY($cube-height));
-      @include transform-origin(50%, 100%);
+      top: $cube-height;
+      @include transform(rotateX(-90deg));
+      @include transform-origin(50%, 0%);
     }
   }
-
 }

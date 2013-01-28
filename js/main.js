@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 0;
+  var counter = 41;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -11,11 +11,11 @@
 
       // Slide 1
       "",
-      "$('.un, .fold, .ing').toggleClass('active'); ",
-      "$('.the, .b').toggleClass('active'); ",
-      "$('.ox, .m').toggleClass('active'); ",
-      "$('.odel').toggleClass('active'); ",
-      "$('#s1 h2 span').toggleClass('active'); ",
+      "$('.un, .fold, .ing', '#s1').toggleClass('active'); ",
+      "$('.the, .b', '#s1').toggleClass('active'); ",
+      "$('.ox, .m', '#s1').toggleClass('active'); ",
+      "$('.odel', '#s1').toggleClass('active'); ",
+      "$('h2 span', '#s1').toggleClass('active'); ",
 
       // Slide 2
       "scrollTo('#s2');",
@@ -61,16 +61,29 @@
       "$('#s5 .sandbox').toggleClass('backface-demo').toggleClass('backface-demo-cube'); ",
       "$('#s5 .sandbox').toggleClass('backface-demo-cube').toggleClass('backface-demo-cube-2sided'); ",
 
+      // Slide 6
+      "scrollTo('#s6'); ",
+      "$('#s6 .paper').toggleClass('folded'); ",
+      "$('#s6 .folds').toggleClass('folded'); ",
+      "$('#s6 .cube').toggleClass('hide'); ",
+      "$('#s6 .cube').toggleClass('labels'); ",
+      "$('#s6 .top').toggleClass('flat'); ",
+      "$('#s6 .left').toggleClass('flat'); ",
+      "$('#s6 .right').toggleClass('flat'); ",
+      "$('#s6 .bottom').toggleClass('flat'); ",
+      "$('#s6 .back').toggleClass('flat'); ",
+
+
     ],
     'reverse': [
 
       // Slide 1
       "",
-      "$('.un, .fold, .ing').toggleClass('active'); ",
-      "$('.the, .b').toggleClass('active'); ",
-      "$('.ox, .m').toggleClass('active'); ",
-      "$('.odel').toggleClass('active'); ",
-      "$('#s1 h2 span').toggleClass('active'); ",
+      "$('.un, .fold, .ing', '#s1').toggleClass('active'); ",
+      "$('.the, .b', '#s1').toggleClass('active'); ",
+      "$('.ox, .m', '#s1').toggleClass('active'); ",
+      "$('.odel', '#s1').toggleClass('active'); ",
+      "$('h2 span', '#s1').toggleClass('active'); ",
 
       // Slide 2
       "scrollTo('#s1');",
@@ -115,6 +128,19 @@
       "$('#s5 .rotate').toggleClass('dim').next().next().toggleClass('hide'); $('#s5 .sandbox').toggleClass('rotate-demo').toggleClass('backface-demo'); ",
       "$('#s5 .sandbox').toggleClass('backface-demo').toggleClass('backface-demo-cube'); ",
       "$('#s5 .sandbox').toggleClass('backface-demo-cube').toggleClass('backface-demo-cube-2sided'); ",
+
+      // Slide 6
+      "scrollTo('#s5'); ",
+      "$('#s6 .paper').toggleClass('folded'); ",
+      "$('#s6 .folds').toggleClass('folded'); ",
+      "$('#s6 .cube').toggleClass('hide'); ",
+      "$('#s6 .cube').toggleClass('labels'); ",
+      "$('#s6 .top').toggleClass('flat'); ",
+      "$('#s6 .left').toggleClass('flat'); ",
+      "$('#s6 .right').toggleClass('flat'); ",
+      "$('#s6 .bottom').toggleClass('flat'); ",
+      "$('#s6 .back').toggleClass('flat'); ",
+
 
     ]
   };
