@@ -623,18 +623,6 @@ span.active {
   -o-border-radius: 100px;
   border-radius: 100px;
 }
-.de.triangle {
-  width: 0;
-  height: 0;
-  background: none;
-  border-color: transparent transparent rgba(51, 68, 85, 0.6) transparent;
-  border-width: 0 100px 100px 100px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-}
 
 .f-left {
   float: left;
@@ -2094,6 +2082,11 @@ span.active {
 #s6 .sandbox {
   float: right;
   width: 50%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 #s6 .sandbox .cube {
   -webkit-transform: translateY(2em);

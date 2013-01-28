@@ -72,6 +72,10 @@
       "$('#s6 .right').toggleClass('flat'); ",
       "$('#s6 .bottom').toggleClass('flat'); ",
       "$('#s6 .back').toggleClass('flat'); ",
+      // "$('#s6 .pyramid').toggleClass('hide'); ",
+      // "$('#s6 .pyramid').toggleClass('wireframe'); ",
+      // "$('#s6 .pyramid').toggleClass('wireframe').toggleClass('planes'); ",
+
 
 
     ],
@@ -140,6 +144,9 @@
       "$('#s6 .right').toggleClass('flat'); ",
       "$('#s6 .bottom').toggleClass('flat'); ",
       "$('#s6 .back').toggleClass('flat'); ",
+      // "$('#s6 .pyramid').toggleClass('hide'); ",
+      // "$('#s6 .pyramid').toggleClass('wireframe'); ",
+      // "$('#s6 .pyramid').toggleClass('wireframe').toggleClass('planes'); ",
 
 
     ]
