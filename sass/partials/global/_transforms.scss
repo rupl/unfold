@@ -78,24 +78,24 @@ $cube-height: 5em;
   }
 
   .top {
-    @include transform(rotateX(-90deg) rotateY(180deg));
+    @include transform(rotateX(90deg) translateY(-$cube-height));
     @include transform-origin(50%, 0%);
   }
   .left {
-    @include transform(rotateY(90deg) rotateZ(90deg));
-    @include transform-origin(100%, 100%);
+    @include transform(rotateY(-90deg) translateX(-$cube-height));
+    @include transform-origin(0%, 50%);
   }
   .right {
-    @include transform(rotateY(-90deg) rotateZ(90deg));
-    @include transform-origin(0%, 0%);
+    @include transform(rotateY(90deg) translateX($cube-height));
+    @include transform-origin(100%, 50%);
   }
   .bottom {
-    @include transform(rotateX(90deg) rotateY(180deg));
+    @include transform(rotateX(-90deg) translateY($cube-height));
     @include transform-origin(50%, 100%);
 
     .back {
-      @include transform(rotateX(90deg) rotateZ(180deg));
-      @include transform-origin(50%, 0%);
+      @include transform(rotateX(-90deg) translateY($cube-height));
+      @include transform-origin(50%, 100%);
     }
   }
 
