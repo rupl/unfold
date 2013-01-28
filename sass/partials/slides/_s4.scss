@@ -15,12 +15,11 @@
   .sandbox {
     width: 60%;
     float: right;
-    @include perspective(1000px);
-    @include backface-visibility(visible);
+    @include perspective(3600px);
     @include transform-style(preserve-3d);
 
     .cube {
-      @include transform(translateX(10em) translateY(6em) translateZ(0.1em));
+      @include transform(translateX(10em) translateY(6.5em) translateZ(0.1em));
 
       .bottom {
         @include box-shadow(0 0 2em rgba(#000, 0.75));
@@ -31,6 +30,7 @@
       @include animation('p-warp' 3s ease-in-out infinite);
     }
     &.po-warp {
+      @include perspective(1400px);
       @include animation('po-warp' 5s ease-in-out infinite);
     }
 
@@ -39,7 +39,7 @@
 
 @include keyframes('p-warp') {
   0%, 100% {
-    @include perspective(1000px);
+    @include perspective(3600px);
   }
   50% {
     @include perspective(100px);

@@ -1,0 +1,139 @@
+/*
+ * Perspective
+ */
+
+#s5 {
+  .intro {
+  }
+
+  dl {
+    width: 52%;
+    margin: 0;
+  }
+
+  .sandbox {
+    overflow: hidden;
+    width: 48%;
+    margin-right: -1em;
+    height: 3.4 * $cube-height;
+    float: right;
+    @include perspective(800px);
+    @include transform-style(preserve-3d);
+
+    .cube {
+      @include transform(translateX(5em) translateY(10em) rotateY(24deg));
+
+      .handles {
+        opacity: 0;
+        position: absolute;
+        z-index: 100;
+      }
+      .h-translate {
+        width: $cube-height;
+        height: $cube-height;
+        border: none;
+        border-left: 5px solid;
+        @include transform-origin(0%, 100%);
+      }
+      .h-rotate {
+        width: 2 * $cube-height;
+        height: 2 * $cube-height;
+        border: 5px solid;
+        @include border-radius(2 * $cube-height)
+      }
+
+      // Position the translate handles
+      .tx {@include transform(translateX($cube-height / 2) translateY($cube-height / -2) translateZ($cube-height / -2) rotateZ(-90deg)); }
+      .ty {@include transform(translateX($cube-height / 2) translateY($cube-height / -2) translateZ($cube-height / -2)); }
+      .tz {@include transform(translateX($cube-height / 2) translateY($cube-height / -2) translateZ($cube-height / -2) rotateX(-90deg)); }
+
+      // Position the rotate handles
+      .rx {@include transform(translateX($cube-height / -2) translateY($cube-height / -2) translateZ($cube-height / -2) rotateY(90deg)); }
+      .ry {@include transform(translateX($cube-height / -2) translateY($cube-height / -2) translateZ($cube-height / -2) rotateX(-90deg)); }
+      .rz {@include transform(translateX($cube-height / -2) translateY($cube-height / -2) translateZ($cube-height / -2)); }
+
+      // Color both sets of handles
+      .rx, .tx {border-color: red; }
+      .ry, .ty {border-color: green; }
+      .rz, .tz {border-color: blue; }
+    }
+
+    &.translate-demo {
+      .h-translate {
+        opacity: 1;
+      }
+      .cube {
+        @include transform(translateX(10em) translateY(10em) rotateY(24deg));
+        @include animation('translate-cube' 4s ease-in-out infinite);
+      }
+    }
+
+    &.rotate-demo {
+      .h-rotate {
+        opacity: 1;
+      }
+      .cube {
+        // we position the cube at the apex of the translation animation for fluidity
+        @include transform(translateX(10em) translateY(6em) rotateY(24deg));
+        @include animation('rotate-cube' 8s linear infinite);
+      }
+    }
+
+    &.backface-demo {
+      .cube {
+        @include backface-visibility(hidden);
+        @include animation('backface-demo-rotate' 4s linear infinite);
+
+        .side {
+          opacity: 0;
+        }
+      }
+    }
+
+    &.backface-demo-cube {
+      .cube {
+        @include backface-visibility(hidden);
+        @include animation('backface-demo-rotate' 4s linear infinite);
+
+        .side {
+          @include backface-visibility(hidden);
+        }
+      }
+    }
+
+    &.backface-demo-cube-2sided {
+      .cube {
+        @include animation('backface-demo-rotate' 4s linear infinite);
+      }
+    }
+
+  }
+}
+
+@include keyframes('translate-cube') {
+  0%, 100% {
+    @include transform(translateX(5em) translateY(10em) rotateY(24deg));
+  }
+  50% {
+    @include transform(translateX(5em) translateY(6em) rotateY(24deg));
+  }
+}
+
+// This animation is positioned at the apex of the translate-cube animation
+@include keyframes('rotate-cube') {
+  0% {
+    @include transform(translateX(5em) translateY(6em) rotateY(24deg) rotateZ(0deg));
+  }
+  100% {
+    @include transform(translateX(5em) translateY(6em) rotateY(24deg) rotateZ(360deg));
+  }
+}
+
+@include keyframes('backface-demo-rotate') {
+  0% {
+    @include transform(translateX(5em) translateY(6em) rotateY(24deg));
+  }
+  100% {
+    @include transform(translateX(5em) translateY(6em) rotateY(384deg));
+  }
+}

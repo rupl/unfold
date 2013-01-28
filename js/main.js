@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 29;
+  var counter = 0;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -52,6 +52,15 @@
       "$('#s4 .transform-style').toggleClass('dim').next().next().toggleClass('hide'); $('#s4 .sandbox').toggleClass('p-warp'); ",
       "$('#s4 .perspective').toggleClass('dim').next().next().toggleClass('hide'); $('#s4 .sandbox').toggleClass('p-warp').toggleClass('po-warp'); ",
 
+      // Slide 5
+      "scrollTo('#s5'); ",
+      "$('#s5 .cube').toggleClass('hide'); ",
+      "$('#s5 .translate').toggleClass('hide'); $('#s5 .sandbox').toggleClass('translate-demo'); ",
+      "$('#s5 .translate').toggleClass('dim').next().next().toggleClass('hide'); $('#s5 .sandbox').toggleClass('translate-demo').toggleClass('rotate-demo'); ",
+      "$('#s5 .rotate').toggleClass('dim').next().next().toggleClass('hide'); $('#s5 .sandbox').toggleClass('rotate-demo').toggleClass('backface-demo'); ",
+      "$('#s5 .sandbox').toggleClass('backface-demo').toggleClass('backface-demo-cube'); ",
+      "$('#s5 .sandbox').toggleClass('backface-demo-cube').toggleClass('backface-demo-cube-2sided'); ",
+
     ],
     'reverse': [
 
@@ -97,6 +106,15 @@
       "$('#s4 .transform-style').toggleClass('hide'); ",
       "$('#s4 .transform-style').toggleClass('dim').next().next().toggleClass('hide'); $('#s4 .sandbox').toggleClass('p-warp'); ",
       "$('#s4 .perspective').toggleClass('dim').next().next().toggleClass('hide'); $('#s4 .sandbox').toggleClass('p-warp').toggleClass('po-warp'); ",
+
+      // Slide 5
+      "scrollTo('#s4'); ",
+      "$('#s5 .cube').toggleClass('hide'); ",
+      "$('#s5 .translate').toggleClass('hide'); $('#s5 .sandbox').toggleClass('translate-demo'); ",
+      "$('#s5 .translate').toggleClass('dim').next().next().toggleClass('hide'); $('#s5 .sandbox').toggleClass('translate-demo').toggleClass('rotate-demo'); ",
+      "$('#s5 .rotate').toggleClass('dim').next().next().toggleClass('hide'); $('#s5 .sandbox').toggleClass('rotate-demo').toggleClass('backface-demo'); ",
+      "$('#s5 .sandbox').toggleClass('backface-demo').toggleClass('backface-demo-cube'); ",
+      "$('#s5 .sandbox').toggleClass('backface-demo-cube').toggleClass('backface-demo-cube-2sided'); ",
 
     ]
   };
