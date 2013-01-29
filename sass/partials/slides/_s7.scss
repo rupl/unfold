@@ -83,6 +83,7 @@
   .solar-system {
     position: absolute;
     opacity: 0; // hidden until .space class is added to #s7
+    @include transition(opacity 1s ease-in-out);
     @include animation('move-sun' 120s linear infinite);
 
     .sun {

@@ -2360,6 +2360,11 @@ span.active {
 #s7 .solar-system {
   position: absolute;
   opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
   -webkit-animation: "move-sun" 120s linear infinite;
   -moz-animation: "move-sun" 120s linear infinite;
   -ms-animation: "move-sun" 120s linear infinite;
@@ -2638,4 +2643,282 @@ span.active {
   100% {
     transform: translateX(2em) rotateZ(360deg);
   }
+}
+
+/*
+ * Stone tile
+ */
+#s8 {
+  background: black url('/img/tile-bg.jpg?1359433508') no-repeat -10px top;
+  color: #000;
+  width: 1390px;
+  overflow: hidden;
+  -webkit-perspective: 470px;
+  -moz-perspective: 470px;
+  -ms-perspective: 470px;
+  -o-perspective: 470px;
+  perspective: 470px;
+  -webkit-perspective-origin: 54% 20%;
+  -moz-perspective-origin: 54% 20%;
+  -ms-perspective-origin: 54% 20%;
+  -o-perspective-origin: 54% 20%;
+  perspective-origin: 54% 20%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
+  backface-visibility: visible;
+  /* Match the photograph's perspective */
+  /* These are the individual tiles, which are rectangular prisms */
+  /* These are the sides of the tiles */
+  /* Give some tiles a different background to make it look more real */
+  /*
+   * These rules make the tiles move on mouseover.
+   * I set the nth-child() rules to make it visually symmetrical.
+   */
+  /* debugging styles */
+  /* -- Go Download Chrome - http://www.google.com/chrome -- */
+}
+#s8 a,
+#s8 p,
+#s8 #other ul li a {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#s8 h1 a {
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+.csstransforms3d #s8 div#fallback {
+  display: none;
+}
+.csstransforms3d #s8 #floor {
+  width: 1860px;
+  height: 436px;
+  background: #222;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
+  -moz-transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
+  -ms-transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
+  -o-transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
+  transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.csstransforms3d #s8 #base {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  -webkit-transform: translate3d(0, -30px, -10px);
+  -moz-transform: translate3d(0, -30px, -10px);
+  -ms-transform: translate3d(0, -30px, -10px);
+  -o-transform: translate3d(0, -30px, -10px);
+  transform: translate3d(0, -30px, -10px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#s8 div.panel {
+  float: left;
+  width: 457px;
+  height: 141px;
+  margin: 2px 4px;
+  background: #333;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  -o-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: translate3d(0, 0, 7px);
+  -moz-transform: translate3d(0, 0, 7px);
+  -ms-transform: translate3d(0, 0, 7px);
+  -o-transform: translate3d(0, 0, 7px);
+  transform: translate3d(0, 0, 7px);
+}
+#s8 div.panel,
+#s8 div.panel div.shadow {
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+#s8 div.panel div.left {
+  width: 124px;
+  height: 6px;
+  background: #444;
+  position: absolute;
+  left: 0;
+  box-shadow: 0 0 2px #444;
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+  -moz-transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+  -ms-transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+  -o-transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+  transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+}
+#s8 div.panel div.right {
+  width: 124px;
+  height: 6px;
+  background: #444;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 0 2px #444;
+  -webkit-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  -o-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+  -moz-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+  -ms-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+  -o-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+  transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+}
+#s8 div.panel div.front {
+  width: inherit;
+  height: 6px;
+  background: #666;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 4px #666;
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  -o-transform-origin: bottom center;
+  transform-origin: bottom center;
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 0);
+  -moz-transform: rotateX(90deg) translate3d(0, 0, 0);
+  -ms-transform: rotateX(90deg) translate3d(0, 0, 0);
+  -o-transform: rotateX(90deg) translate3d(0, 0, 0);
+  transform: rotateX(90deg) translate3d(0, 0, 0);
+}
+#s8 div.panel div.back {
+  width: inherit;
+  height: 6px;
+  background: #666;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 4px #666;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  -o-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transform: rotateX(90deg) translate3d(0, -6px, 0);
+  -moz-transform: rotateX(90deg) translate3d(0, -6px, 0);
+  -ms-transform: rotateX(90deg) translate3d(0, -6px, 0);
+  -o-transform: rotateX(90deg) translate3d(0, -6px, 0);
+  transform: rotateX(90deg) translate3d(0, -6px, 0);
+}
+#s8 div.panel div.top {
+  width: inherit;
+  height: inherit;
+  background: url('/img/tile-4.jpg?1359433508');
+  -webkit-transform: translate3d(0, 0, 1px);
+  -moz-transform: translate3d(0, 0, 1px);
+  -ms-transform: translate3d(0, 0, 1px);
+  -o-transform: translate3d(0, 0, 1px);
+  transform: translate3d(0, 0, 1px);
+}
+#s8.shadows div.panel div.shadow {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transform: translate3d(0, -122px, -5px);
+  -moz-transform: translate3d(0, -122px, -5px);
+  -ms-transform: translate3d(0, -122px, -5px);
+  -o-transform: translate3d(0, -122px, -5px);
+  transform: translate3d(0, -122px, -5px);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0);
+}
+#s8 div.panel:nth-child(3n+1) div.top {
+  background-position: 70% 80%;
+}
+#s8 div.panel:nth-child(5n) div.top {
+  background: url('/img/tile-2.jpg?1359435187') 50% 50%;
+}
+#s8 div.panel.hover {
+  -webkit-transform: translate3d(0, 0, 25px) rotateY(3deg);
+  -moz-transform: translate3d(0, 0, 25px) rotateY(3deg);
+  -ms-transform: translate3d(0, 0, 25px) rotateY(3deg);
+  -o-transform: translate3d(0, 0, 25px) rotateY(3deg);
+  transform: translate3d(0, 0, 25px) rotateY(3deg);
+}
+#s8.shadows div.panel.hover div.shadow {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  -moz-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  -ms-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  -o-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  -webkit-box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.6);
+}
+#s8 div.panel:nth-child(4n+1),
+#s8 div.panel:nth-child(4n+2) {
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+#s8 div.panel:nth-child(4n+2).hover,
+#s8 div.panel:nth-child(4n+1).hover {
+  -webkit-transform: translate3d(0, 0, 25px) rotateY(-3deg);
+  -moz-transform: translate3d(0, 0, 25px) rotateY(-3deg);
+  -ms-transform: translate3d(0, 0, 25px) rotateY(-3deg);
+  -o-transform: translate3d(0, 0, 25px) rotateY(-3deg);
+  transform: translate3d(0, 0, 25px) rotateY(-3deg);
+}
+#s8.shadows div.panel:nth-child(4n+2).hover div.shadow, #s8.shadows div.panel:nth-child(4n+1).hover div.shadow {
+  -webkit-transform: translate3d(0, -122px, -25px) rotateY(3deg);
+  -moz-transform: translate3d(0, -122px, -25px) rotateY(3deg);
+  -ms-transform: translate3d(0, -122px, -25px) rotateY(3deg);
+  -o-transform: translate3d(0, -122px, -25px) rotateY(3deg);
+  transform: translate3d(0, -122px, -25px) rotateY(3deg);
+}
+#s8 body.wireframe div#floor {
+  background: #f00;
+}
+#s8 html.no-csstransforms3d div#floor {
+  display: none;
+}
+#s8 html.no-csstransforms3d div#fallback {
+  display: block;
+  width: 800px;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+#s8 html.no-csstransforms3d p#toggle-shadows {
+  display: none;
 }

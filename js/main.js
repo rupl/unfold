@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = -1;
+  var counter = 58;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -85,6 +85,9 @@
       "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
       "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
 
+      // Slide 8
+      "scrollTo('#s8'); ",
+      "$('#s8'); ",
 
     ],
     'reverse': [
@@ -164,6 +167,9 @@
       "$('#s7 .slinky').toggleClass('move'); ",
       "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
       "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
+
+      // Slide 8
+      "scrollTo('#s7'); ",
 
     ]
   };

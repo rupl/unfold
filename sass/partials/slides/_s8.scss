@@ -1,0 +1,188 @@
+/*
+ * Stone tile
+ */
+
+#s8 {
+
+  background: #000 image-url('tile-bg.jpg') no-repeat -10px top;
+  color: #000;
+  width: 1390px;
+  overflow: hidden;
+  @include perspective(470px);
+  @include perspective-origin(54% 20%);
+  @include transform-style(preserve-3d);
+  @include backface-visibility(visible);
+  
+  a,
+  p,
+  #other ul li a {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  h1 a {
+    color: #000; text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+  }
+  
+  /* Match the photograph's perspective */
+  .csstransforms3d & {
+
+    div#fallback {display: none; }
+
+    #floor {
+      width: 1860px;
+      height: 436px;
+      background: #222;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      @include transform(rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px));
+      @include transform-style(preserve-3d);
+    }
+    #base {
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 15;
+
+      @include transform(translate3d(0, -30px, -10px));
+      @include transform-style(preserve-3d);
+    }
+  }
+  
+  /* These are the individual tiles, which are rectangular prisms */
+  div.panel {
+    float: left; 
+    width: 457px;
+    height: 141px;
+    margin: 2px 4px;
+    background: #333;
+
+    @include transform-style(preserve-3d);
+    @include transform-origin(bottom, right);
+    @include transform(translate3d(0,0,7px));
+  }
+  div.panel,
+  div.panel div.shadow {
+    @include transition(.3s all ease-in-out);
+  }
+  
+  /* These are the sides of the tiles */
+  div.panel div.left {
+    width: 124px;
+    height: 6px;
+    background: #444;
+    position: absolute;
+    left: 0;
+    box-shadow: 0 0 2px #444;
+
+    @include transform-origin(bottom, left);
+    @include transform(rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0));
+  }
+  div.panel div.right {
+    width: 124px;
+    height: 6px;
+    background: #444;
+    position: absolute;
+    right: 0;
+    box-shadow: 0 0 2px #444;
+
+    @include transform-origin(bottom, right);
+    @include transform(rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0));
+  }
+  div.panel div.front {
+    width: inherit;
+    height: 6px;
+    background: #666;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 4px #666;
+
+    @include transform-origin(bottom, center);
+    @include transform(rotateX(90deg) translate3d(0, 0, 0));
+  }
+  div.panel div.back {
+    width: inherit;
+    height: 6px;
+    background: #666;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 0 4px #666;
+
+    @include transform-origin(top, center);
+    @include transform(rotateX(90deg) translate3d(0, -6px, 0));
+  }
+  div.panel div.top {
+    width: inherit;
+    height: inherit;
+    background: image-url('tile-4.jpg');
+
+    @include transform(translate3d(0, 0, 1px));
+  }
+  &.shadows div.panel div.shadow {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: rgba(#000,0);
+
+    @include transform(translate3d(0, -122px, -5px));
+    @include box-shadow(0 0 5px 5px rgba(#000,0));
+  }
+
+  /* Give some tiles a different background to make it look more real */
+  div.panel:nth-child(3n+1) div.top {
+    background-position: 70% 80%;
+  }
+  div.panel:nth-child(5n) div.top {
+    background: image-url('tile-2.jpg') 50% 50%;
+  }
+
+  /*
+   * These rules make the tiles move on mouseover.
+   * I set the nth-child() rules to make it visually symmetrical.
+   */
+  div.panel.hover {
+    @include transform(translate3d(0,0,25px) rotateY(3deg));
+  }
+  &.shadows div.panel.hover div.shadow {
+    background: rgba(0,0,0,0.6);
+    @include transform(translate3d(0, -122px,-25px) rotateY(-3deg));
+    @include box-shadow(0 0 25px 15px rgba(#000,0.6));
+  }
+  div.panel:nth-child(4n+1),
+  div.panel:nth-child(4n+2) {
+    @include transform-origin(bottom, left);
+  }
+  div.panel:nth-child(4n+2).hover,
+  div.panel:nth-child(4n+1).hover {
+    @include transform(translate3d(0,0,25px) rotateY(-3deg));
+  }
+  &.shadows div.panel:nth-child(4n+2).hover div.shadow,
+  &.shadows div.panel:nth-child(4n+1).hover div.shadow {
+    @include transform(translate3d(0, -122px,-25px) rotateY(3deg));
+  }
+  
+  /* debugging styles */
+  body.wireframe div#floor {
+    background: #f00; 
+  }
+
+  /* -- Go Download Chrome - http://www.google.com/chrome -- */
+  html.no-csstransforms3d div#floor {
+    display: none;
+  }
+  html.no-csstransforms3d div#fallback {
+    display: block;
+    width: 800px;
+    padding: 2em;
+    background: rgba(#fff,0.5);
+    text-shadow: 1px 1px 1px rgba(#fff,0.4);
+  }
+  html.no-csstransforms3d p#toggle-shadows {
+    display: none;
+  }
+
+}
