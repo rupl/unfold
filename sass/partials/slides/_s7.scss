@@ -6,6 +6,7 @@
   .sandbox {
     width: 100%;
     height: 600px;
+    margin: 0 -1em;
     overflow: hidden;
     @include transform-style(preserve-3d);
     @include perspective(1200px);
@@ -42,7 +43,6 @@
       );
 
       // initial slinky position
-      @include transform(rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0) translateY(0) translateZ(0));
       @include transform-origin(0%, 0%);
       @include transform-style(preserve-3d);
 
@@ -53,13 +53,13 @@
 
   // The slinky segments at rest
   .slinky .segment .segment {
-    @include transform(rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(-.15em));
+    @include transform(translateZ(-.15em));
     @include box-shadow(0 0 .04em .04em rgba(#000,.9));
   }
 
   // The slinky segments extended
   .slinky.extended .segment .segment {
-    @include transform(rotateX(0) rotateY(5.1deg) rotateZ(0) translateX(0) translateY(0) translateZ(-.15em));
+    @include transform(translateZ(-.15em) rotateY(5.1deg));
 
     &.last {
       // This puts a box-shadow on the last element when it is touching the "floor"
