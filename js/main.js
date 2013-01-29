@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 41;
+  var counter = -1;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -10,7 +10,7 @@
     'forward': [
 
       // Slide 1
-      "",
+      "scrollTo('#s1'); ",
       "$('.un, .fold, .ing', '#s1').toggleClass('active'); ",
       "$('.the, .b', '#s1').toggleClass('active'); ",
       "$('.ox, .m', '#s1').toggleClass('active'); ",
@@ -80,7 +80,10 @@
       "scrollTo('#s7'); ",
       "$('#s7 .slinky').toggleClass('hide'); ",
       "$('#s7 .slinky').toggleClass('extended'); ",
+      "$('#s7 p.slinky-desc').toggleClass('hide'); $('#s7 p.intro').toggleClass('dim'); ",
       "$('#s7 .slinky').toggleClass('move'); ",
+      "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
+      "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
 
 
     ],
@@ -157,8 +160,10 @@
       "scrollTo('#s6'); ",
       "$('#s7 .slinky').toggleClass('hide'); ",
       "$('#s7 .slinky').toggleClass('extended'); ",
+      "$('#s7 p.slinky-desc').toggleClass('hide'); $('#s7 p.intro').toggleClass('dim'); ",
       "$('#s7 .slinky').toggleClass('move'); ",
-
+      "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
+      "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
 
     ]
   };

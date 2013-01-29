@@ -135,8 +135,11 @@
         </article>
         <article id="s7">
           <p class="intro">You can use this inheritance to simulate more complex objects</p>
+          <p class="slinky-desc hide">This slinky is not a spiral, but numerous nested <code>&lt;div></code>s</p>
+          <p class="solar-desc hide">A solar system only needs one element per celestial body.</p>
           <div class="sandbox">
-              <div class="slinky hide">
+            <div class="slinky hide">
+              <div class="segment">
                 <div class="segment">
                   <div class="segment">
                     <div class="segment">
@@ -171,9 +174,7 @@
                                                                               <div class="segment">
                                                                                 <div class="segment">
                                                                                   <div class="segment">
-                                                                                    <div class="segment">
-                                                                                      <div class="segment last">
-                                                                                      </div>
+                                                                                    <div class="segment last">
                                                                                     </div>
                                                                                   </div>
                                                                                 </div>
@@ -210,8 +211,16 @@
                   </div>
                 </div>
               </div>
+            </div><!-- .slinky -->
+            <!-- There is lots of prior art for this: http://codepen.io/juliangarnier/pen/idhuG -->
+            <div class="solar-system hide">
+              <span class="sun">
+                <span class="earth">
+                  <span class="moon"></span>
+                </span>
+              </span>
             </div>
-          </div>
+          </div><!-- .sandbox -->
         </article>
       </main>
 

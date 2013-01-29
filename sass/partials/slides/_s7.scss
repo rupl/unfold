@@ -3,9 +3,14 @@
  */
 
 #s7 {
+  p.slinky-desc,
+  p.etwas-desc {
+    position: absolute;
+  }
+
   .sandbox {
     width: 100%;
-    height: 600px;
+    height: 556px;
     margin: 0 -1em;
     overflow: hidden;
     @include transform-style(preserve-3d);
@@ -34,11 +39,12 @@
       z-index: 900;
       width: 8em;
       height: 8em;
-      border: .3em solid #666;
+      border: .3em solid #888;
       background: transparent;
       @include border-radius(4em);
       @include box-shadow(
-        0 0 .04em .04em rgba(#000,.9),
+        0 0 .07em .07em #000,
+  inset 0 0 .07em .03em #000,
         0 0 3em rgba(#000, 0.7)
       );
 
@@ -54,7 +60,10 @@
   // The slinky segments at rest
   .slinky .segment .segment {
     @include transform(translateZ(-.15em));
-    @include box-shadow(0 0 .04em .04em rgba(#000,.9));
+    @include box-shadow(
+      0 0 .07em .07em #000,
+      inset 0 0 .07em .03em #000
+    );
   }
 
   // The slinky segments extended
@@ -64,10 +73,103 @@
     &.last {
       // This puts a box-shadow on the last element when it is touching the "floor"
       @include box-shadow(
-        0 0 .04em .04em rgba(#000,.9),
+        0 0 .07em .07em #000,
+        inset 0 0 .07em .07em #000,
         0 0 3em rgba(#000, 0.3)
       );
     }
   }
 
+  .solar-system {
+    position: absolute;
+    opacity: 0; // hidden until .space class is added to #s7
+    @include animation('move-sun' 120s linear infinite);
+
+    .sun {
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      @include border-radius(1em);
+      background: #fd0;
+      @include background-image(radial-gradient(1em 1em, #ff0 0, #ff7200 2em));
+      @include box-shadow(0 0 .6em .3em rgba(#f90, .5), inset 0 0 .5em #fa0);
+      
+      @include transform(rotateZ(0deg));
+
+      .earth {
+        position: absolute;
+        
+        width: .8em;
+        height: .8em;
+        left: .5em;
+        top: .5em;
+        @include border-radius(.6em);
+        @include background-image(radial-gradient(.6em .5em, #00f 0, #1e90ff .6em));
+        @include transform(translateX(3em));
+        @include transform-origin(-3.5em, 0%);
+        @include animation('rotate-earth' 10s linear infinite);
+
+        .moon {
+          position: absolute;
+
+          width: .3em;
+          height: .3em;
+          left: .32em;
+          top: .32em;
+          @include border-radius(.4em);
+          @include background-image(radial-gradient(.26em .3em, #ccc 0, #777 10px));
+          @include transform(translateX(1em));
+          @include transform-origin(-1.32em, 0%);
+          @include animation('rotate-moon' 4s linear infinite);
+        }        
+      }
+    }
+  }
+
+  // License: http://creativecommons.org/licenses/by-sa/3.0/deed.en
+  // Source:  http://en.wikipedia.org/wiki/File:Vermont_night_sky_stargazing.JPG
+  //
+  // Add this image to the slide initially but let .space display it
+  @include background(#fff image-url('space-bg.jpg') no-repeat 0% -960px);
+  @include transition(background-position 1.2s ease-in-out);
+
+  &.space {
+    // Move space into view
+    background-position: 0 0;
+    // Make text legible
+    color: #fff;
+    text-shadow: 0 0 .2em #000;
+    
+    // Show solar system
+    .solar-system {
+      opacity: 1;
+    }
+  }
+
+}
+
+@include keyframes('move-sun') {
+  0% {
+    @include transform(translateX(24em) translateY(7em));
+  }
+  100% {
+    @include transform(translateX(6em) translateY(5.5em));
+  }
+}
+@include keyframes('rotate-earth') {
+  0% {
+    @include transform(translateX(3.5em) rotateZ(0deg));
+  }
+  100% {
+    @include transform(translateX(3.5em) rotateZ(360deg));
+  }
+}
+
+@include keyframes('rotate-moon') {
+  0% {
+    @include transform(translateX(2em) rotateZ(0deg));
+  }
+  100% {
+    @include transform(translateX(2em) rotateZ(360deg));
+  }
 }
