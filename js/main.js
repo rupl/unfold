@@ -76,6 +76,11 @@
       // "$('#s6 .pyramid').toggleClass('wireframe'); ",
       // "$('#s6 .pyramid').toggleClass('wireframe').toggleClass('planes'); ",
 
+      // Slide 7
+      "scrollTo('#s7'); ",
+      "$('#s7 .slinky').toggleClass('hide'); ",
+      "$('#s7 .slinky').toggleClass('extended'); ",
+      "$('#s7 .slinky').toggleClass('move'); ",
 
 
     ],
@@ -147,6 +152,12 @@
       // "$('#s6 .pyramid').toggleClass('hide'); ",
       // "$('#s6 .pyramid').toggleClass('wireframe'); ",
       // "$('#s6 .pyramid').toggleClass('wireframe').toggleClass('planes'); ",
+
+      // Slide 7
+      "scrollTo('#s6'); ",
+      "$('#s7 .slinky').toggleClass('hide'); ",
+      "$('#s7 .slinky').toggleClass('extended'); ",
+      "$('#s7 .slinky').toggleClass('move'); ",
 
 
     ]

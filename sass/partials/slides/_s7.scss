@@ -1,0 +1,73 @@
+/*
+ * Slinky
+ */
+
+#s7 {
+  .sandbox {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    @include transform-style(preserve-3d);
+    @include perspective(1200px);
+  }
+
+  /* -- make sure to declare a default for every property that you want animated -- */
+  .slinky {
+    position: absolute;
+    top: 14em;
+    left: 14em;
+    @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em));
+    @include transform-origin(50%, 50%);
+    @include transform-style(preserve-3d);
+    @include transition(all 1.25s ease-in-out);
+
+    &.move {
+      @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em));
+    }
+
+    .segment {
+      float: none;
+      position: absolute;
+      top: -.275em;
+      left: -.275em;
+      z-index: 900;
+      width: 8em;
+      height: 8em;
+      border: .3em solid #666;
+      background: transparent;
+      @include border-radius(4em);
+      @include box-shadow(
+        0 0 .04em .04em rgba(#000,.9),
+        0 0 3em rgba(#000, 0.7)
+      );
+
+      // initial slinky position
+      @include transform(rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0) translateY(0) translateZ(0));
+      @include transform-origin(0%, 0%);
+      @include transform-style(preserve-3d);
+
+      // transition is the magic sauce for animation
+      @include transition(all 0.5s ease-in-out);
+    }
+  }
+
+  // The slinky segments at rest
+  .slinky .segment .segment {
+    @include transform(rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(-.15em));
+    @include box-shadow(0 0 .04em .04em rgba(#000,.9));
+  }
+
+  // The slinky segments extended
+  .slinky.extended .segment .segment {
+    @include transform(rotateX(0) rotateY(5.1deg) rotateZ(0) translateX(0) translateY(0) translateZ(-.15em));
+
+    &.last {
+      // This puts a box-shadow on the last element when it is touching the "floor"
+      @include box-shadow(
+        0 0 .04em .04em rgba(#000,.9),
+        0 0 3em rgba(#000, 0.3)
+      );
+    }
+  }
+
+}
