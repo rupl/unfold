@@ -53,19 +53,15 @@ You can simulate other more complex objects. This slinky is not a spiral, but nu
 You can superimpose transforms on top of real images
 1. Demo tile
 
+Combining with other CSS
+1. Demo blur filter
+
 DOM elements can be enhanced by JavaScript. Just write <code><span class="cube"></span></code> in your markup and have your script add [bottom, left, right, front, back] edges.
 1. Make various minecraft blocks out of really simple markup+classes
 2. *Maybe* make it so clicking a surface generates the new block on that surface
-
-Combining with other CSS
-1. Demo blur filter
 
 The end
 
 # Todos
 
 - blur filter: convert to Sass, add real 3d perspctive and shift perspective origin based on cursor position
-- tile: convert to Sass, test in IE10/FF/Chrome/Safari
-- slinky: convert to Sass, add border-image and mask to make it look shiny
-
-- Make 3D headings by using two 0px box shadows
