@@ -733,11 +733,11 @@ span.active {
  * Title slide
  */
 #s1 h1 {
-  font-size: 2.08333em;
+  font-size: 2.5em;
   line-height: .9em;
   position: absolute;
   top: 1em;
-  left: 3em;
+  left: 2em;
 }
 #s1 h1 .fold .un {
   -webkit-transform-origin: 100% 100%;
