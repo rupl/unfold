@@ -37,7 +37,7 @@
       left: 0;
       top: 0;
 
-      @include transform(rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px));
+      @include transform(rotateX(66.3deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 80px, -218px));
       @include transform-style(preserve-3d);
     }
     #base {

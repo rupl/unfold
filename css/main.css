@@ -2704,11 +2704,11 @@ span.active {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
-  -moz-transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
-  -ms-transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
-  -o-transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
-  transform: rotateX(66.3deg) rotateY(0deg) rotateZ(0deg) translate3d(-421px, 79px, -218px);
+  -webkit-transform: rotateX(66.3deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 80px, -218px);
+  -moz-transform: rotateX(66.3deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 80px, -218px);
+  -ms-transform: rotateX(66.3deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 80px, -218px);
+  -o-transform: rotateX(66.3deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 80px, -218px);
+  transform: rotateX(66.3deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 80px, -218px);
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
