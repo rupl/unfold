@@ -87,7 +87,11 @@
 
       // Slide 8
       "scrollTo('#s8'); ",
-      "$('#s8'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(even)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(odd)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(2), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(10), :nth-child(12) ').toggleClass('lift'); ",
+      "$('#floor .panel').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift'); ",
 
     ],
     'reverse': [
@@ -170,6 +174,11 @@
 
       // Slide 8
       "scrollTo('#s7'); ",
+      "$('#floor .panel').removeClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(odd)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(2), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(10), :nth-child(12) ').toggleClass('lift'); ",
+      "$('#floor .panel').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift'); ",
 
     ]
   };

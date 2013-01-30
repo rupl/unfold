@@ -2673,14 +2673,6 @@ span.active {
   -ms-backface-visibility: visible;
   -o-backface-visibility: visible;
   backface-visibility: visible;
-  /* Match the photograph's perspective */
-  /* These are the individual tiles, which are rectangular prisms */
-  /* These are the sides of the tiles */
-  /* Give some tiles a different background to make it look more real */
-  /*
-   * These rules make the tiles move on mouseover.
-   * I set the nth-child() rules to make it visually symmetrical.
-   */
   /* debugging styles */
   /* -- Go Download Chrome - http://www.google.com/chrome -- */
 }
@@ -2733,7 +2725,7 @@ span.active {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-#s8 div.panel {
+#s8 .panel {
   float: left;
   width: 457px;
   height: 141px;
@@ -2755,15 +2747,15 @@ span.active {
   -o-transform: translate3d(0, 0, 7px);
   transform: translate3d(0, 0, 7px);
 }
-#s8 div.panel,
-#s8 div.panel div.shadow {
+#s8 .panel,
+#s8 .panel .shadow {
   -webkit-transition: 0.3s all ease-in-out;
   -moz-transition: 0.3s all ease-in-out;
   -ms-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
-#s8 div.panel div.left {
+#s8 .panel .left {
   width: 124px;
   height: 6px;
   background: #444;
@@ -2781,7 +2773,7 @@ span.active {
   -o-transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
   transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
 }
-#s8 div.panel div.right {
+#s8 .panel .right {
   width: 124px;
   height: 6px;
   background: #444;
@@ -2799,7 +2791,7 @@ span.active {
   -o-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
   transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
 }
-#s8 div.panel div.front {
+#s8 .panel .front {
   width: inherit;
   height: 6px;
   background: #666;
@@ -2817,7 +2809,7 @@ span.active {
   -o-transform: rotateX(90deg) translate3d(0, 0, 0);
   transform: rotateX(90deg) translate3d(0, 0, 0);
 }
-#s8 div.panel div.back {
+#s8 .panel .back {
   width: inherit;
   height: 6px;
   background: #666;
@@ -2835,7 +2827,7 @@ span.active {
   -o-transform: rotateX(90deg) translate3d(0, -6px, 0);
   transform: rotateX(90deg) translate3d(0, -6px, 0);
 }
-#s8 div.panel div.top {
+#s8 .panel .top {
   width: inherit;
   height: inherit;
   background: url('/img/tile-4.jpg?1359433508');
@@ -2845,7 +2837,7 @@ span.active {
   -o-transform: translate3d(0, 0, 1px);
   transform: translate3d(0, 0, 1px);
 }
-#s8.shadows div.panel div.shadow {
+#s8 .panel .shadow {
   width: inherit;
   height: inherit;
   position: absolute;
@@ -2859,54 +2851,61 @@ span.active {
   -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0);
 }
-#s8 div.panel:nth-child(3n+1) div.top {
+#s8 .panel:nth-child(3n+1) .top {
   background-position: 70% 80%;
 }
-#s8 div.panel:nth-child(5n) div.top {
+#s8 .panel:nth-child(5n) .top {
   background: url('/img/tile-2.jpg?1359435187') 50% 50%;
 }
-#s8 div.panel.hover {
+#s8 .panel:hover,
+#s8 .panel.lift {
   -webkit-transform: translate3d(0, 0, 25px) rotateY(3deg);
   -moz-transform: translate3d(0, 0, 25px) rotateY(3deg);
   -ms-transform: translate3d(0, 0, 25px) rotateY(3deg);
   -o-transform: translate3d(0, 0, 25px) rotateY(3deg);
   transform: translate3d(0, 0, 25px) rotateY(3deg);
 }
-#s8.shadows div.panel.hover div.shadow {
-  background: rgba(0, 0, 0, 0.6);
+#s8 .panel:hover .shadow,
+#s8 .panel.lift .shadow {
+  background: rgba(0, 0, 0, 0.4);
   -webkit-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
   -moz-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
   -ms-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
   -o-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
   transform: translate3d(0, -122px, -25px) rotateY(-3deg);
-  -webkit-box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.4);
 }
-#s8 div.panel:nth-child(4n+1),
-#s8 div.panel:nth-child(4n+2) {
+#s8 .panel:nth-child(4n+1),
+#s8 .panel:nth-child(4n+2) {
   -webkit-transform-origin: bottom left;
   -moz-transform-origin: bottom left;
   -ms-transform-origin: bottom left;
   -o-transform-origin: bottom left;
   transform-origin: bottom left;
 }
-#s8 div.panel:nth-child(4n+2).hover,
-#s8 div.panel:nth-child(4n+1).hover {
+#s8 .panel:nth-child(4n+2):hover,
+#s8 .panel:nth-child(4n+1):hover,
+#s8 .panel.lift:nth-child(4n+2),
+#s8 .panel.lift:nth-child(4n+1) {
   -webkit-transform: translate3d(0, 0, 25px) rotateY(-3deg);
   -moz-transform: translate3d(0, 0, 25px) rotateY(-3deg);
   -ms-transform: translate3d(0, 0, 25px) rotateY(-3deg);
   -o-transform: translate3d(0, 0, 25px) rotateY(-3deg);
   transform: translate3d(0, 0, 25px) rotateY(-3deg);
 }
-#s8.shadows div.panel:nth-child(4n+2).hover div.shadow, #s8.shadows div.panel:nth-child(4n+1).hover div.shadow {
+#s8 .panel:nth-child(4n+2):hover .shadow,
+#s8 .panel:nth-child(4n+1):hover .shadow,
+#s8 .panel.lift:nth-child(4n+2) .shadow,
+#s8 .panel.lift:nth-child(4n+1) .shadow {
   -webkit-transform: translate3d(0, -122px, -25px) rotateY(3deg);
   -moz-transform: translate3d(0, -122px, -25px) rotateY(3deg);
   -ms-transform: translate3d(0, -122px, -25px) rotateY(3deg);
   -o-transform: translate3d(0, -122px, -25px) rotateY(3deg);
   transform: translate3d(0, -122px, -25px) rotateY(3deg);
 }
-#s8 body.wireframe div#floor {
+body.wireframe #s8 div#floor {
   background: #f00;
 }
 #s8 html.no-csstransforms3d div#floor {
@@ -2918,7 +2917,4 @@ span.active {
   padding: 2em;
   background: rgba(255, 255, 255, 0.5);
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
-}
-#s8 html.no-csstransforms3d p#toggle-shadows {
-  display: none;
 }
