@@ -19,6 +19,7 @@
       <![endif]-->
       <main role="main" class="main wrapper clearfix" id="slides">
         <article id="s1">
+
           <h1>
             <span class="fold">
               <span class="un">Un</span>fold<span class="ing">ing</span>
@@ -34,8 +35,10 @@
             </span>
           </h1>
           <h2><span>Exploring CSS 3D Transforms</span></h2>
+
         </article>
         <article id="s2">
+
           <p class="intro friend show">Here is our dear friend, the <strong>DOM element</strong>.</p>
           <p class="limits">For so long, we've had limited options: <span class="floats bold">floats</span> and <span class="pos">positioning</span></p>
           <div class="sandbox">
@@ -43,8 +46,10 @@
             <p>Quinoa portland farm-to-table retro, put a bird on it mlkshk tattooed flannel actually high life carles semiotics iphone. Single-origin coffee blue bottle helvetica, neutra letterpress typewriter cardigan ethical. Selvage bushwick american apparel next level.</p>
             <p>Jean shorts whatever blog bushwick. Actually godard pitchfork, neutra bushwick dreamcatcher pour-over farm-to-table food truck banjo authentic occupy mlkshk vice. Farm-to-table brooklyn cosby sweater, tattooed stumptown keytar.</p>
           </div>
+
         </article>
         <article id="s3">
+
           <div class="sandbox sandbox1">
             <p class="intro">However, there's a feature of CSS that unlocks a whole new dimension:</p>
             <h2 class="hide"><span>CSS 3D Transforms</span></h2>
@@ -56,8 +61,10 @@
             </p>
             <div class="de"><span class="axis"></span></div>
           </div>
+
         </article>
         <article id="s4">
+
           <p class="intro">
             Combined with some settings that control perspective,<br>
             3D transforms will make your DOM Elements jump out of flatland!
@@ -80,8 +87,10 @@
             <dt class="perspective-origin hide"><code><a href="https://developer.mozilla.org/en-US/docs/CSS/perspective-origin">perspective-origin</a></code></dt>
             <dd class="perspective-origin hide">Specifies the vanishing point of the perspective effect.</dd>
           </dl>
+
         </article>
         <article id="s5">
+
           <p class="intro">
             These settings go on the element you want to transform:
           </p>
@@ -110,8 +119,10 @@
             <dt class="backface-visibility hide"><code><a href="https://developer.mozilla.org/en-US/docs/CSS/backface-visibility">backface-visibility</a></code></dt>
             <dd class="backface-visibility hide">Specifies if you can see this element when it is <b>not</b> facing you.<br><br><small><i>By definition <a href="http://en.wikipedia.org/wiki/Polygonal_modeling">computer-generated polygons are 1-sided</a>, a decades-old convention in 3D-land.</i></small></dd>
           </dl>
+
         </article>
         <article id="s6">
+
           <p class="intro">
             Transforms are inherited by children.<br>
             You can think of nested elements much like <span class="paper">paper <span class="folds">folds</span></span>
@@ -132,8 +143,10 @@
               <span class="de triangle de4"></span>
             </div> -->
           </div>
+
         </article>
         <article id="s7">
+
           <p class="intro">You can use this inheritance to simulate more complex objects</p>
           <p class="slinky-desc hide">This slinky is not a spiral, but numerous nested <code>&lt;div></code>s</p>
           <p class="solar-desc hide">A solar system only needs one element per celestial body.</p>
@@ -175,6 +188,7 @@
                                                                                 <div class="segment">
                                                                                   <div class="segment">
                                                                                     <div class="segment last">
+                                                                                      <!-- nothing to see here, move along -->
                                                                                     </div>
                                                                                   </div>
                                                                                 </div>
@@ -212,6 +226,7 @@
                 </div>
               </div>
             </div><!-- .slinky -->
+
             <!-- There is lots of prior art for this: http://codepen.io/juliangarnier/pen/idhuG -->
             <div class="solar-system hide">
               <span class="sun">
@@ -221,8 +236,10 @@
               </span>
             </div>
           </div><!-- .sandbox -->
+
         </article>
         <article id="s8">
+
           <p class="intro">You can also incorporate transformed elements into images.</p>
           <!-- I took the tile photo right here: http://j.mp/tile-aic -->
           <div id="floor">
@@ -243,8 +260,24 @@
 
               <div id="base"></div>
           </div><!-- #floor -->
-
           <div id="fallback"><b>If you can read this, it means your browser cannot process the 3D transforms on this page.</b><br> There's no good fallback behavior, so I put this message here to let you know what happened.</div>
+
+        </article>
+        <article id="s9">
+
+            <p class="intro">You can combine transforms with other CSS to create compelling effects</p>
+            <!--
+            The tabindex is "backwards" here so that the increasingly specific adjacent sibling selectors
+            listed above get activated one-by-one as the focus moves backwards over the elements.
+            -->
+            <span class="rolodex hide">
+              <span class="vcard" contenteditable><span class="fn">Chris Ruppel</span></span>
+              <span class="vcard" contenteditable><span class="fn">Garann Means</span></span>
+              <span class="vcard" contenteditable><span class="fn">Mike Taylor</span></span>
+              <span class="vcard" contenteditable><span class="fn">Cody Lindley</span></span>
+              <span class="vcard" contenteditable><span class="fn">Estelle Weyl</span></span>
+              <span class="vcard" contenteditable><span class="fn">Brandon Satrom</span></span>
+            </span>
 
         </article>
       </main>
