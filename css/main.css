@@ -2300,11 +2300,11 @@ span.active {
   transition: all 1.25s ease-in-out;
 }
 #s7 .slinky.move {
-  -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em);
-  -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em);
-  -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em);
-  -o-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em);
-  transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em);
+  -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  -o-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
 }
 #s7 .slinky .segment {
   float: none;
@@ -2350,14 +2350,26 @@ span.active {
   -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black;
   box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black;
 }
-#s7 .slinky.extended .segment .segment {
+#s7 .slinky.half .segment .segment {
   -webkit-transform: translateZ(-0.15em) rotateY(5.1deg);
   -moz-transform: translateZ(-0.15em) rotateY(5.1deg);
   -ms-transform: translateZ(-0.15em) rotateY(5.1deg);
   -o-transform: translateZ(-0.15em) rotateY(5.1deg);
   transform: translateZ(-0.15em) rotateY(5.1deg);
 }
-#s7 .slinky.extended .segment .segment.last {
+#s7 .slinky.half .segment .segment.last {
+  -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
+}
+#s7 .slinky.full .segment .segment {
+  -webkit-transform: translateZ(-0.15em) rotateY(10.3deg);
+  -moz-transform: translateZ(-0.15em) rotateY(10.3deg);
+  -ms-transform: translateZ(-0.15em) rotateY(10.3deg);
+  -o-transform: translateZ(-0.15em) rotateY(10.3deg);
+  transform: translateZ(-0.15em) rotateY(10.3deg);
+}
+#s7 .slinky.full .segment .segment.last {
   -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);

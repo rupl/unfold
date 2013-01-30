@@ -36,7 +36,7 @@
     @include transition(all 1.25s ease-in-out);
 
     &.move {
-      @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em));
+      @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em));
     }
 
     .segment {
@@ -74,9 +74,23 @@
     );
   }
 
-  // The slinky segments extended
-  .slinky.extended .segment .segment {
+  // Semi-circle slinky
+  .slinky.half .segment .segment {
     @include transform(translateZ(-.15em) rotateY(5.1deg));
+
+    &.last {
+      // This puts a box-shadow on the last element when it is touching the "floor"
+      @include box-shadow(
+        0 0 .07em .07em #000,
+        inset 0 0 .07em .07em #000,
+        0 0 3em rgba(#000, 0.3)
+      );
+    }
+  }
+
+  // Full-circle slinky
+  .slinky.full .segment .segment {
+    @include transform(translateZ(-.15em) rotateY(10.3deg));
 
     &.last {
       // This puts a box-shadow on the last element when it is touching the "floor"

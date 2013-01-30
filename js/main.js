@@ -96,10 +96,10 @@
       // Slide 7
       "scrollTo('#s7'); ",
       "$('#s7 .slinky').toggleClass('hide'); ",
-      "$('#s7 .slinky').toggleClass('extended'); ",
+      "$('#s7 .slinky').toggleClass('half'); ",
       "$('#s7 p.slinky-desc').toggleClass('hide'); "+
       "$('#s7 p.intro').toggleClass('dim'); ",
-      "$('#s7 .slinky').toggleClass('move'); ",
+      "$('#s7 .slinky').toggleClass('move half full'); ",
       "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
       "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
 
@@ -201,10 +201,10 @@
       // Slide 7
       "scrollTo('#s6'); ",
       "$('#s7 .slinky').toggleClass('hide'); ",
-      "$('#s7 .slinky').toggleClass('extended'); ",
+      "$('#s7 .slinky').toggleClass('half'); ",
       "$('#s7 p.slinky-desc').toggleClass('hide'); "+
       "$('#s7 p.intro').toggleClass('dim'); ",
-      "$('#s7 .slinky').toggleClass('move'); ",
+      "$('#s7 .slinky').toggleClass('move half full'); ",
       "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
       "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
 
