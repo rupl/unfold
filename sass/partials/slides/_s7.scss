@@ -3,6 +3,14 @@
  */
 
 #s7 {
+  padding-left: 0;
+  padding-right: 0;
+  // Text still needs padding.
+  p {
+    padding-left: 1em;
+  }
+
+
   p.slinky-desc,
   p.etwas-desc {
     position: absolute;
@@ -11,7 +19,7 @@
   .sandbox {
     width: 100%;
     height: 556px;
-    margin: 0 -1em;
+    margin: 0;
     overflow: hidden;
     @include transform-style(preserve-3d);
     @include perspective(1200px);
@@ -135,7 +143,7 @@
   @include transition(background-position 1.2s ease-in-out);
 
   &.space {
-    // Move space into view
+    // Move space bg into view
     background-position: 0 0;
     // Make text legible
     color: #fff;
@@ -151,10 +159,10 @@
 
 @include keyframes('move-sun') {
   0% {
-    @include transform(translateX(24em) translateY(7em));
+    @include transform(translateX(37em) translateY(7em));
   }
   100% {
-    @include transform(translateX(6em) translateY(5.5em));
+    @include transform(translateX(-8em) translateY(5.5em));
   }
 }
 @include keyframes('rotate-earth') {

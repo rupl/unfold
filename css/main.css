@@ -2241,6 +2241,8 @@ span.active {
  * Slinky
  */
 #s7 {
+  padding-left: 0;
+  padding-right: 0;
   /* -- make sure to declare a default for every property that you want animated -- */
   background: white url('/img/space-bg.jpg?1359429388') no-repeat 0% -960px;
   -webkit-transition: background-position 1.2s ease-in-out;
@@ -2249,6 +2251,9 @@ span.active {
   -o-transition: background-position 1.2s ease-in-out;
   transition: background-position 1.2s ease-in-out;
 }
+#s7 p {
+  padding-left: 1em;
+}
 #s7 p.slinky-desc,
 #s7 p.etwas-desc {
   position: absolute;
@@ -2256,7 +2261,7 @@ span.active {
 #s7 .sandbox {
   width: 100%;
   height: 556px;
-  margin: 0 -1em;
+  margin: 0;
   overflow: hidden;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -2473,59 +2478,59 @@ span.active {
 
 @-moz-keyframes move-sun {
   0% {
-    -moz-transform: translateX(24em) translateY(7em);
-    transform: translateX(24em) translateY(7em);
+    -moz-transform: translateX(37em) translateY(7em);
+    transform: translateX(37em) translateY(7em);
   }
 
   100% {
-    -moz-transform: translateX(6em) translateY(5.5em);
-    transform: translateX(6em) translateY(5.5em);
+    -moz-transform: translateX(-8em) translateY(5.5em);
+    transform: translateX(-8em) translateY(5.5em);
   }
 }
 
 @-webkit-keyframes move-sun {
   0% {
-    -webkit-transform: translateX(24em) translateY(7em);
-    transform: translateX(24em) translateY(7em);
+    -webkit-transform: translateX(37em) translateY(7em);
+    transform: translateX(37em) translateY(7em);
   }
 
   100% {
-    -webkit-transform: translateX(6em) translateY(5.5em);
-    transform: translateX(6em) translateY(5.5em);
+    -webkit-transform: translateX(-8em) translateY(5.5em);
+    transform: translateX(-8em) translateY(5.5em);
   }
 }
 
 @-o-keyframes move-sun {
   0% {
-    -o-transform: translateX(24em) translateY(7em);
-    transform: translateX(24em) translateY(7em);
+    -o-transform: translateX(37em) translateY(7em);
+    transform: translateX(37em) translateY(7em);
   }
 
   100% {
-    -o-transform: translateX(6em) translateY(5.5em);
-    transform: translateX(6em) translateY(5.5em);
+    -o-transform: translateX(-8em) translateY(5.5em);
+    transform: translateX(-8em) translateY(5.5em);
   }
 }
 
 @-ms-keyframes move-sun {
   0% {
-    -ms-transform: translateX(24em) translateY(7em);
-    transform: translateX(24em) translateY(7em);
+    -ms-transform: translateX(37em) translateY(7em);
+    transform: translateX(37em) translateY(7em);
   }
 
   100% {
-    -ms-transform: translateX(6em) translateY(5.5em);
-    transform: translateX(6em) translateY(5.5em);
+    -ms-transform: translateX(-8em) translateY(5.5em);
+    transform: translateX(-8em) translateY(5.5em);
   }
 }
 
 @keyframes move-sun {
   0% {
-    transform: translateX(24em) translateY(7em);
+    transform: translateX(37em) translateY(7em);
   }
 
   100% {
-    transform: translateX(6em) translateY(5.5em);
+    transform: translateX(-8em) translateY(5.5em);
   }
 }
 
