@@ -113,6 +113,11 @@
       "$('#floor .panel').toggleClass('lift'); ",
       "$('#floor .panel').removeClass('lift'); ",
 
+      // Slide 9
+      "scrollTo('#s9'); ",
+      "$('#s9 .intro').toggleClass('show'); ",
+      "$('#s9 .layer').toggleClass('show'); blurLayers(); ",
+
     ],
     'reverse': [
 
@@ -221,6 +226,11 @@
       "$('#floor .panel').toggleClass('lift'); ",
       "$('#floor .panel').removeClass('lift'); ",
 
+      // Slide 9
+      "scrollTo('#s8'); ",
+      "$('#s9 .intro').toggleClass('show'); ",
+      "$('#s9 .layer').toggleClass('show'); blurLayers(); ",
+
     ]
   };
 
@@ -239,6 +249,55 @@
   function scrollTo(target){
       var element = $(target);
       $('html,body').animate({scrollTop: element.offset().top - 25}, 'fast');
+  }
+
+  /**
+   * Drives the blur effect in Slide 9
+   */
+  function blurLayers() {
+
+    // vars for mouse tracking and blur
+    var back = 300,
+        middle = 400,
+        front = 524,
+        XX,
+        YY,
+        offset,
+        sizeBack,
+        sizeMiddle,
+        sizeFront;
+
+    // For mouse users
+    $('html.no-touch').mousemove(function(e){
+
+      // calculate the shadow
+      offset = $('html').offset();
+      XX = e.clientX - offset.left;
+      YY = e.clientY - offset.top;
+
+      // calculate blur for layers
+      sizeBack   = Math.abs(back-YY)/40;
+      sizeMiddle = Math.abs(middle-YY)/40;
+      sizeFront  = Math.abs(front-YY)/40;
+
+      // apply blur
+      $('.back').css('-webkit-filter',   'blur('+ (sizeBack) +'px)');
+      $('.middle').css('-webkit-filter', 'blur('+ (sizeMiddle) +'px)');
+      $('.front').css('-webkit-filter',  'blur('+ (sizeFront) +'px)');
+
+      // calculate perspective-origin based on mouse position
+      pox = 45 + XX/84;
+      poy = -25 + YY/60;
+
+      // apply perspective-origin
+      $('#s9').css('-webkit-perspective-origin', pox +'% '+ poy +'%');
+
+    });
+
+    // For touch users
+    // Make it so touching a layer brings it in focus
+    //
+    // $('.touch').blah();
   }
 
 })(jQuery);

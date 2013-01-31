@@ -2945,3 +2945,90 @@ body.wireframe #s8 div#floor {
   background: rgba(255, 255, 255, 0.5);
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
 }
+
+/*
+ * Blurry layers
+ */
+#s9 {
+  -webkit-perspective: 70em;
+  -moz-perspective: 70em;
+  -ms-perspective: 70em;
+  -o-perspective: 70em;
+  perspective: 70em;
+  -webkit-perspective-origin: 50% -20%;
+  -moz-perspective-origin: 50% -20%;
+  -ms-perspective-origin: 50% -20%;
+  -o-perspective-origin: 50% -20%;
+  perspective-origin: 50% -20%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#s9 .intro {
+  -webkit-transform: translateZ(10em) translateY(-1em);
+  -moz-transform: translateZ(10em) translateY(-1em);
+  -ms-transform: translateZ(10em) translateY(-1em);
+  -o-transform: translateZ(10em) translateY(-1em);
+  transform: translateZ(10em) translateY(-1em);
+  -webkit-filter: blur(0.2em);
+  opacity: 0;
+}
+#s9 .intro.show {
+  -webkit-transform: translateZ(0em) translateY(0em);
+  -moz-transform: translateZ(0em) translateY(0em);
+  -ms-transform: translateZ(0em) translateY(0em);
+  -o-transform: translateZ(0em) translateY(0em);
+  transform: translateZ(0em) translateY(0em);
+  -webkit-filter: blur(0em);
+  opacity: 1;
+}
+#s9 .layer {
+  background: #fff;
+  width: 12em;
+  height: 6em;
+  color: #000;
+  border: 10px solid #333;
+  border-radius: 20px;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 7em;
+  left: 50%;
+  margin-left: -6em;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+#s9 .layer.show {
+  opacity: 1;
+}
+#s9 .layer span {
+  font-size: 1.4em;
+}
+#s9 .back {
+  -webkit-transform: rotateY(0) translateY(0em) translateZ(2em);
+  -moz-transform: rotateY(0) translateY(0em) translateZ(2em);
+  -ms-transform: rotateY(0) translateY(0em) translateZ(2em);
+  -o-transform: rotateY(0) translateY(0em) translateZ(2em);
+  transform: rotateY(0) translateY(0em) translateZ(2em);
+}
+#s9 .middle {
+  -webkit-transform: rotateY(0) translateY(0.2em) translateZ(11.5em);
+  -moz-transform: rotateY(0) translateY(0.2em) translateZ(11.5em);
+  -ms-transform: rotateY(0) translateY(0.2em) translateZ(11.5em);
+  -o-transform: rotateY(0) translateY(0.2em) translateZ(11.5em);
+  transform: rotateY(0) translateY(0.2em) translateZ(11.5em);
+  -webkit-filter: blur(0.1em);
+}
+#s9 .front {
+  -webkit-transform: rotateY(0) translateY(0.4em) translateZ(20em);
+  -moz-transform: rotateY(0) translateY(0.4em) translateZ(20em);
+  -ms-transform: rotateY(0) translateY(0.4em) translateZ(20em);
+  -o-transform: rotateY(0) translateY(0.4em) translateZ(20em);
+  transform: rotateY(0) translateY(0.4em) translateZ(20em);
+  -webkit-filter: blur(0.3em);
+}

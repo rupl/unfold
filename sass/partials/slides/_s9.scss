@@ -1,0 +1,58 @@
+/*
+ * Blurry layers
+ */
+
+$layer-width: 12em;
+
+#s9 {
+  @include perspective(70em);
+  @include perspective-origin(50% -20%);
+  @include transform-style(preserve-3d);
+
+  .intro {
+    @include transform(translateZ(10em) translateY(-1em));
+    -webkit-filter: blur(.2em);
+    opacity: 0;
+  }
+  .intro.show {
+    @include transform(translateZ(0em) translateY(0em));
+    -webkit-filter: blur(0em);
+    opacity: 1;
+  }
+
+  .layer {
+    background: #fff;
+    width: $layer-width;
+    height: $layer-width / 2;
+    color: #000;
+    border: 10px solid #333;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0; // defaults to invisible
+
+    position: absolute;
+    top: 7em;
+    left: 50%;
+    margin-left: ($layer-width / -2);
+    @include transform(rotateY(0deg));
+
+    &.show {
+      opacity: 1;
+    }
+  }
+  .layer span {
+    font-size: 1.4em;
+  }
+
+  .back {
+    @include transform(rotateY(0) translateY(0em) translateZ(2em));
+  }
+  .middle {
+    @include transform(rotateY(0) translateY(.2em) translateZ(11.5em));
+    -webkit-filter: blur(.1em);
+  }
+  .front {
+    @include transform(rotateY(0) translateY(.4em) translateZ(20em));
+    -webkit-filter: blur(.3em);
+  }
+}
