@@ -2408,12 +2408,12 @@ span.active {
   -o-border-radius: 1em;
   border-radius: 1em;
   background: #fd0;
-  background-image: -webkit-gradient(radial, 1em 1em, 0, 1em 1em, 2, color-stop(0%, #ffff00), color-stop(100%, #ff7200));
-  background-image: -webkit-radial-gradient(1em 1em, #ffff00 0%, #ff7200 2em);
-  background-image: -moz-radial-gradient(1em 1em, #ffff00 0%, #ff7200 2em);
-  background-image: -o-radial-gradient(1em 1em, #ffff00 0%, #ff7200 2em);
-  background-image: -ms-radial-gradient(1em 1em, #ffff00 0%, #ff7200 2em);
-  background-image: radial-gradient(1em 1em, #ffff00 0%, #ff7200 2em);
+  background-image: -webkit-gradient(radial, 1em 1em, 0, 1em 1em, 1.3, color-stop(0%, #ffff00), color-stop(100%, #ff7200));
+  background-image: -webkit-radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
+  background-image: -moz-radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
+  background-image: -o-radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
+  background-image: -ms-radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
+  background-image: radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
   -webkit-box-shadow: 0 0 0.6em 0.3em rgba(255, 153, 0, 0.5), inset 0 0 0.5em #ffaa00;
   -moz-box-shadow: 0 0 0.6em 0.3em rgba(255, 153, 0, 0.5), inset 0 0 0.5em #ffaa00;
   box-shadow: 0 0 0.6em 0.3em rgba(255, 153, 0, 0.5), inset 0 0 0.5em #ffaa00;
@@ -2505,8 +2505,8 @@ span.active {
   }
 
   100% {
-    -moz-transform: translateX(-8em) translateY(5.5em);
-    transform: translateX(-8em) translateY(5.5em);
+    -moz-transform: translateX(-5em) translateY(5.5em);
+    transform: translateX(-5em) translateY(5.5em);
   }
 }
 
@@ -2517,8 +2517,8 @@ span.active {
   }
 
   100% {
-    -webkit-transform: translateX(-8em) translateY(5.5em);
-    transform: translateX(-8em) translateY(5.5em);
+    -webkit-transform: translateX(-5em) translateY(5.5em);
+    transform: translateX(-5em) translateY(5.5em);
   }
 }
 
@@ -2529,8 +2529,8 @@ span.active {
   }
 
   100% {
-    -o-transform: translateX(-8em) translateY(5.5em);
-    transform: translateX(-8em) translateY(5.5em);
+    -o-transform: translateX(-5em) translateY(5.5em);
+    transform: translateX(-5em) translateY(5.5em);
   }
 }
 
@@ -2541,8 +2541,8 @@ span.active {
   }
 
   100% {
-    -ms-transform: translateX(-8em) translateY(5.5em);
-    transform: translateX(-8em) translateY(5.5em);
+    -ms-transform: translateX(-5em) translateY(5.5em);
+    transform: translateX(-5em) translateY(5.5em);
   }
 }
 
@@ -2552,7 +2552,7 @@ span.active {
   }
 
   100% {
-    transform: translateX(-8em) translateY(5.5em);
+    transform: translateX(-5em) translateY(5.5em);
   }
 }
 
