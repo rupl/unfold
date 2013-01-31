@@ -176,7 +176,7 @@
     @include transform(translateX(37em) translateY(7em));
   }
   100% {
-    @include transform(translateX(-5em) translateY(5.5em));
+    @include transform(translateX(-3em) translateY(5.5em));
   }
 }
 @include keyframes('rotate-earth') {
