@@ -848,6 +848,16 @@ span.active {
 #s2 p.limits {
   color: #666666;
 }
+#s2 p.design {
+  margin-top: 0.75em;
+  position: absolute;
+  left: 10em;
+}
+#s2 p.placing {
+  margin-top: 3.5em;
+  position: absolute;
+  left: 16em;
+}
 #s2 .de {
   margin: 0 1em;
 }

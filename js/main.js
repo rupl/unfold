@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 51;
+  var counter = -1;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -20,13 +20,15 @@
       // Slide 2
       "scrollTo('#s2');",
       "$('#s2 .de').toggleClass('show').toggleClass('f-left'); ",
+      "$('#s2 .design').toggleClass('show'); ",
+      "$('#s2 .placing').toggleClass('show'); ",
       "$('#s2 .friend, #s2 .limits').toggleClass('show'); ",
       "$('#s2 .sandbox p').toggleClass('show'); ",
       "$('#s2 .de').toggleClass('f-left').toggleClass('f-right'); ",
       "$('#s2 .floats, #s2 .pos').toggleClass('bold'); ",
       "$('#s2 .de').toggleClass('p-up'); ",
       "$('#s2 .de').toggleClass('p-down'); ",
-      "$('#s2 .de').toggleClass('p-up').toggleClass('p-down'); ", // reset to center
+      "$('#s2 .de').toggleClass('p-up p-down'); ", // reset to center
       "$('#s2 .de').toggleClass('p-left'); ",
       "$('#s2 .de').toggleClass('p-left'); ", // reset to center
 
@@ -125,15 +127,18 @@
       // Slide 2
       "scrollTo('#s1');",
       "$('#s2 .de').toggleClass('show').toggleClass('f-left'); ",
+      "$('#s2 .design').toggleClass('show'); ",
+      "$('#s2 .placing').toggleClass('show'); ",
       "$('#s2 .friend, #s2 .limits').toggleClass('show'); ",
       "$('#s2 .sandbox p').toggleClass('show'); ",
       "$('#s2 .de').toggleClass('f-left').toggleClass('f-right'); ",
       "$('#s2 .floats, #s2 .pos').toggleClass('bold'); ",
       "$('#s2 .de').toggleClass('p-up'); ",
       "$('#s2 .de').toggleClass('p-down'); ",
-      "$('#s2 .de').toggleClass('p-up').toggleClass('p-down'); ", // reset to center
+      "$('#s2 .de').toggleClass('p-up p-down'); ", // reset to center
       "$('#s2 .de').toggleClass('p-left'); ",
       "$('#s2 .de').toggleClass('p-left'); ", // reset to center
+
 
       // Slide 3
       "scrollTo('#s2');",
