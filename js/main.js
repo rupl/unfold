@@ -118,6 +118,9 @@
       "$('#s9 .intro').toggleClass('show'); ",
       "$('#s9 .layer').toggleClass('show'); blurLayers(); ",
 
+      // Slide 10
+      "scrollTo('#s10'); blurLayersStop(); ",
+
     ],
     'reverse': [
 
@@ -229,7 +232,10 @@
       // Slide 9
       "scrollTo('#s8'); ",
       "$('#s9 .intro').toggleClass('show'); ",
-      "$('#s9 .layer').toggleClass('show'); blurLayers(); ",
+      "$('#s9 .layer').toggleClass('show'); blurLayersStop(); ",
+
+      // Slide 10
+      "scrollTo('#s9'); blurLayers(); ",
 
     ]
   };
@@ -298,6 +304,10 @@
     // Make it so touching a layer brings it in focus
     //
     // $('.touch').blah();
+  }
+
+  function blurLayersStop() {
+    $('html.no-touch').unbind('mousemove');
   }
 
 })(jQuery);
