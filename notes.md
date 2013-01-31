@@ -60,6 +60,9 @@ DOM elements can be enhanced by JavaScript. Just write <code><span class="cube">
 1. Make various minecraft blocks out of really simple markup+classes
 2. *Maybe* make it so clicking a surface generates the new block on that surface
 
+Playtime!
+Set up a holodeck-type thing and offer six textfields to let the user transform a cube
+
 The end
 
 # Todos
