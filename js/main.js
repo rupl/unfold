@@ -16,6 +16,7 @@
       "$('.ox, .m', '#s1').toggleClass('active'); ",
       "$('.odel', '#s1').toggleClass('active'); ",
       "$('h2 span', '#s1').toggleClass('active'); ",
+      "$('.no-csstransforms3d #s1 .warning').toggleClass('active'); ",
 
       // Slide 2
       "scrollTo('#s2');",
@@ -131,6 +132,7 @@
       "$('.ox, .m', '#s1').toggleClass('active'); ",
       "$('.odel', '#s1').toggleClass('active'); ",
       "$('h2 span', '#s1').toggleClass('active'); ",
+      "$('.no-csstransforms3d #s1 .warning').toggleClass('active'); ",
 
       // Slide 2
       "scrollTo('#s1');",

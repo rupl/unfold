@@ -45,17 +45,32 @@
     }
   }
 
-  // "Exploring CSS 3D Transforms"
+  // Exploring CSS 3D Transforms
   h2 {
     font-size: 3em / $slide-font-size;
     position: absolute;
     bottom: 32%;
     right: 19%;
 
-    span {
+    .csstransforms3d & span {
       @include transition(.6s);
       @include transform(rotateY(16deg) translateX(-5.2em) translateY(-1.8em) translateZ(14em));
       @include transform-style(preserve-3d);
     }
+  }
+
+  // This warning is for browsers that don't support 3D transforms
+  .warning {
+    opacity: 0; // hidden by default
+    width: 100%;
+    height: 100%;
+    color: #a00;
+    text-align: center;
+    background: image-url('bad-time.jpg') no-repeat 10% 70%;
+  }
+
+  // Show warning for browsers that fail Modernizr test
+  .no-csstransforms3d & .warning.active {
+    opacity: 1;
   }
 }
