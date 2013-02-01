@@ -959,9 +959,6 @@ span.active {
   position: relative;
   top: 1em;
   opacity: 1;
-  -webkit-box-shadow: -0.4em 0 0 rgba(255, 0, 0, 0.74), 0.4em 0 0 rgba(0, 238, 238, 0.83);
-  -moz-box-shadow: -0.4em 0 0 rgba(255, 0, 0, 0.74), 0.4em 0 0 rgba(0, 238, 238, 0.83);
-  box-shadow: -0.4em 0 0 rgba(255, 0, 0, 0.74), 0.4em 0 0 rgba(0, 238, 238, 0.83);
 }
 #s3 .sandbox2 .de.t-x {
   -webkit-animation: "t-x" 3s ease-in-out infinite;
@@ -1239,8 +1236,8 @@ span.active {
   75% {
     -moz-transform: translateZ(-20em);
     transform: translateZ(-20em);
-    -moz-box-shadow: 0 0 0 rgba(255, 0, 0, 0.74), 0 0 0 rgba(0, 238, 238, 0.83);
-    box-shadow: 0 0 0 rgba(255, 0, 0, 0.74), 0 0 0 rgba(0, 238, 238, 0.83);
+    -moz-box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
+    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
@@ -1265,8 +1262,8 @@ span.active {
   75% {
     -webkit-transform: translateZ(-20em);
     transform: translateZ(-20em);
-    -webkit-box-shadow: 0 0 0 rgba(255, 0, 0, 0.74), 0 0 0 rgba(0, 238, 238, 0.83);
-    box-shadow: 0 0 0 rgba(255, 0, 0, 0.74), 0 0 0 rgba(0, 238, 238, 0.83);
+    -webkit-box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
+    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
@@ -1290,7 +1287,7 @@ span.active {
   75% {
     -o-transform: translateZ(-20em);
     transform: translateZ(-20em);
-    box-shadow: 0 0 0 rgba(255, 0, 0, 0.74), 0 0 0 rgba(0, 238, 238, 0.83);
+    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
@@ -1314,7 +1311,7 @@ span.active {
   75% {
     -ms-transform: translateZ(-20em);
     transform: translateZ(-20em);
-    box-shadow: 0 0 0 rgba(255, 0, 0, 0.74), 0 0 0 rgba(0, 238, 238, 0.83);
+    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
@@ -1334,7 +1331,7 @@ span.active {
 
   75% {
     transform: translateZ(-20em);
-    box-shadow: 0 0 0 rgba(255, 0, 0, 0.74), 0 0 0 rgba(0, 238, 238, 0.83);
+    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
