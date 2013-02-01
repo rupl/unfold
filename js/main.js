@@ -76,9 +76,10 @@
       "$('#s5 .translate').toggleClass('dim').next().next().toggleClass('hide'); "+
       "$('#s5 .sandbox').toggleClass('translate-demo').toggleClass('rotate-demo'); ",
       "$('#s5 .rotate').toggleClass('dim').next().next().toggleClass('hide'); "+
-      "$('#s5 .sandbox').toggleClass('rotate-demo').toggleClass('backface-demo'); ",
-      "$('#s5 .sandbox').toggleClass('backface-demo').toggleClass('backface-demo-cube'); ",
-      "$('#s5 .sandbox').toggleClass('backface-demo-cube').toggleClass('backface-demo-cube-2sided'); ",
+      "$('#s5 .sandbox').toggleClass('rotate-demo backface-demo'); ",
+      "$('#s5 .sandbox').toggleClass('backface-hidden'); ",
+      "$('#s5 .sandbox').toggleClass('cubed'); ",
+      "$('#s5 .sandbox').toggleClass('backface-hidden'); ",
 
       // Slide 6
       "scrollTo('#s6'); ",
@@ -192,9 +193,10 @@
       "$('#s5 .translate').toggleClass('dim').next().next().toggleClass('hide'); "+
       "$('#s5 .sandbox').toggleClass('translate-demo').toggleClass('rotate-demo'); ",
       "$('#s5 .rotate').toggleClass('dim').next().next().toggleClass('hide'); "+
-      "$('#s5 .sandbox').toggleClass('rotate-demo').toggleClass('backface-demo'); ",
-      "$('#s5 .sandbox').toggleClass('backface-demo').toggleClass('backface-demo-cube'); ",
-      "$('#s5 .sandbox').toggleClass('backface-demo-cube').toggleClass('backface-demo-cube-2sided'); ",
+      "$('#s5 .sandbox').toggleClass('rotate-demo backface-demo'); ",
+      "$('#s5 .sandbox').toggleClass('backface-hidden'); ",
+      "$('#s5 .sandbox').toggleClass('cubed'); ",
+      "$('#s5 .sandbox').toggleClass('backface-hidden'); ",
 
       // Slide 6
       "scrollTo('#s5'); ",

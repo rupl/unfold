@@ -73,37 +73,58 @@
         opacity: 1;
       }
       .cube {
-        // we position the cube at the apex of the translation animation for fluidity
+        // Position the cube at the apex of the translation animation for fluidity
         @include transform(translateX(10em) translateY(6em) rotateY(24deg));
         @include animation('rotate-cube' 8s linear infinite);
       }
     }
 
+    // Set up the cube to rotate
     &.backface-demo {
       .cube {
-        @include backface-visibility(hidden);
+        @include backface-visibility(visible);
         @include animation('backface-demo-rotate' 4s linear infinite);
 
+        // Indicate which mode we're in. defaults to visible.
+        &:after {
+          content: 'visible';
+
+          display: block;
+          width: 100%;
+          padding-top: 1em;
+          text-align: center;
+        }
+
+        // Hide other 5 sides of cube by default,
+        // but backfaces are visible by default, same as cube
         .side {
+          @include backface-visibility(visible);
           opacity: 0;
         }
       }
     }
 
-    &.backface-demo-cube {
+    // Make sides be hidden from behind
+    &.backface-hidden {
       .cube {
         @include backface-visibility(hidden);
-        @include animation('backface-demo-rotate' 4s linear infinite);
 
+        // Indicate which mode we're in
+        &:after {
+          content: 'hidden';
+        }
+
+        // Make sure sides are hidden
         .side {
           @include backface-visibility(hidden);
         }
       }
     }
 
-    &.backface-demo-cube-2sided {
-      .cube {
-        @include animation('backface-demo-rotate' 4s linear infinite);
+    // Make cube appear
+    &.cubed {
+      .cube .side {
+        opacity: 1;
       }
     }
 

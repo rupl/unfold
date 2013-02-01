@@ -1841,45 +1841,51 @@ span.active {
   animation: "rotate-cube" 8s linear infinite;
 }
 #s5 .sandbox.backface-demo .cube {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
+  backface-visibility: visible;
   -webkit-animation: "backface-demo-rotate" 4s linear infinite;
   -moz-animation: "backface-demo-rotate" 4s linear infinite;
   -ms-animation: "backface-demo-rotate" 4s linear infinite;
   -o-animation: "backface-demo-rotate" 4s linear infinite;
   animation: "backface-demo-rotate" 4s linear infinite;
+}
+#s5 .sandbox.backface-demo .cube:after {
+  content: 'visible';
+  display: block;
+  width: 100%;
+  padding-top: 1em;
+  text-align: center;
 }
 #s5 .sandbox.backface-demo .cube .side {
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
+  backface-visibility: visible;
   opacity: 0;
 }
-#s5 .sandbox.backface-demo-cube .cube {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-animation: "backface-demo-rotate" 4s linear infinite;
-  -moz-animation: "backface-demo-rotate" 4s linear infinite;
-  -ms-animation: "backface-demo-rotate" 4s linear infinite;
-  -o-animation: "backface-demo-rotate" 4s linear infinite;
-  animation: "backface-demo-rotate" 4s linear infinite;
-}
-#s5 .sandbox.backface-demo-cube .cube .side {
+#s5 .sandbox.backface-hidden .cube {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-#s5 .sandbox.backface-demo-cube-2sided .cube {
-  -webkit-animation: "backface-demo-rotate" 4s linear infinite;
-  -moz-animation: "backface-demo-rotate" 4s linear infinite;
-  -ms-animation: "backface-demo-rotate" 4s linear infinite;
-  -o-animation: "backface-demo-rotate" 4s linear infinite;
-  animation: "backface-demo-rotate" 4s linear infinite;
+#s5 .sandbox.backface-hidden .cube:after {
+  content: 'hidden';
+}
+#s5 .sandbox.backface-hidden .cube .side {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#s5 .sandbox.cubed .cube .side {
+  opacity: 1;
 }
 
 @-moz-keyframes translate-cube {
