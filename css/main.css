@@ -882,6 +882,9 @@ span.active {
 /*
  * Introducing: CSS 3D Transforms
  */
+#s3 {
+  overflow: hidden;
+}
 #s3 .sandbox {
   -webkit-perspective: 600px;
   -moz-perspective: 600px;

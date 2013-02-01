@@ -2,6 +2,8 @@
  * Introducing: CSS 3D Transforms
  */
 #s3 {
+  overflow: hidden;
+
   .sandbox {
     @include perspective(600px);
     text-align: center;
