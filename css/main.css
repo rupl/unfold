@@ -1707,7 +1707,7 @@ span.active {
  */
 #s5 dl {
   width: 52%;
-  margin: 0;
+  margin: 3em 0 0 0;
 }
 #s5 .sandbox {
   overflow: hidden;
