@@ -8,24 +8,71 @@
     @include transform-style(preserve-3d);
   }
 
+  .elements,
+  .like,
   .paper,
   .folds {
     @include transform-origin(0%, 50%);
     @include transform-style(preserve-3d);
     background: #fff;    
-  }
-  .paper {
-    width: 2.54em;
     white-space: nowrap;
   }
 
-  .paper.folded {
-    @include box-shadow(0.1em 0 0.3em rgba(#000, 0.4));
-    @include transform(rotateY(42deg));
+  .elements {
+    width: 3.97em;
   }
+  .like {
+    width: 4.10em;
+  }
+  .paper {
+    width: 2.54em;
+  }
+
+  // the .folded class causes the paper words to crumple
   .folds.folded {
     @include box-shadow(0.1em 0 0.3em rgba(#000, 0.2));
-    @include transform(rotateY(-42deg));
+    @include transform(rotateY(52deg));
+  }
+  .paper.folded {
+    @include box-shadow(0.1em 0 0.3em rgba(#000, 0.4));
+    @include transform(rotateY(-72deg));
+
+    // crumple .folds a little more
+    .folds.folded {
+      @include transform(rotateY(122deg));
+    }
+  }
+  .like.folded {
+    @include box-shadow(0.1em 0 0.3em rgba(#000, 0.2));
+    @include transform(rotateY(72deg));
+
+    // crumple .paper a little more
+    .paper.folded {
+      @include transform(rotateY(-102deg));
+
+      // we need to go deeper
+      .folds.folded {
+        @include transform(rotateY(142deg));
+      }
+    }
+  }
+  .elements.folded {
+    @include box-shadow(0.1em 0 0.3em rgba(#000, 0.2));
+    @include transform(rotateY(-39deg)); // Chrome seems to switch z-index at -41deg
+
+    // crumple .like a little more
+    .like.folded {
+      @include transform(rotateY(80deg));
+
+      // almost there..
+      .paper.folded {
+
+        // we need to go deeper
+        .folds.folded {
+          @include transform(rotateY(122deg));
+        }
+      }
+    }
   }
 
   .sandbox {

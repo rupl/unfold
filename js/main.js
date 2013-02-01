@@ -83,8 +83,10 @@
 
       // Slide 6
       "scrollTo('#s6'); ",
-      "$('#s6 .paper').toggleClass('folded'); ",
       "$('#s6 .folds').toggleClass('folded'); ",
+      "$('#s6 .paper').toggleClass('folded'); ",
+      "$('#s6 .like').toggleClass('folded'); ",
+      "$('#s6 .elements').toggleClass('folded'); ",
       "$('#s6 .cube').toggleClass('hide'); ",
       "$('#s6 .cube').toggleClass('labels'); ",
       "$('#s6 .top').toggleClass('flat'); ",
@@ -92,9 +94,6 @@
       "$('#s6 .right').toggleClass('flat'); ",
       "$('#s6 .bottom').toggleClass('flat'); ",
       "$('#s6 .back').toggleClass('flat'); ",
-      // "$('#s6 .pyramid').toggleClass('hide'); ",
-      // "$('#s6 .pyramid').toggleClass('wireframe'); ",
-      // "$('#s6 .pyramid').toggleClass('wireframe').toggleClass('planes'); ",
 
       // Slide 7
       "scrollTo('#s7'); ",
@@ -200,8 +199,10 @@
 
       // Slide 6
       "scrollTo('#s5'); ",
-      "$('#s6 .paper').toggleClass('folded'); ",
       "$('#s6 .folds').toggleClass('folded'); ",
+      "$('#s6 .paper').toggleClass('folded'); ",
+      "$('#s6 .like').toggleClass('folded'); ",
+      "$('#s6 .elements').toggleClass('folded'); ",
       "$('#s6 .cube').toggleClass('hide'); ",
       "$('#s6 .cube').toggleClass('labels'); ",
       "$('#s6 .top').toggleClass('flat'); ",
@@ -209,9 +210,6 @@
       "$('#s6 .right').toggleClass('flat'); ",
       "$('#s6 .bottom').toggleClass('flat'); ",
       "$('#s6 .back').toggleClass('flat'); ",
-      // "$('#s6 .pyramid').toggleClass('hide'); ",
-      // "$('#s6 .pyramid').toggleClass('wireframe'); ",
-      // "$('#s6 .pyramid').toggleClass('wireframe').toggleClass('planes'); ",
 
       // Slide 7
       "scrollTo('#s6'); ",
