@@ -121,6 +121,26 @@
 
       // Slide 10
       "scrollTo('#s10'); blurLayersStop(); ",
+      "$('#s10 .de').toggleClass('show'); ",
+      "$('#s10 .intro').toggleClass('hide'); ",
+      "$('#s10 .c').toggleClass('hide'); ",
+      "$('#s10 .de').toggleClass('translate'); "+
+      "$('#s10 .c .translate').toggleClass('active'); ",
+      "$('#s10 .de').toggleClass('translate rotate'); "+
+      "$('.translate, .rotate', '#s10 .c').toggleClass('active'); ",
+      "$('#s10 .de').toggleClass('rotate transform-origin'); "+
+      "$('.rotate, .transform-origin','#s10 .c').toggleClass('active'); ",
+      "$('#s10 .de').toggleClass('transform-origin'); "+
+      // "$('#s10').toggleClass('perspective'); "+
+      // "$('#s10 .c .transform-origin').toggleClass('active'); ",
+      // "$('#s10').toggleClass('perspective perspective-origin'); ",
+      // "$('#s10').toggleClass('perspective-origin transform-style'); ",
+
+      // Slide 11
+      "scrollTo('#s11'); ",
+
+      // Slide 12
+      "scrollTo('#s12'); ",
 
     ],
     'reverse': [
@@ -238,6 +258,26 @@
 
       // Slide 10
       "scrollTo('#s9'); blurLayers(); ",
+      "$('#s10 .de').toggleClass('show'); ",
+      "$('#s10 .intro').toggleClass('hide'); ",
+      "$('#s10 .c').toggleClass('hide'); ",
+      "$('#s10 .de').toggleClass('translate'); "+
+      "$('#s10 .c .translate').toggleClass('active'); ",
+      "$('#s10 .de').toggleClass('translate rotate'); "+
+      "$('.translate, .rotate', '#s10 .c').toggleClass('active'); ",
+      "$('#s10 .de').toggleClass('rotate transform-origin'); "+
+      "$('.rotate, .transform-origin','#s10 .c').toggleClass('active'); ",
+      "$('#s10 .de').toggleClass('transform-origin'); "+
+      // "$('#s10').toggleClass('perspective'); "+
+      // "$('#s10 .c .transform-origin').toggleClass('active'); ",
+      // "$('#s10').toggleClass('perspective perspective-origin'); ",
+      // "$('#s10').toggleClass('perspective-origin transform-style'); ",
+
+      // Slide 11
+      "scrollTo('#s10'); ",
+
+      // Slide 12
+      "scrollTo('#s11'); ",
 
     ]
   };

@@ -3,5 +3,65 @@
  */
 
 #s10 {
+  position: relative;
+  @include perspective(1000px);
+  @include transform-style(preserve-3d);
 
+  .de {
+    position: absolute;
+    top: 6em;
+    left: 2em;
+
+    // Transform properties
+    &.translate {
+      @include animation('de-translate' 5s ease-in-out infinite);
+    }
+    &.rotate {
+      @include animation('de-rotate' 5s linear infinite);
+    }
+    &.transform-origin {
+      @include animation('de-transform-origin' 5s linear infinite);
+      @include transform-origin(100%, 0%);
+    }
+  }
+
+  .intro {
+    position: absolute;
+  }
+
+  .c {
+    width: 50%;
+    float: right;
+    margin-top: 3.5em;
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    .active code {
+      font-weight: 700;
+    }
+  }
+
+}
+
+@include keyframes('de-translate') {
+  50% {
+    @include transform(translateX(9em));
+  }
+}
+
+@include keyframes('de-rotate') {
+  from {
+    @include transform(rotateY(0deg));
+  }
+  to {
+    @include transform(rotateY(360deg));
+  }
+}
+
+@include keyframes('de-transform-origin') {
+  50% {
+    @include transform(rotateY(180deg));
+  }
 }
