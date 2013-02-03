@@ -840,7 +840,7 @@ span.active {
   height: 100%;
   color: #a00;
   text-align: center;
-  background: url('/img/bad-time.jpg?1359756760') no-repeat 10% 70%;
+  background: url('/unfold/img/bad-time.jpg?1359756760') no-repeat 10% 70%;
 }
 .no-csstransforms3d #s1 .warning.active {
   opacity: 1;
@@ -2352,7 +2352,7 @@ span.active {
   padding-left: 0;
   padding-right: 0;
   /* -- make sure to declare a default for every property that you want animated -- */
-  background: white url('/img/space-bg.jpg?1359429388') no-repeat 0% -960px;
+  background: white url('/unfold/img/space-bg.jpg?1359429388') no-repeat 0% -960px;
   -webkit-transition: background-position 1.2s ease-in-out;
   -moz-transition: background-position 1.2s ease-in-out;
   -ms-transition: background-position 1.2s ease-in-out;
@@ -2774,7 +2774,7 @@ span.active {
  * Stone tile
  */
 #s8 {
-  background: black url('/img/tile-bg.jpg?1359433508') no-repeat -10px top;
+  background: black url('/unfold/img/tile-bg.jpg?1359433508') no-repeat -10px top;
   color: #000;
   width: 1390px;
   overflow: hidden;
@@ -2955,7 +2955,7 @@ span.active {
 #s8 .panel .top {
   width: inherit;
   height: inherit;
-  background: url('/img/tile-4.jpg?1359433508');
+  background: url('/unfold/img/tile-4.jpg?1359433508');
   -webkit-transform: translate3d(0, 0, 1px);
   -moz-transform: translate3d(0, 0, 1px);
   -ms-transform: translate3d(0, 0, 1px);
@@ -2980,7 +2980,7 @@ span.active {
   background-position: 70% 80%;
 }
 #s8 .panel:nth-child(5n) .top {
-  background: url('/img/tile-2.jpg?1359435187') 50% 50%;
+  background: url('/unfold/img/tile-2.jpg?1359435187') 50% 50%;
 }
 #s8 .panel:hover,
 #s8 .panel.lift {
