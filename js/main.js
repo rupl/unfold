@@ -6,6 +6,7 @@
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
   // - feel free to explain to me how this could be accomplished with only one array
+  // - or why i have to use eval?
   var story = {
     'forward': [
 
@@ -140,7 +141,7 @@
       "scrollTo('#s11'); ",
 
       // Slide 12
-      "scrollTo('#s12'); ",
+      "scrollTo('#s12'); "
 
     ],
     'reverse': [
@@ -277,7 +278,7 @@
       "scrollTo('#s10'); ",
 
       // Slide 12
-      "scrollTo('#s11'); ",
+      "scrollTo('#s11'); "
 
     ]
   };
@@ -287,16 +288,36 @@
     // counter is incremented differently depending on direction
     // so that the two arrays with forward/reverse steps can be
     // kept in sync and maintained in the most sane fashion.
-    if (e.keyCode == 37) { eval(story.reverse[counter--]); }
-    if (e.keyCode == 39) { eval(story.forward[++counter]); }
+    if (e.keyCode == 37) { storyBack(); }
+    if (e.keyCode == 39) { storyNext(); }
   });
+
+  // Set up touch nav to progress through the story
+  $('.touch nav .back').click(function() { storyBack(); });
+  $('.touch nav .next').click(function() { storyNext(); });
+
+  /**
+   * Advances story one step
+   */
+  function storyNext() {
+    eval(story.forward[++counter]);
+    console.log(counter);
+  }
+
+  /**
+   * Advances story *back* one step
+   */
+  function storyBack() {
+    console.log(counter);
+    eval(story.reverse[counter--]);
+  }
 
   /**
    * Scrolls to a particular anchor
    */
   function scrollTo(target){
-      var element = $(target);
-      $('html,body').animate({scrollTop: element.offset().top - 25}, 'fast');
+    var element = $(target);
+    $('html,body').animate({scrollTop: element.offset().top - 25}, 'fast');
   }
 
   /**

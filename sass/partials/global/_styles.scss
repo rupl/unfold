@@ -38,11 +38,33 @@ main {
 
     @include perspective(600px);
   }
-  article:first-child {
+  article:nth-of-type(1) {
     margin-top: 0;
   }
   article:last-child {
     margin-bottom: 0.5em;
+  }
+}
+
+.no-touch nav {
+  display: none;
+}
+
+.touch nav {
+  // both buttons
+  a {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 60%;
+    padding: 0.4em 1em;
+    background: rgba(#000, 0.1);
+  }
+  .back {
+    left: 0;
+  }
+  .next {
+    right: 0;
   }
 }
 

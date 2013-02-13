@@ -543,11 +543,30 @@ main article {
   -o-perspective: 600px;
   perspective: 600px;
 }
-main article:first-child {
+main article:nth-of-type(1) {
   margin-top: 0;
 }
 main article:last-child {
   margin-bottom: 0.5em;
+}
+
+.no-touch nav {
+  display: none;
+}
+
+.touch nav a {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  top: 60%;
+  padding: 0.4em 1em;
+  background: rgba(0, 0, 0, 0.1);
+}
+.touch nav .back {
+  left: 0;
+}
+.touch nav .next {
+  right: 0;
 }
 
 footer {
