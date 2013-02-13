@@ -293,8 +293,8 @@
   });
 
   // Set up touch nav to progress through the story
-  $('.touch nav .back').click(function() { storyBack(); });
-  $('.touch nav .next').click(function() { storyNext(); });
+  $('.touch nav .back').bind('touchstart', function() { storyBack(); });
+  $('.touch nav .next').bind('touchstart', function() { storyNext(); });
 
   /**
    * Advances story one step
