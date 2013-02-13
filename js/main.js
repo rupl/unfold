@@ -301,14 +301,12 @@
    */
   function storyNext() {
     eval(story.forward[++counter]);
-    console.log(counter);
   }
 
   /**
    * Advances story *back* one step
    */
   function storyBack() {
-    console.log(counter);
     eval(story.reverse[counter--]);
   }
 
