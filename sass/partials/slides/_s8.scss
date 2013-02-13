@@ -6,7 +6,6 @@
 
   background: #000 image-url('tile-bg.jpg') no-repeat -10px top;
   color: #000;
-  width: 1390px;
   overflow: hidden;
   @include perspective(470px);
   @include perspective-origin(54% 20%);

@@ -488,7 +488,7 @@ table {
 }
 
 /* Global styles ----------------------------------------------------------- */
-.it, span, .cube .side, #s3 .sandbox1 h2, #s6 .sandbox .cube.labels .back:before {
+.it, span, .cube .side, #s1 .instructions, #s3 .sandbox1 h2, #s6 .sandbox .cube.labels .back:before {
   display: inline-block;
 }
 
@@ -543,11 +543,30 @@ main article {
   -o-perspective: 600px;
   perspective: 600px;
 }
-main article:first-child {
+main article:nth-of-type(1) {
   margin-top: 0;
 }
 main article:last-child {
   margin-bottom: 0.5em;
+}
+
+.no-touch nav {
+  display: none;
+}
+
+.touch nav a {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  top: 60%;
+  padding: 0.4em 1em;
+  background: rgba(0, 0, 0, 0.1);
+}
+.touch nav .back {
+  left: 0;
+}
+.touch nav .next {
+  right: 0;
 }
 
 footer {
@@ -844,6 +863,71 @@ span.active {
 }
 .no-csstransforms3d #s1 .warning.active {
   opacity: 1;
+}
+#s1 .instructions {
+  opacity: 1;
+  -webkit-transform: translateY(-4em);
+  -moz-transform: translateY(-4em);
+  -ms-transform: translateY(-4em);
+  -o-transform: translateY(-4em);
+  transform: translateY(-4em);
+  -webkit-animation: "throbber" 2s linear 4;
+  -moz-animation: "throbber" 2s linear 4;
+  -ms-animation: "throbber" 2s linear 4;
+  -o-animation: "throbber" 2s linear 4;
+  animation: "throbber" 2s linear 4;
+}
+.no-touch #s1 .instructions {
+  display: block;
+}
+.touch #s1 .instructions {
+  display: none;
+}
+#s1 .instructions.active {
+  opacity: 0;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -ms-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+.js #s1 .instructions .silent {
+  display: none;
+}
+
+@-moz-keyframes throbber {
+  50% {
+    opacity: .5;
+  }
+}
+
+@-webkit-keyframes throbber {
+  50% {
+    opacity: .5;
+  }
+}
+
+@-o-keyframes throbber {
+  50% {
+    opacity: .5;
+  }
+}
+
+@-ms-keyframes throbber {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes throbber {
+  50% {
+    opacity: .5;
+  }
 }
 
 /*
@@ -2776,7 +2860,6 @@ span.active {
 #s8 {
   background: black url('/unfold/img/tile-bg.jpg?1359433508') no-repeat -10px top;
   color: #000;
-  width: 1390px;
   overflow: hidden;
   -webkit-perspective: 470px;
   -moz-perspective: 470px;
