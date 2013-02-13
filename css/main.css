@@ -878,7 +878,7 @@ span.active {
   animation: "throbber" 2s linear 4;
 }
 .no-touch #s1 .instructions {
-  display: inline;
+  display: block;
 }
 .touch #s1 .instructions {
   display: none;
