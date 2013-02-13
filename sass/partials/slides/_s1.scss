@@ -73,4 +73,44 @@
   .no-csstransforms3d & .warning.active {
     opacity: 1;
   }
+
+  // Instructions for navigating presentation
+  .instructions {
+    @extend .it;
+    opacity: 1;
+    @include transform(translateY(-4em));
+    @include animation('throbber' 2s linear 4);
+
+    // These two rules word the instructions for touch/no-touch users. hax
+    .no-touch {
+      display: inline;
+      .touch & {
+        display: none;
+      }
+    }
+    .touch {
+      display: none;
+      .touch & {
+        display: inline;
+      }
+    }
+
+    // 'active' in this case means hidden to keep the JS simple
+    &.active {
+      opacity: 0;
+      @include animation(none);
+      @include transition(opacity 1s linear);
+    }
+
+    // If Modernizr executed, hide the word "or" from everyone.
+    .js & .silent {
+      display: none;
+    }
+  }
+}
+
+@include keyframes('throbber') {
+  50% {
+    opacity: .5;
+  }
 }

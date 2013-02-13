@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = -1;
+  var counter = 0;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -13,7 +13,7 @@
       "scrollTo('#s1'); ",
       "$('.un, .fold, .ing', '#s1').toggleClass('active'); ",
       "$('.the, .b', '#s1').toggleClass('active'); ",
-      "$('.ox, .m', '#s1').toggleClass('active'); ",
+      "$('.ox, .m, .instructions', '#s1').toggleClass('active'); ", // instructions
       "$('.odel', '#s1').toggleClass('active'); ",
       "$('h2 span', '#s1').toggleClass('active'); ",
       "$('.no-csstransforms3d #s1 .warning').toggleClass('active'); ",
@@ -149,7 +149,7 @@
       "",
       "$('.un, .fold, .ing', '#s1').toggleClass('active'); ",
       "$('.the, .b', '#s1').toggleClass('active'); ",
-      "$('.ox, .m', '#s1').toggleClass('active'); ",
+      "$('.ox, .m, .instructions', '#s1').toggleClass('active'); ", // instructions
       "$('.odel', '#s1').toggleClass('active'); ",
       "$('h2 span', '#s1').toggleClass('active'); ",
       "$('.no-csstransforms3d #s1 .warning').toggleClass('active'); ",
