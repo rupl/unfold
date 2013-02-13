@@ -877,17 +877,11 @@ span.active {
   -o-animation: "throbber" 2s linear 4;
   animation: "throbber" 2s linear 4;
 }
-#s1 .instructions .no-touch {
+.no-touch #s1 .instructions {
   display: inline;
 }
-.touch #s1 .instructions .no-touch {
+.touch #s1 .instructions {
   display: none;
-}
-#s1 .instructions .touch {
-  display: none;
-}
-.touch #s1 .instructions .touch {
-  display: inline;
 }
 #s1 .instructions.active {
   opacity: 0;
