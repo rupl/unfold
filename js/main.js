@@ -141,7 +141,7 @@
       "scrollTo('#s11'); ",
 
       // Slide 12
-      "scrollTo('#s12'); "
+      "scrollTo('#s12'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Finished']); "
 
     ],
     'reverse': [
