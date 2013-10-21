@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Rambla:400,700,400italic|Crete+Round|Nunito:400,700|Quando|Andada");
 /* Libraries and Dependencies ---------------------------------------------- */
 /* Normalize --------------------------------------------------------------- */
-/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -532,7 +532,7 @@ main * {
 }
 main article {
   width: 100%;
-  height: 840px;
+  height: 960px;
   padding: 1em;
   margin: 16% 0;
   box-shadow: 0 5px 10px rgba(51, 51, 51, 0.1);
@@ -859,7 +859,7 @@ span.active {
   height: 100%;
   color: #a00;
   text-align: center;
-  background: url('/img/bad-time.jpg?1359756760') no-repeat 10% 70%;
+  background: url('/img/bad-time.jpg?1382325794') no-repeat 10% 70%;
 }
 .no-csstransforms3d #s1 .warning.active {
   opacity: 1;
@@ -2433,10 +2433,12 @@ span.active {
  * Slinky
  */
 #s7 {
+  overflow-x: hidden;
+  overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
   /* -- make sure to declare a default for every property that you want animated -- */
-  background: white url('/img/space-bg.jpg?1359429388') no-repeat 0% -960px;
+  background: white url('/img/space-bg.jpg?1382325794') no-repeat 0% -960px;
   -webkit-transition: background-position 1.2s ease-in-out;
   -moz-transition: background-position 1.2s ease-in-out;
   -ms-transition: background-position 1.2s ease-in-out;
@@ -2450,25 +2452,9 @@ span.active {
 #s7 p.etwas-desc {
   position: absolute;
 }
-#s7 .sandbox {
-  width: 100%;
-  height: 556px;
-  margin: 0;
-  overflow: hidden;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-perspective: 1200px;
-  -moz-perspective: 1200px;
-  -ms-perspective: 1200px;
-  -o-perspective: 1200px;
-  perspective: 1200px;
-}
 #s7 .slinky {
   position: absolute;
-  top: 14em;
+  top: 20em;
   left: 14em;
   -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em);
   -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em);
@@ -2491,28 +2477,21 @@ span.active {
   -o-transition: all 1.25s ease-in-out;
   transition: all 1.25s ease-in-out;
 }
-#s7 .slinky.move {
-  -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-  -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-  -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-  -o-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-  transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-}
 #s7 .slinky .segment {
   float: none;
   position: absolute;
-  top: -0.275em;
-  left: -0.275em;
+  top: -.275em;
+  left: -.275em;
   z-index: 900;
-  width: 8em;
-  height: 8em;
+  width: 10em;
+  height: 10em;
   border: .3em solid #888;
   background: transparent;
-  -webkit-border-radius: 4em;
-  -moz-border-radius: 4em;
-  -ms-border-radius: 4em;
-  -o-border-radius: 4em;
-  border-radius: 4em;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  -ms-border-radius: 5em;
+  -o-border-radius: 5em;
+  border-radius: 5em;
   -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black, 0 0 3em rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black, 0 0 3em rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black, 0 0 3em rgba(0, 0, 0, 0.7);
@@ -2550,9 +2529,14 @@ span.active {
   transform: translateZ(-0.15em) rotateY(5.1deg);
 }
 #s7 .slinky.half .segment .segment.last {
-  -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.5);
+}
+#s7 .slinky.full > .segment {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 #s7 .slinky.full .segment .segment {
   -webkit-transform: translateZ(-0.15em) rotateY(10.3deg);
@@ -2561,10 +2545,63 @@ span.active {
   -o-transform: translateZ(-0.15em) rotateY(10.3deg);
   transform: translateZ(-0.15em) rotateY(10.3deg);
 }
-#s7 .slinky.full .segment .segment.last {
-  -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
+#s7 .slinky.move {
+  -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  -o-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+}
+#s7 .slinky.stretched {
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+#s7 .slinky.stretched > .segment {
+  -webkit-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -moz-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -ms-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -o-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#s7 .slinky.stretched .segment .segment {
+  -webkit-transform: translateZ(-1.16em) rotateY(-2deg);
+  -moz-transform: translateZ(-1.16em) rotateY(-2deg);
+  -ms-transform: translateZ(-1.16em) rotateY(-2deg);
+  -o-transform: translateZ(-1.16em) rotateY(-2deg);
+  transform: translateZ(-1.16em) rotateY(-2deg);
+}
+#s7 .slinky.oscillate > .segment {
+  -webkit-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  -moz-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  -ms-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  -o-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  -webkit-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -moz-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -ms-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -o-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#s7 .slinky.oscillate .segment .segment {
+  -webkit-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  -moz-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  -ms-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  -o-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  -webkit-transform: translateZ(-1.16em) rotateY(-2deg);
+  -moz-transform: translateZ(-1.16em) rotateY(-2deg);
+  -ms-transform: translateZ(-1.16em) rotateY(-2deg);
+  -o-transform: translateZ(-1.16em) rotateY(-2deg);
+  transform: translateZ(-1.16em) rotateY(-2deg);
 }
 #s7 .solar-system {
   position: absolute;
@@ -2678,6 +2715,74 @@ span.active {
 }
 #s7.space .solar-system {
   opacity: 1;
+}
+
+@-moz-keyframes slinky-base-osc {
+  to {
+    -moz-transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@-webkit-keyframes slinky-base-osc {
+  to {
+    -webkit-transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@-o-keyframes slinky-base-osc {
+  to {
+    -o-transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@-ms-keyframes slinky-base-osc {
+  to {
+    -ms-transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@keyframes slinky-base-osc {
+  to {
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@-moz-keyframes slinky-segment-osc {
+  to {
+    -moz-transform: translateZ(-1.36em) rotateY(-3deg);
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
+}
+
+@-webkit-keyframes slinky-segment-osc {
+  to {
+    -webkit-transform: translateZ(-1.36em) rotateY(-3deg);
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
+}
+
+@-o-keyframes slinky-segment-osc {
+  to {
+    -o-transform: translateZ(-1.36em) rotateY(-3deg);
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
+}
+
+@-ms-keyframes slinky-segment-osc {
+  to {
+    -ms-transform: translateZ(-1.36em) rotateY(-3deg);
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
+}
+
+@keyframes slinky-segment-osc {
+  to {
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
 }
 
 @-moz-keyframes move-sun {
@@ -2858,7 +2963,7 @@ span.active {
  * Stone tile
  */
 #s8 {
-  background: black url('/img/tile-bg.jpg?1359433508') no-repeat -10px top;
+  background: black url('/img/tile-bg.jpg?1382325794') no-repeat -10px top;
   color: #000;
   overflow: hidden;
   -webkit-perspective: 470px;
@@ -3038,7 +3143,7 @@ span.active {
 #s8 .panel .top {
   width: inherit;
   height: inherit;
-  background: url('/img/tile-4.jpg?1359433508');
+  background: url('/img/tile-4.jpg?1382325794');
   -webkit-transform: translate3d(0, 0, 1px);
   -moz-transform: translate3d(0, 0, 1px);
   -ms-transform: translate3d(0, 0, 1px);
@@ -3063,7 +3168,7 @@ span.active {
   background-position: 70% 80%;
 }
 #s8 .panel:nth-child(5n) .top {
-  background: url('/img/tile-2.jpg?1359435187') 50% 50%;
+  background: url('/img/tile-2.jpg?1382325794') 50% 50%;
 }
 #s8 .panel:hover,
 #s8 .panel.lift {

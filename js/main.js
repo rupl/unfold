@@ -104,6 +104,8 @@
       "$('#s7 p.slinky-desc').toggleClass('hide'); "+
       "$('#s7 p.intro').toggleClass('dim'); ",
       "$('#s7 .slinky').toggleClass('move half full'); ",
+      "$('#s7 .slinky').toggleClass('full stretched'); ",
+      "$('#s7 .slinky').toggleClass('oscillate'); ",
       "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
       "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
 
@@ -241,6 +243,8 @@
       "$('#s7 p.slinky-desc').toggleClass('hide'); "+
       "$('#s7 p.intro').toggleClass('dim'); ",
       "$('#s7 .slinky').toggleClass('move half full'); ",
+      "$('#s7 .slinky').toggleClass('full stretched'); ",
+      "$('#s7 .slinky').toggleClass('oscillate'); ",
       "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
       "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
 
