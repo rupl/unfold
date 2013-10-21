@@ -2971,11 +2971,11 @@ span.active {
   -ms-perspective: 470px;
   -o-perspective: 470px;
   perspective: 470px;
-  -webkit-perspective-origin: 54% 20%;
-  -moz-perspective-origin: 54% 20%;
-  -ms-perspective-origin: 54% 20%;
-  -o-perspective-origin: 54% 20%;
-  perspective-origin: 54% 20%;
+  -webkit-perspective-origin: 56% 18%;
+  -moz-perspective-origin: 56% 18%;
+  -ms-perspective-origin: 56% 18%;
+  -o-perspective-origin: 56% 18%;
+  perspective-origin: 56% 18%;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -3004,7 +3004,7 @@ span.active {
 }
 .csstransforms3d #s8 #floor {
   width: 1860px;
-  height: 436px;
+  height: 438px;
   background: #222;
   position: absolute;
   left: 0;
@@ -3027,11 +3027,11 @@ span.active {
   top: 0;
   left: 0;
   z-index: 15;
-  -webkit-transform: translate3d(0, -30px, -10px);
-  -moz-transform: translate3d(0, -30px, -10px);
-  -ms-transform: translate3d(0, -30px, -10px);
-  -o-transform: translate3d(0, -30px, -10px);
-  transform: translate3d(0, -30px, -10px);
+  -webkit-transform: translate3d(0, -30px, -10px) rotateX(4deg);
+  -moz-transform: translate3d(0, -30px, -10px) rotateX(4deg);
+  -ms-transform: translate3d(0, -30px, -10px) rotateX(4deg);
+  -o-transform: translate3d(0, -30px, -10px) rotateX(4deg);
+  transform: translate3d(0, -30px, -10px) rotateX(4deg);
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -3041,7 +3041,7 @@ span.active {
 #s8 .panel {
   float: left;
   width: 457px;
-  height: 141px;
+  height: 142px;
   margin: 2px 4px;
   background: #333;
   -webkit-transform-style: preserve-3d;
