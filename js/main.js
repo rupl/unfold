@@ -133,7 +133,9 @@
       "$('.translate, .rotate', '#s10 .c').toggleClass('active'); ",
       "$('#s10 .de').toggleClass('rotate transform-origin'); "+
       "$('.rotate, .transform-origin','#s10 .c').toggleClass('active'); ",
-      "$('#s10 .de').toggleClass('transform-origin'); "+
+      "$('#s10 .de').toggleClass('backface-visibility'); "+
+      "$('.transform-origin, .backface-visibility','#s10 .c').toggleClass('active'); ",
+      // "$('#s10 .de').toggleClass('transform-origin'); "+
       // "$('#s10').toggleClass('perspective'); "+
       // "$('#s10 .c .transform-origin').toggleClass('active'); ",
       // "$('#s10').toggleClass('perspective perspective-origin'); ",
@@ -272,7 +274,9 @@
       "$('.translate, .rotate', '#s10 .c').toggleClass('active'); ",
       "$('#s10 .de').toggleClass('rotate transform-origin'); "+
       "$('.rotate, .transform-origin','#s10 .c').toggleClass('active'); ",
-      "$('#s10 .de').toggleClass('transform-origin'); "+
+      "$('#s10 .de').toggleClass('backface-visibility'); "+
+      "$('.transform-origin, .backface-visibility','#s10 .c').toggleClass('active'); ",
+      // "$('#s10 .de').toggleClass('transform-origin'); "+
       // "$('#s10').toggleClass('perspective'); "+
       // "$('#s10 .c .transform-origin').toggleClass('active'); ",
       // "$('#s10').toggleClass('perspective perspective-origin'); ",

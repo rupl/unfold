@@ -4,7 +4,7 @@
 
 #s10 {
   position: relative;
-  @include perspective(1000px);
+  @include perspective(1200px);
   @include transform-style(preserve-3d);
 
   .de {
@@ -22,6 +22,9 @@
     &.transform-origin {
       @include animation('de-transform-origin' 5s linear infinite);
       @include transform-origin(100%, 0%);
+    }
+    &.backface-visibility {
+      @include backface-visibility(hidden);
     }
   }
 
