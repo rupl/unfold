@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Rambla:400,700,400italic|Crete+Round|Nunito:400,700|Quando|Andada");
 /* Libraries and Dependencies ---------------------------------------------- */
 /* Normalize --------------------------------------------------------------- */
-/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -532,7 +532,7 @@ main * {
 }
 main article {
   width: 100%;
-  height: 840px;
+  height: 960px;
   padding: 1em;
   margin: 16% 0;
   box-shadow: 0 5px 10px rgba(51, 51, 51, 0.1);
@@ -979,6 +979,7 @@ span.active {
  */
 #s3 {
   overflow: hidden;
+  overflow-y: visible;
 }
 #s3 .sandbox {
   -webkit-perspective: 600px;
@@ -992,6 +993,8 @@ span.active {
 #s3 .sandbox1 h2 {
   font-size: 4em;
   font-family: "Crete Round", serif;
+  width: 120%;
+  margin-left: -10%;
   text-shadow: -0.05em 0.05em 0.1em rgba(0, 0, 0, 0.3);
   -webkit-transform: rotateX(0deg) rotateY(52deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
   -moz-transform: rotateX(0deg) rotateY(52deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em);
@@ -1049,7 +1052,6 @@ span.active {
   color: blue;
 }
 #s3 .sandbox2 .de {
-  background: #345;
   margin: 0 auto;
   position: relative;
   top: 1em;
@@ -1319,8 +1321,6 @@ span.active {
   25% {
     -moz-transform: translateZ(10em);
     transform: translateZ(10em);
-    -moz-box-shadow: -0.6em 0 0 rgba(255, 0, 0, 0.74), 0.6em 0 0 rgba(0, 238, 238, 0.83);
-    box-shadow: -0.6em 0 0 rgba(255, 0, 0, 0.74), 0.6em 0 0 rgba(0, 238, 238, 0.83);
   }
 
   50% {
@@ -1331,8 +1331,6 @@ span.active {
   75% {
     -moz-transform: translateZ(-20em);
     transform: translateZ(-20em);
-    -moz-box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
-    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
@@ -1345,8 +1343,6 @@ span.active {
   25% {
     -webkit-transform: translateZ(10em);
     transform: translateZ(10em);
-    -webkit-box-shadow: -0.6em 0 0 rgba(255, 0, 0, 0.74), 0.6em 0 0 rgba(0, 238, 238, 0.83);
-    box-shadow: -0.6em 0 0 rgba(255, 0, 0, 0.74), 0.6em 0 0 rgba(0, 238, 238, 0.83);
   }
 
   50% {
@@ -1357,8 +1353,6 @@ span.active {
   75% {
     -webkit-transform: translateZ(-20em);
     transform: translateZ(-20em);
-    -webkit-box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
-    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
@@ -1371,7 +1365,6 @@ span.active {
   25% {
     -o-transform: translateZ(10em);
     transform: translateZ(10em);
-    box-shadow: -0.6em 0 0 rgba(255, 0, 0, 0.74), 0.6em 0 0 rgba(0, 238, 238, 0.83);
   }
 
   50% {
@@ -1382,7 +1375,6 @@ span.active {
   75% {
     -o-transform: translateZ(-20em);
     transform: translateZ(-20em);
-    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
@@ -1395,7 +1387,6 @@ span.active {
   25% {
     -ms-transform: translateZ(10em);
     transform: translateZ(10em);
-    box-shadow: -0.6em 0 0 rgba(255, 0, 0, 0.74), 0.6em 0 0 rgba(0, 238, 238, 0.83);
   }
 
   50% {
@@ -1406,7 +1397,6 @@ span.active {
   75% {
     -ms-transform: translateZ(-20em);
     transform: translateZ(-20em);
-    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
@@ -1417,7 +1407,6 @@ span.active {
 
   25% {
     transform: translateZ(10em);
-    box-shadow: -0.6em 0 0 rgba(255, 0, 0, 0.74), 0.6em 0 0 rgba(0, 238, 238, 0.83);
   }
 
   50% {
@@ -1426,7 +1415,6 @@ span.active {
 
   75% {
     transform: translateZ(-20em);
-    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.74), -0.4em 0 0 rgba(0, 238, 238, 0.83);
   }
 }
 
@@ -2433,6 +2421,8 @@ span.active {
  * Slinky
  */
 #s7 {
+  overflow-x: hidden;
+  overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
   /* -- make sure to declare a default for every property that you want animated -- */
@@ -2450,25 +2440,9 @@ span.active {
 #s7 p.etwas-desc {
   position: absolute;
 }
-#s7 .sandbox {
-  width: 100%;
-  height: 556px;
-  margin: 0;
-  overflow: hidden;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-perspective: 1200px;
-  -moz-perspective: 1200px;
-  -ms-perspective: 1200px;
-  -o-perspective: 1200px;
-  perspective: 1200px;
-}
 #s7 .slinky {
   position: absolute;
-  top: 14em;
+  top: 20em;
   left: 14em;
   -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em);
   -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em);
@@ -2491,28 +2465,21 @@ span.active {
   -o-transition: all 1.25s ease-in-out;
   transition: all 1.25s ease-in-out;
 }
-#s7 .slinky.move {
-  -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-  -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-  -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-  -o-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-  transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
-}
 #s7 .slinky .segment {
   float: none;
   position: absolute;
-  top: -0.275em;
-  left: -0.275em;
+  top: -.275em;
+  left: -.275em;
   z-index: 900;
-  width: 8em;
-  height: 8em;
+  width: 10em;
+  height: 10em;
   border: .3em solid #888;
   background: transparent;
-  -webkit-border-radius: 4em;
-  -moz-border-radius: 4em;
-  -ms-border-radius: 4em;
-  -o-border-radius: 4em;
-  border-radius: 4em;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  -ms-border-radius: 5em;
+  -o-border-radius: 5em;
+  border-radius: 5em;
   -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black, 0 0 3em rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black, 0 0 3em rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black, 0 0 3em rgba(0, 0, 0, 0.7);
@@ -2550,9 +2517,14 @@ span.active {
   transform: translateZ(-0.15em) rotateY(5.1deg);
 }
 #s7 .slinky.half .segment .segment.last {
-  -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.5);
+}
+#s7 .slinky.full > .segment {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 #s7 .slinky.full .segment .segment {
   -webkit-transform: translateZ(-0.15em) rotateY(10.3deg);
@@ -2561,10 +2533,63 @@ span.active {
   -o-transform: translateZ(-0.15em) rotateY(10.3deg);
   transform: translateZ(-0.15em) rotateY(10.3deg);
 }
-#s7 .slinky.full .segment .segment.last {
-  -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
+#s7 .slinky.move {
+  -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  -o-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+  transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
+}
+#s7 .slinky.stretched {
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+#s7 .slinky.stretched > .segment {
+  -webkit-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -moz-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -ms-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -o-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#s7 .slinky.stretched .segment .segment {
+  -webkit-transform: translateZ(-1.16em) rotateY(-2deg);
+  -moz-transform: translateZ(-1.16em) rotateY(-2deg);
+  -ms-transform: translateZ(-1.16em) rotateY(-2deg);
+  -o-transform: translateZ(-1.16em) rotateY(-2deg);
+  transform: translateZ(-1.16em) rotateY(-2deg);
+}
+#s7 .slinky.oscillate > .segment {
+  -webkit-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  -moz-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  -ms-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  -o-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  -webkit-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -moz-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -ms-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -o-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#s7 .slinky.oscillate .segment .segment {
+  -webkit-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  -moz-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  -ms-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  -o-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  -webkit-transform: translateZ(-1.16em) rotateY(-2deg);
+  -moz-transform: translateZ(-1.16em) rotateY(-2deg);
+  -ms-transform: translateZ(-1.16em) rotateY(-2deg);
+  -o-transform: translateZ(-1.16em) rotateY(-2deg);
+  transform: translateZ(-1.16em) rotateY(-2deg);
 }
 #s7 .solar-system {
   position: absolute;
@@ -2678,6 +2703,74 @@ span.active {
 }
 #s7.space .solar-system {
   opacity: 1;
+}
+
+@-moz-keyframes slinky-base-osc {
+  to {
+    -moz-transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@-webkit-keyframes slinky-base-osc {
+  to {
+    -webkit-transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@-o-keyframes slinky-base-osc {
+  to {
+    -o-transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@-ms-keyframes slinky-base-osc {
+  to {
+    -ms-transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@keyframes slinky-base-osc {
+  to {
+    transform: rotateY(132deg) rotateX(10deg) translateX(-3.2em);
+  }
+}
+
+@-moz-keyframes slinky-segment-osc {
+  to {
+    -moz-transform: translateZ(-1.36em) rotateY(-3deg);
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
+}
+
+@-webkit-keyframes slinky-segment-osc {
+  to {
+    -webkit-transform: translateZ(-1.36em) rotateY(-3deg);
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
+}
+
+@-o-keyframes slinky-segment-osc {
+  to {
+    -o-transform: translateZ(-1.36em) rotateY(-3deg);
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
+}
+
+@-ms-keyframes slinky-segment-osc {
+  to {
+    -ms-transform: translateZ(-1.36em) rotateY(-3deg);
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
+}
+
+@keyframes slinky-segment-osc {
+  to {
+    transform: translateZ(-1.36em) rotateY(-3deg);
+  }
 }
 
 @-moz-keyframes move-sun {
@@ -2866,11 +2959,11 @@ span.active {
   -ms-perspective: 470px;
   -o-perspective: 470px;
   perspective: 470px;
-  -webkit-perspective-origin: 54% 20%;
-  -moz-perspective-origin: 54% 20%;
-  -ms-perspective-origin: 54% 20%;
-  -o-perspective-origin: 54% 20%;
-  perspective-origin: 54% 20%;
+  -webkit-perspective-origin: 56% 18%;
+  -moz-perspective-origin: 56% 18%;
+  -ms-perspective-origin: 56% 18%;
+  -o-perspective-origin: 56% 18%;
+  perspective-origin: 56% 18%;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -2899,7 +2992,7 @@ span.active {
 }
 .csstransforms3d #s8 #floor {
   width: 1860px;
-  height: 436px;
+  height: 438px;
   background: #222;
   position: absolute;
   left: 0;
@@ -2922,11 +3015,11 @@ span.active {
   top: 0;
   left: 0;
   z-index: 15;
-  -webkit-transform: translate3d(0, -30px, -10px);
-  -moz-transform: translate3d(0, -30px, -10px);
-  -ms-transform: translate3d(0, -30px, -10px);
-  -o-transform: translate3d(0, -30px, -10px);
-  transform: translate3d(0, -30px, -10px);
+  -webkit-transform: translate3d(0, -30px, -10px) rotateX(4deg);
+  -moz-transform: translate3d(0, -30px, -10px) rotateX(4deg);
+  -ms-transform: translate3d(0, -30px, -10px) rotateX(4deg);
+  -o-transform: translate3d(0, -30px, -10px) rotateX(4deg);
+  transform: translate3d(0, -30px, -10px) rotateX(4deg);
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -2936,7 +3029,7 @@ span.active {
 #s8 .panel {
   float: left;
   width: 457px;
-  height: 141px;
+  height: 142px;
   margin: 2px 4px;
   background: #333;
   -webkit-transform-style: preserve-3d;
@@ -3219,11 +3312,11 @@ body.wireframe #s8 div#floor {
  */
 #s10 {
   position: relative;
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  -ms-perspective: 1000px;
-  -o-perspective: 1000px;
-  perspective: 1000px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -3260,6 +3353,13 @@ body.wireframe #s8 div#floor {
   -ms-transform-origin: 100% 0%;
   -o-transform-origin: 100% 0%;
   transform-origin: 100% 0%;
+}
+#s10 .de.backface-visibility {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 #s10 .intro {
   position: absolute;

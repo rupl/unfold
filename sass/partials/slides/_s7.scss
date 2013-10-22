@@ -3,6 +3,8 @@
  */
 
 #s7 {
+  overflow-x: hidden;
+  overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
   // Text still needs padding.
@@ -16,28 +18,15 @@
     position: absolute;
   }
 
-  .sandbox {
-    width: 100%;
-    height: 556px;
-    margin: 0;
-    overflow: hidden;
-    @include transform-style(preserve-3d);
-    @include perspective(1200px);
-  }
-
   /* -- make sure to declare a default for every property that you want animated -- */
   .slinky {
     position: absolute;
-    top: 14em;
+    top: 20em;
     left: 14em;
     @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em));
     @include transform-origin(50%, 50%);
     @include transform-style(preserve-3d);
     @include transition(all 1.25s ease-in-out);
-
-    &.move {
-      @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em));
-    }
 
     .segment {
       float: none;
@@ -45,11 +34,11 @@
       top: -.275em;
       left: -.275em;
       z-index: 900;
-      width: 8em;
-      height: 8em;
+      width: 10em;
+      height: 10em;
       border: .3em solid #888;
       background: transparent;
-      @include border-radius(4em);
+      @include border-radius(5em);
       @include box-shadow(
         0 0 .07em .07em #000,
   inset 0 0 .07em .03em #000,
@@ -83,22 +72,56 @@
       @include box-shadow(
         0 0 .07em .07em #000,
         inset 0 0 .07em .07em #000,
-        0 0 3em rgba(#000, 0.3)
+        0 0 3em rgba(#000, 0.5)
       );
     }
   }
 
   // Full-circle slinky
-  .slinky.full .segment .segment {
-    @include transform(translateZ(-.15em) rotateY(10.3deg));
+  .slinky.full {
+    // kill shadow on base segment
+    > .segment {
+      @include box-shadow(none);
+    }
 
-    &.last {
-      // This puts a box-shadow on the last element when it is touching the "floor"
-      @include box-shadow(
-        0 0 .07em .07em #000,
-        inset 0 0 .07em .07em #000,
-        0 0 3em rgba(#000, 0.3)
-      );
+    .segment .segment {
+      @include transform(translateZ(-.15em) rotateY(10.3deg));
+    }
+  }
+
+  // Move the slinky over
+  .slinky.move {
+    @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em));
+  }
+
+
+  // Stretched-out slinky
+  .slinky.stretched {
+    // slow this effect down
+    @include transition(all 2s ease-in-out);
+
+    // position slinky using base segment
+    > .segment {
+      @include transform(rotateY(120deg) rotateX(10deg) translateX(-3em));
+      @include box-shadow(none);
+    }
+    .segment .segment {
+      @include transform(translateZ(-1.16em) rotateY(-2deg));
+    }
+  }
+
+  // Oscillating slinky
+  // The two animations work in tandem with the other
+  .slinky.oscillate {
+    // Slinky base
+    > .segment {
+      @include animation('slinky-base-osc' 1s ease-in-out infinite alternate);
+      @include transform(rotateY(120deg) rotateX(10deg) translateX(-3em));
+      @include box-shadow(none);
+    }
+    .segment .segment {
+      @include animation('slinky-segment-osc' 1s ease-in-out infinite alternate);
+      @include transform(translateZ(-1.16em) rotateY(-2deg));
     }
   }
 
@@ -171,6 +194,23 @@
 
 }
 
+//
+// Slinky keyframes
+//
+@include keyframes('slinky-base-osc') {
+  to {
+    @include transform(rotateY(132deg) rotateX(10deg) translateX(-3.2em));
+  }
+}
+@include keyframes('slinky-segment-osc') {
+  to {
+    @include transform(translateZ(-1.36em) rotateY(-3deg));
+  }
+}
+
+//
+// Solar system keyframes
+//
 @include keyframes('move-sun') {
   0% {
     @include transform(translateX(37em) translateY(7em));

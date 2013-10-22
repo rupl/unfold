@@ -8,7 +8,7 @@
   color: #000;
   overflow: hidden;
   @include perspective(470px);
-  @include perspective-origin(54% 20%);
+  @include perspective-origin(56% 18%);
   @include transform-style(preserve-3d);
   @include backface-visibility(visible);
   
@@ -31,7 +31,7 @@
     // Use the floor element to match the photograph's perspective
     #floor {
       width: 1860px;
-      height: 436px;
+      height: 438px;
       background: #222;
 
       position: absolute;
@@ -52,7 +52,7 @@
       left: 0;
       z-index: 15;
 
-      @include transform(translate3d(0, -30px, -10px));
+      @include transform(translate3d(0, -30px, -10px) rotateX(4deg));
       @include transform-style(preserve-3d);
     }
   }
@@ -61,7 +61,7 @@
   .panel {
     float: left; 
     width: 457px;
-    height: 141px;
+    height: 142px;
     margin: 2px 4px;
     background: #333;
 

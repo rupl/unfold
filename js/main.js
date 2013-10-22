@@ -104,6 +104,8 @@
       "$('#s7 p.slinky-desc').toggleClass('hide'); "+
       "$('#s7 p.intro').toggleClass('dim'); ",
       "$('#s7 .slinky').toggleClass('move half full'); ",
+      "$('#s7 .slinky').toggleClass('full stretched'); ",
+      "$('#s7 .slinky').toggleClass('oscillate'); ",
       "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
       "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
 
@@ -131,7 +133,9 @@
       "$('.translate, .rotate', '#s10 .c').toggleClass('active'); ",
       "$('#s10 .de').toggleClass('rotate transform-origin'); "+
       "$('.rotate, .transform-origin','#s10 .c').toggleClass('active'); ",
-      "$('#s10 .de').toggleClass('transform-origin'); "+
+      "$('#s10 .de').toggleClass('backface-visibility'); "+
+      "$('.transform-origin, .backface-visibility','#s10 .c').toggleClass('active'); ",
+      // "$('#s10 .de').toggleClass('transform-origin'); "+
       // "$('#s10').toggleClass('perspective'); "+
       // "$('#s10 .c .transform-origin').toggleClass('active'); ",
       // "$('#s10').toggleClass('perspective perspective-origin'); ",
@@ -241,6 +245,8 @@
       "$('#s7 p.slinky-desc').toggleClass('hide'); "+
       "$('#s7 p.intro').toggleClass('dim'); ",
       "$('#s7 .slinky').toggleClass('move half full'); ",
+      "$('#s7 .slinky').toggleClass('full stretched'); ",
+      "$('#s7 .slinky').toggleClass('oscillate'); ",
       "$('.slinky, p.slinky-desc, p.solar-desc', '#s7').toggleClass('hide'); ",
       "$('#s7').toggleClass('space').find('.solar-system').toggleClass('hide'); ",
 
@@ -268,7 +274,9 @@
       "$('.translate, .rotate', '#s10 .c').toggleClass('active'); ",
       "$('#s10 .de').toggleClass('rotate transform-origin'); "+
       "$('.rotate, .transform-origin','#s10 .c').toggleClass('active'); ",
-      "$('#s10 .de').toggleClass('transform-origin'); "+
+      "$('#s10 .de').toggleClass('backface-visibility'); "+
+      "$('.transform-origin, .backface-visibility','#s10 .c').toggleClass('active'); ",
+      // "$('#s10 .de').toggleClass('transform-origin'); "+
       // "$('#s10').toggleClass('perspective'); "+
       // "$('#s10 .c .transform-origin').toggleClass('active'); ",
       // "$('#s10').toggleClass('perspective perspective-origin'); ",
