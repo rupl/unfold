@@ -3,6 +3,7 @@
  */
 #s3 {
   overflow: hidden;
+  overflow-y: visible;
 
   .sandbox {
     @include perspective(600px);
@@ -15,6 +16,9 @@
       @extend .it;
       font-size: 4em;
       font-family: $crete;
+      width: 120%;
+      margin-left: -10%;
+
       @include text-shadow(-.05em .05em 0.1em rgba(#000, 0.3));
       @include transform(rotateX(0deg) rotateY(52deg) rotateZ(0deg) translateX(1.8em) translateY(0em) translateZ(0em));
 
@@ -63,7 +67,7 @@
     }
 
     .de {
-      background: #345; // make it glasses-friendly by setting dark bgcolor
+      // background: #345; // make it glasses-friendly by setting dark bgcolor
       margin: 0 auto;
       position: relative;
       top: 1em;
@@ -130,20 +134,22 @@
   }
   25% {
     @include transform(translateZ(10em));
-    @include box-shadow(
-      -.6em 0 0 rgba(#f00, 0.74),
-       .6em 0 0 rgba(#0ee, 0.83)
-    );
+    // 3D glasses
+    // @include box-shadow(
+    //   -.6em 0 0 rgba(#f00, 0.74),
+    //    .6em 0 0 rgba(#0ee, 0.83)
+    // );
   }
   50% {
     @include transform(translateZ(0em));
   }
   75% {
     @include transform(translateZ(-20em));
-    @include box-shadow(
-       .4em 0 0 rgba(#f00, 0.74),
-      -.4em 0 0 rgba(#0ee, 0.83)
-    );
+    // 3D glasses
+    // @include box-shadow(
+    //    .4em 0 0 rgba(#f00, 0.74),
+    //   -.4em 0 0 rgba(#0ee, 0.83)
+    // );
   }
 }
 
