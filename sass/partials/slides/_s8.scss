@@ -11,6 +11,7 @@
   @include perspective-origin(56% 18%);
   @include transform-style(preserve-3d);
   @include backface-visibility(visible);
+  width: 1340px; // the tile illusion requires a fixed container size
   
   a,
   p,

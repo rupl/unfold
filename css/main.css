@@ -2974,6 +2974,7 @@ span.active {
   -ms-backface-visibility: visible;
   -o-backface-visibility: visible;
   backface-visibility: visible;
+  width: 1340px;
   /* debugging styles */
   /* -- Go Download Chrome - http://www.google.com/chrome -- */
 }
