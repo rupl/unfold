@@ -2426,12 +2426,8 @@ span.active {
   padding-left: 0;
   padding-right: 0;
   /* -- make sure to declare a default for every property that you want animated -- */
-<<<<<<< HEAD
-  background: white url('/unfold/img/space-bg.jpg?1359429388') no-repeat 0% -960px;
-=======
   background-size: cover;
-  background: white url('/img/space-bg.jpg?1382325794') no-repeat 0 -40em;
->>>>>>> master
+  background: white url('/unfold/img/space-bg.jpg?1382325794') no-repeat 0 -40em;
   -webkit-transition: background-position 1.2s ease-in-out;
   -moz-transition: background-position 1.2s ease-in-out;
   -ms-transition: background-position 1.2s ease-in-out;
