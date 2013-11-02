@@ -2426,7 +2426,12 @@ span.active {
   padding-left: 0;
   padding-right: 0;
   /* -- make sure to declare a default for every property that you want animated -- */
+<<<<<<< HEAD
   background: white url('/unfold/img/space-bg.jpg?1359429388') no-repeat 0% -960px;
+=======
+  background-size: cover;
+  background: white url('/img/space-bg.jpg?1382325794') no-repeat 0 -40em;
+>>>>>>> master
   -webkit-transition: background-position 1.2s ease-in-out;
   -moz-transition: background-position 1.2s ease-in-out;
   -ms-transition: background-position 1.2s ease-in-out;
@@ -2698,6 +2703,7 @@ span.active {
 }
 #s7.space {
   background-position: 0 0;
+  background-size: cover;
   color: #fff;
   text-shadow: 0 0 .2em #000;
 }
@@ -2974,6 +2980,7 @@ span.active {
   -ms-backface-visibility: visible;
   -o-backface-visibility: visible;
   backface-visibility: visible;
+  width: 1340px;
   /* debugging styles */
   /* -- Go Download Chrome - http://www.google.com/chrome -- */
 }
