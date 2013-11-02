@@ -7,6 +7,8 @@
   overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
+  // background stuff is below near &.space
+
   // Text still needs padding.
   p {
     padding-left: 1em;
@@ -176,12 +178,15 @@
   // Source:  http://en.wikipedia.org/wiki/File:Vermont_night_sky_stargazing.JPG
   //
   // Add this image to the slide initially but let .space display it
-  @include background(#fff image-url('space-bg.jpg') no-repeat 0% -960px);
+  background-size: cover;
+  @include background(#fff image-url('space-bg.jpg') no-repeat 0 -40em);
   @include transition(background-position 1.2s ease-in-out);
 
   &.space {
     // Move space bg into view
     background-position: 0 0;
+    background-size: cover;
+
     // Make text legible
     color: #fff;
     text-shadow: 0 0 .2em #000;
