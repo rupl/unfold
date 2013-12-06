@@ -292,12 +292,13 @@
   };
 
   // Set up the arrow keys to progress through the story
-  $(document).keyup(function(e) {
+  $(document).keydown(function(e) {
     // counter is incremented differently depending on direction
     // so that the two arrays with forward/reverse steps can be
     // kept in sync and maintained in the most sane fashion.
-    if (e.keyCode == 37) { storyBack(); }
-    if (e.keyCode == 39) { storyNext(); }
+    if (e.keyCode == 37) { storyBack(); return false; }
+    if (e.keyCode == 39) { storyNext(); return false; }
+    if (e.keyCode == 38 || e.keyCode == 40) { return false; }
   });
 
   // Set up touch nav to progress through the story
