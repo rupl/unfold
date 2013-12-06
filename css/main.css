@@ -537,6 +537,7 @@ main article {
   margin: 16% 0;
   box-shadow: 0 5px 10px rgba(51, 51, 51, 0.1);
   background: #fff;
+  overflow: hidden;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   -ms-perspective: 600px;
@@ -871,11 +872,11 @@ span.active {
   -ms-transform: translateY(-4em);
   -o-transform: translateY(-4em);
   transform: translateY(-4em);
-  -webkit-animation: "throbber" 2s linear 4;
-  -moz-animation: "throbber" 2s linear 4;
-  -ms-animation: "throbber" 2s linear 4;
-  -o-animation: "throbber" 2s linear 4;
-  animation: "throbber" 2s linear 4;
+  -webkit-animation: throbber 2s linear 4;
+  -moz-animation: throbber 2s linear 4;
+  -ms-animation: throbber 2s linear 4;
+  -o-animation: throbber 2s linear 4;
+  animation: throbber 2s linear 4;
 }
 .no-touch #s1 .instructions {
   display: block;
@@ -1058,46 +1059,46 @@ span.active {
   opacity: 1;
 }
 #s3 .sandbox2 .de.t-x {
-  -webkit-animation: "t-x" 3s ease-in-out infinite;
-  -moz-animation: "t-x" 3s ease-in-out infinite;
-  -ms-animation: "t-x" 3s ease-in-out infinite;
-  -o-animation: "t-x" 3s ease-in-out infinite;
-  animation: "t-x" 3s ease-in-out infinite;
+  -webkit-animation: t-x 3s ease-in-out infinite;
+  -moz-animation: t-x 3s ease-in-out infinite;
+  -ms-animation: t-x 3s ease-in-out infinite;
+  -o-animation: t-x 3s ease-in-out infinite;
+  animation: t-x 3s ease-in-out infinite;
 }
 #s3 .sandbox2 .de.t-y {
-  -webkit-animation: "t-y" 3s ease-in-out infinite;
-  -moz-animation: "t-y" 3s ease-in-out infinite;
-  -ms-animation: "t-y" 3s ease-in-out infinite;
-  -o-animation: "t-y" 3s ease-in-out infinite;
-  animation: "t-y" 3s ease-in-out infinite;
+  -webkit-animation: t-y 3s ease-in-out infinite;
+  -moz-animation: t-y 3s ease-in-out infinite;
+  -ms-animation: t-y 3s ease-in-out infinite;
+  -o-animation: t-y 3s ease-in-out infinite;
+  animation: t-y 3s ease-in-out infinite;
 }
 #s3 .sandbox2 .de.t-z {
-  -webkit-animation: "t-z" 3s ease-in-out infinite;
-  -moz-animation: "t-z" 3s ease-in-out infinite;
-  -ms-animation: "t-z" 3s ease-in-out infinite;
-  -o-animation: "t-z" 3s ease-in-out infinite;
-  animation: "t-z" 3s ease-in-out infinite;
+  -webkit-animation: t-z 3s ease-in-out infinite;
+  -moz-animation: t-z 3s ease-in-out infinite;
+  -ms-animation: t-z 3s ease-in-out infinite;
+  -o-animation: t-z 3s ease-in-out infinite;
+  animation: t-z 3s ease-in-out infinite;
 }
 #s3 .sandbox2 .de.r-x {
-  -webkit-animation: "r-x" 3s linear infinite;
-  -moz-animation: "r-x" 3s linear infinite;
-  -ms-animation: "r-x" 3s linear infinite;
-  -o-animation: "r-x" 3s linear infinite;
-  animation: "r-x" 3s linear infinite;
+  -webkit-animation: r-x 3s linear infinite;
+  -moz-animation: r-x 3s linear infinite;
+  -ms-animation: r-x 3s linear infinite;
+  -o-animation: r-x 3s linear infinite;
+  animation: r-x 3s linear infinite;
 }
 #s3 .sandbox2 .de.r-y {
-  -webkit-animation: "r-y" 3s linear infinite;
-  -moz-animation: "r-y" 3s linear infinite;
-  -ms-animation: "r-y" 3s linear infinite;
-  -o-animation: "r-y" 3s linear infinite;
-  animation: "r-y" 3s linear infinite;
+  -webkit-animation: r-y 3s linear infinite;
+  -moz-animation: r-y 3s linear infinite;
+  -ms-animation: r-y 3s linear infinite;
+  -o-animation: r-y 3s linear infinite;
+  animation: r-y 3s linear infinite;
 }
 #s3 .sandbox2 .de.r-z {
-  -webkit-animation: "r-z" 3s linear infinite;
-  -moz-animation: "r-z" 3s linear infinite;
-  -ms-animation: "r-z" 3s linear infinite;
-  -o-animation: "r-z" 3s linear infinite;
-  animation: "r-z" 3s linear infinite;
+  -webkit-animation: r-z 3s linear infinite;
+  -moz-animation: r-z 3s linear infinite;
+  -ms-animation: r-z 3s linear infinite;
+  -o-animation: r-z 3s linear infinite;
+  animation: r-z 3s linear infinite;
 }
 
 @-moz-keyframes t-x {
@@ -1626,11 +1627,11 @@ span.active {
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.75);
 }
 #s4 .sandbox.p-warp {
-  -webkit-animation: "p-warp" 3s ease-in-out infinite;
-  -moz-animation: "p-warp" 3s ease-in-out infinite;
-  -ms-animation: "p-warp" 3s ease-in-out infinite;
-  -o-animation: "p-warp" 3s ease-in-out infinite;
-  animation: "p-warp" 3s ease-in-out infinite;
+  -webkit-animation: p-warp 3s ease-in-out infinite;
+  -moz-animation: p-warp 3s ease-in-out infinite;
+  -ms-animation: p-warp 3s ease-in-out infinite;
+  -o-animation: p-warp 3s ease-in-out infinite;
+  animation: p-warp 3s ease-in-out infinite;
 }
 #s4 .sandbox.po-warp {
   -webkit-perspective: 1400px;
@@ -1638,11 +1639,11 @@ span.active {
   -ms-perspective: 1400px;
   -o-perspective: 1400px;
   perspective: 1400px;
-  -webkit-animation: "po-warp" 5s ease-in-out infinite;
-  -moz-animation: "po-warp" 5s ease-in-out infinite;
-  -ms-animation: "po-warp" 5s ease-in-out infinite;
-  -o-animation: "po-warp" 5s ease-in-out infinite;
-  animation: "po-warp" 5s ease-in-out infinite;
+  -webkit-animation: po-warp 5s ease-in-out infinite;
+  -moz-animation: po-warp 5s ease-in-out infinite;
+  -ms-animation: po-warp 5s ease-in-out infinite;
+  -o-animation: po-warp 5s ease-in-out infinite;
+  animation: po-warp 5s ease-in-out infinite;
 }
 
 @-moz-keyframes p-warp {
@@ -1902,11 +1903,11 @@ span.active {
   -ms-transform: translateX(10em) translateY(10em) rotateY(24deg);
   -o-transform: translateX(10em) translateY(10em) rotateY(24deg);
   transform: translateX(10em) translateY(10em) rotateY(24deg);
-  -webkit-animation: "translate-cube" 4s ease-in-out infinite;
-  -moz-animation: "translate-cube" 4s ease-in-out infinite;
-  -ms-animation: "translate-cube" 4s ease-in-out infinite;
-  -o-animation: "translate-cube" 4s ease-in-out infinite;
-  animation: "translate-cube" 4s ease-in-out infinite;
+  -webkit-animation: translate-cube 4s ease-in-out infinite;
+  -moz-animation: translate-cube 4s ease-in-out infinite;
+  -ms-animation: translate-cube 4s ease-in-out infinite;
+  -o-animation: translate-cube 4s ease-in-out infinite;
+  animation: translate-cube 4s ease-in-out infinite;
 }
 #s5 .sandbox.rotate-demo .h-rotate {
   opacity: 1;
@@ -1917,11 +1918,11 @@ span.active {
   -ms-transform: translateX(10em) translateY(6em) rotateY(24deg);
   -o-transform: translateX(10em) translateY(6em) rotateY(24deg);
   transform: translateX(10em) translateY(6em) rotateY(24deg);
-  -webkit-animation: "rotate-cube" 8s linear infinite;
-  -moz-animation: "rotate-cube" 8s linear infinite;
-  -ms-animation: "rotate-cube" 8s linear infinite;
-  -o-animation: "rotate-cube" 8s linear infinite;
-  animation: "rotate-cube" 8s linear infinite;
+  -webkit-animation: rotate-cube 8s linear infinite;
+  -moz-animation: rotate-cube 8s linear infinite;
+  -ms-animation: rotate-cube 8s linear infinite;
+  -o-animation: rotate-cube 8s linear infinite;
+  animation: rotate-cube 8s linear infinite;
 }
 #s5 .sandbox.backface-demo .cube {
   -webkit-backface-visibility: visible;
@@ -1929,11 +1930,11 @@ span.active {
   -ms-backface-visibility: visible;
   -o-backface-visibility: visible;
   backface-visibility: visible;
-  -webkit-animation: "backface-demo-rotate" 4s linear infinite;
-  -moz-animation: "backface-demo-rotate" 4s linear infinite;
-  -ms-animation: "backface-demo-rotate" 4s linear infinite;
-  -o-animation: "backface-demo-rotate" 4s linear infinite;
-  animation: "backface-demo-rotate" 4s linear infinite;
+  -webkit-animation: backface-demo-rotate 4s linear infinite;
+  -moz-animation: backface-demo-rotate 4s linear infinite;
+  -ms-animation: backface-demo-rotate 4s linear infinite;
+  -o-animation: backface-demo-rotate 4s linear infinite;
+  animation: backface-demo-rotate 4s linear infinite;
 }
 #s5 .sandbox.backface-demo .cube:after {
   content: 'visible';
@@ -2281,11 +2282,11 @@ span.active {
   transform-origin: 50% 50% -2.5em;
 }
 #s6 .sandbox .cube.rotate {
-  -webkit-animation: "rotate-cube-slow" 8s linear infinite;
-  -moz-animation: "rotate-cube-slow" 8s linear infinite;
-  -ms-animation: "rotate-cube-slow" 8s linear infinite;
-  -o-animation: "rotate-cube-slow" 8s linear infinite;
-  animation: "rotate-cube-slow" 8s linear infinite;
+  -webkit-animation: rotate-cube-slow 8s linear infinite;
+  -moz-animation: rotate-cube-slow 8s linear infinite;
+  -ms-animation: rotate-cube-slow 8s linear infinite;
+  -o-animation: rotate-cube-slow 8s linear infinite;
+  animation: rotate-cube-slow 8s linear infinite;
 }
 #s6 .sandbox .cube.labels:before,
 #s6 .sandbox .cube.labels .top:before,
@@ -2566,11 +2567,11 @@ span.active {
   transform: translateZ(-1.16em) rotateY(-2deg);
 }
 #s7 .slinky.oscillate > .segment {
-  -webkit-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
-  -moz-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
-  -ms-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
-  -o-animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
-  animation: "slinky-base-osc" 1s ease-in-out infinite alternate;
+  -webkit-animation: slinky-base-osc 1s ease-in-out infinite alternate;
+  -moz-animation: slinky-base-osc 1s ease-in-out infinite alternate;
+  -ms-animation: slinky-base-osc 1s ease-in-out infinite alternate;
+  -o-animation: slinky-base-osc 1s ease-in-out infinite alternate;
+  animation: slinky-base-osc 1s ease-in-out infinite alternate;
   -webkit-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
   -moz-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
   -ms-transform: rotateY(120deg) rotateX(10deg) translateX(-3em);
@@ -2581,11 +2582,11 @@ span.active {
   box-shadow: none;
 }
 #s7 .slinky.oscillate .segment .segment {
-  -webkit-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
-  -moz-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
-  -ms-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
-  -o-animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
-  animation: "slinky-segment-osc" 1s ease-in-out infinite alternate;
+  -webkit-animation: slinky-segment-osc 1s ease-in-out infinite alternate;
+  -moz-animation: slinky-segment-osc 1s ease-in-out infinite alternate;
+  -ms-animation: slinky-segment-osc 1s ease-in-out infinite alternate;
+  -o-animation: slinky-segment-osc 1s ease-in-out infinite alternate;
+  animation: slinky-segment-osc 1s ease-in-out infinite alternate;
   -webkit-transform: translateZ(-1.16em) rotateY(-2deg);
   -moz-transform: translateZ(-1.16em) rotateY(-2deg);
   -ms-transform: translateZ(-1.16em) rotateY(-2deg);
@@ -2600,11 +2601,11 @@ span.active {
   -ms-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  -webkit-animation: "move-sun" 120s linear infinite;
-  -moz-animation: "move-sun" 120s linear infinite;
-  -ms-animation: "move-sun" 120s linear infinite;
-  -o-animation: "move-sun" 120s linear infinite;
-  animation: "move-sun" 120s linear infinite;
+  -webkit-animation: sun-move 120s linear infinite;
+  -moz-animation: sun-move 120s linear infinite;
+  -ms-animation: sun-move 120s linear infinite;
+  -o-animation: sun-move 120s linear infinite;
+  animation: sun-move 120s linear infinite;
 }
 #s7 .solar-system .sun {
   position: absolute;
@@ -2658,11 +2659,11 @@ span.active {
   -ms-transform-origin: -3.5em 0%;
   -o-transform-origin: -3.5em 0%;
   transform-origin: -3.5em 0%;
-  -webkit-animation: "rotate-earth" 10s linear infinite;
-  -moz-animation: "rotate-earth" 10s linear infinite;
-  -ms-animation: "rotate-earth" 10s linear infinite;
-  -o-animation: "rotate-earth" 10s linear infinite;
-  animation: "rotate-earth" 10s linear infinite;
+  -webkit-animation: rotate-earth 10s linear infinite;
+  -moz-animation: rotate-earth 10s linear infinite;
+  -ms-animation: rotate-earth 10s linear infinite;
+  -o-animation: rotate-earth 10s linear infinite;
+  animation: rotate-earth 10s linear infinite;
 }
 #s7 .solar-system .sun .earth .moon {
   position: absolute;
@@ -2691,11 +2692,11 @@ span.active {
   -ms-transform-origin: -1.32em 0%;
   -o-transform-origin: -1.32em 0%;
   transform-origin: -1.32em 0%;
-  -webkit-animation: "rotate-moon" 4s linear infinite;
-  -moz-animation: "rotate-moon" 4s linear infinite;
-  -ms-animation: "rotate-moon" 4s linear infinite;
-  -o-animation: "rotate-moon" 4s linear infinite;
-  animation: "rotate-moon" 4s linear infinite;
+  -webkit-animation: rotate-moon 4s linear infinite;
+  -moz-animation: rotate-moon 4s linear infinite;
+  -ms-animation: rotate-moon 4s linear infinite;
+  -o-animation: rotate-moon 4s linear infinite;
+  animation: rotate-moon 4s linear infinite;
 }
 #s7.space {
   background-position: 0 0;
@@ -2775,7 +2776,7 @@ span.active {
   }
 }
 
-@-moz-keyframes move-sun {
+@-moz-keyframes sun-move {
   0% {
     -moz-transform: translateX(37em) translateY(7em);
     transform: translateX(37em) translateY(7em);
@@ -2787,7 +2788,7 @@ span.active {
   }
 }
 
-@-webkit-keyframes move-sun {
+@-webkit-keyframes sun-move {
   0% {
     -webkit-transform: translateX(37em) translateY(7em);
     transform: translateX(37em) translateY(7em);
@@ -2799,7 +2800,7 @@ span.active {
   }
 }
 
-@-o-keyframes move-sun {
+@-o-keyframes sun-move {
   0% {
     -o-transform: translateX(37em) translateY(7em);
     transform: translateX(37em) translateY(7em);
@@ -2811,7 +2812,7 @@ span.active {
   }
 }
 
-@-ms-keyframes move-sun {
+@-ms-keyframes sun-move {
   0% {
     -ms-transform: translateX(37em) translateY(7em);
     transform: translateX(37em) translateY(7em);
@@ -2823,7 +2824,7 @@ span.active {
   }
 }
 
-@keyframes move-sun {
+@keyframes sun-move {
   0% {
     transform: translateX(37em) translateY(7em);
   }
@@ -3332,25 +3333,25 @@ body.wireframe #s8 div#floor {
   left: 2em;
 }
 #s10 .de.translate {
-  -webkit-animation: "de-translate" 5s ease-in-out infinite;
-  -moz-animation: "de-translate" 5s ease-in-out infinite;
-  -ms-animation: "de-translate" 5s ease-in-out infinite;
-  -o-animation: "de-translate" 5s ease-in-out infinite;
-  animation: "de-translate" 5s ease-in-out infinite;
+  -webkit-animation: de-translate 5s ease-in-out infinite;
+  -moz-animation: de-translate 5s ease-in-out infinite;
+  -ms-animation: de-translate 5s ease-in-out infinite;
+  -o-animation: de-translate 5s ease-in-out infinite;
+  animation: de-translate 5s ease-in-out infinite;
 }
 #s10 .de.rotate {
-  -webkit-animation: "de-rotate" 5s linear infinite;
-  -moz-animation: "de-rotate" 5s linear infinite;
-  -ms-animation: "de-rotate" 5s linear infinite;
-  -o-animation: "de-rotate" 5s linear infinite;
-  animation: "de-rotate" 5s linear infinite;
+  -webkit-animation: de-rotate 5s linear infinite;
+  -moz-animation: de-rotate 5s linear infinite;
+  -ms-animation: de-rotate 5s linear infinite;
+  -o-animation: de-rotate 5s linear infinite;
+  animation: de-rotate 5s linear infinite;
 }
 #s10 .de.transform-origin {
-  -webkit-animation: "de-transform-origin" 5s linear infinite;
-  -moz-animation: "de-transform-origin" 5s linear infinite;
-  -ms-animation: "de-transform-origin" 5s linear infinite;
-  -o-animation: "de-transform-origin" 5s linear infinite;
-  animation: "de-transform-origin" 5s linear infinite;
+  -webkit-animation: de-transform-origin 5s linear infinite;
+  -moz-animation: de-transform-origin 5s linear infinite;
+  -ms-animation: de-transform-origin 5s linear infinite;
+  -o-animation: de-transform-origin 5s linear infinite;
+  animation: de-transform-origin 5s linear infinite;
   -webkit-transform-origin: 100% 0%;
   -moz-transform-origin: 100% 0%;
   -ms-transform-origin: 100% 0%;

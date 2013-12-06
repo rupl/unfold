@@ -75,24 +75,24 @@
 
       // translate
       &.t-x {
-        @include animation('t-x' 3s ease-in-out infinite);
+        @include animation(t-x 3s ease-in-out infinite);
       }
       &.t-y {
-        @include animation('t-y' 3s ease-in-out infinite);
+        @include animation(t-y 3s ease-in-out infinite);
       }
       &.t-z {
-        @include animation('t-z' 3s ease-in-out infinite);
+        @include animation(t-z 3s ease-in-out infinite);
       }
 
       // rotate
       &.r-x {
-        @include animation('r-x' 3s linear infinite);
+        @include animation(r-x 3s linear infinite);
       }
       &.r-y {
-        @include animation('r-y' 3s linear infinite);
+        @include animation(r-y 3s linear infinite);
       }
       &.r-z {
-        @include animation('r-z' 3s linear infinite);
+        @include animation(r-z 3s linear infinite);
       }
     }
   }
