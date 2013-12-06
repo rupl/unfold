@@ -79,7 +79,7 @@
     @extend .it;
     opacity: 1;
     @include transform(translateY(-4em));
-    @include animation('throbber' 2s linear 4);
+    @include animation(throbber 2s linear 4);
 
     // These two rules word the instructions for touch/no-touch users. hax
     .no-touch & {

@@ -64,7 +64,7 @@
       }
       .cube {
         @include transform(translateX(10em) translateY(10em) rotateY(24deg));
-        @include animation('translate-cube' 4s ease-in-out infinite);
+        @include animation(translate-cube 4s ease-in-out infinite);
       }
     }
 
@@ -75,7 +75,7 @@
       .cube {
         // Position the cube at the apex of the translation animation for fluidity
         @include transform(translateX(10em) translateY(6em) rotateY(24deg));
-        @include animation('rotate-cube' 8s linear infinite);
+        @include animation(rotate-cube 8s linear infinite);
       }
     }
 
@@ -83,7 +83,7 @@
     &.backface-demo {
       .cube {
         @include backface-visibility(visible);
-        @include animation('backface-demo-rotate' 4s linear infinite);
+        @include animation(backface-demo-rotate 4s linear infinite);
 
         // Indicate which mode we're in. defaults to visible.
         &:after {

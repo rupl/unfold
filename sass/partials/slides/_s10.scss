@@ -14,13 +14,13 @@
 
     // Transform properties
     &.translate {
-      @include animation('de-translate' 5s ease-in-out infinite);
+      @include animation(de-translate 5s ease-in-out infinite);
     }
     &.rotate {
-      @include animation('de-rotate' 5s linear infinite);
+      @include animation(de-rotate 5s linear infinite);
     }
     &.transform-origin {
-      @include animation('de-transform-origin' 5s linear infinite);
+      @include animation(de-transform-origin 5s linear infinite);
       @include transform-origin(100%, 0%);
     }
     &.backface-visibility {

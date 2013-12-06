@@ -35,6 +35,7 @@ main {
     margin: 16% 0;
     box-shadow: 0 5px 10px rgba(#333, 0.1);
     background: #fff;
+    overflow: hidden;
 
     @include perspective(600px);
   }

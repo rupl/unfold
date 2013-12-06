@@ -23,11 +23,11 @@
     }
 
     &.p-warp {
-      @include animation('p-warp' 3s ease-in-out infinite);
+      @include animation(p-warp 3s ease-in-out infinite);
     }
     &.po-warp {
       @include perspective(1400px);
-      @include animation('po-warp' 5s ease-in-out infinite);
+      @include animation(po-warp 5s ease-in-out infinite);
     }
 
   }

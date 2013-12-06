@@ -117,12 +117,12 @@
   .slinky.oscillate {
     // Slinky base
     > .segment {
-      @include animation('slinky-base-osc' 1s ease-in-out infinite alternate);
+      @include animation(slinky-base-osc 1s ease-in-out infinite alternate);
       @include transform(rotateY(120deg) rotateX(10deg) translateX(-3em));
       @include box-shadow(none);
     }
     .segment .segment {
-      @include animation('slinky-segment-osc' 1s ease-in-out infinite alternate);
+      @include animation(slinky-segment-osc 1s ease-in-out infinite alternate);
       @include transform(translateZ(-1.16em) rotateY(-2deg));
     }
   }
@@ -131,7 +131,7 @@
     position: absolute;
     opacity: 0; // hidden until .space class is added to #s7
     @include transition(opacity 1s ease-in-out);
-    @include animation('move-sun' 120s linear infinite);
+    @include animation(sun-move 120s linear infinite);
 
     .sun {
       position: absolute;
@@ -155,7 +155,7 @@
         @include background-image(radial-gradient(.6em .5em, #00f 0, #1e90ff .6em));
         @include transform(translateX(3em));
         @include transform-origin(-3.5em, 0%);
-        @include animation('rotate-earth' 10s linear infinite);
+        @include animation(rotate-earth 10s linear infinite);
 
         .moon {
           position: absolute;
@@ -168,7 +168,7 @@
           @include background-image(radial-gradient(.26em .3em, #ccc 0, #777 10px));
           @include transform(translateX(1em));
           @include transform-origin(-1.32em, 0%);
-          @include animation('rotate-moon' 4s linear infinite);
+          @include animation(rotate-moon 4s linear infinite);
         }        
       }
     }
@@ -216,7 +216,7 @@
 //
 // Solar system keyframes
 //
-@include keyframes('move-sun') {
+@include keyframes('sun-move') {
   0% {
     @include transform(translateX(37em) translateY(7em));
   }

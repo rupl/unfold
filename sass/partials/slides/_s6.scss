@@ -89,7 +89,7 @@
       @include transform-origin(50%, 50%, ($cube-height / -2));
 
       &.rotate {
-        @include animation('rotate-cube-slow' 8s linear infinite);
+        @include animation(rotate-cube-slow 8s linear infinite);
       }
       &.labels {
         &:before,
