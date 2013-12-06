@@ -15,6 +15,7 @@ install the required gems before trying to make changes to the source.
 ## Presented at
 
 - [HTML5.tx 2013](http://html5tx.com)
+- [CSSDevConf 2013](http://cssdevconf2013.sched.org/event/a9ba3210c0daa57928e2157b5f613ee6#.UqJZr2Tk8Tg)
 
 ## License
 
