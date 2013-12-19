@@ -21,6 +21,7 @@
     @include transform-style(preserve-3d);
 
     .cube {
+      @include transition(none);
       @include transform(translateX(5em) translateY(10em) rotateY(24deg));
 
       .handles {

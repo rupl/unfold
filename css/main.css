@@ -1816,6 +1816,11 @@ span.active {
   transform-style: preserve-3d;
 }
 #s5 .sandbox .cube {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
   -webkit-transform: translateX(5em) translateY(10em) rotateY(24deg);
   -moz-transform: translateX(5em) translateY(10em) rotateY(24deg);
   -ms-transform: translateX(5em) translateY(10em) rotateY(24deg);
