@@ -2472,7 +2472,7 @@ span.active {
 }
 #s7 .slinky {
   position: absolute;
-  top: 20em;
+  top: 14em;
   left: 14em;
   -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em);
   -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em);

@@ -25,7 +25,7 @@
   /* -- make sure to declare a default for every property that you want animated -- */
   .slinky {
     position: absolute;
-    top: 20em;
+    top: 14em;
     left: 14em;
     @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em));
     @include transform-origin(50%, 50%);
