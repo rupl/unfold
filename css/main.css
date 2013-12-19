@@ -3359,6 +3359,11 @@ body.wireframe #s8 div#floor {
   position: absolute;
   top: 6em;
   left: 2em;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 #s10 .de.translate {
   -webkit-animation: de-translate 5s ease-in-out infinite;
