@@ -836,6 +836,11 @@ span.active {
   position: absolute;
   bottom: 32%;
   right: 19%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .csstransforms3d #s1 h2 span {
   -webkit-transition: 0.6s;

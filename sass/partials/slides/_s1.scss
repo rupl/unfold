@@ -51,6 +51,7 @@
     position: absolute;
     bottom: 32%;
     right: 19%;
+    @include transform-style(preserve-3d);
 
     .csstransforms3d & span {
       @include transition(.6s);
