@@ -2280,6 +2280,11 @@ span.active {
   transform-style: preserve-3d;
 }
 #s6 .sandbox .cube {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
   -webkit-transform: translateY(2em);
   -moz-transform: translateY(2em);
   -ms-transform: translateY(2em);
@@ -2333,6 +2338,13 @@ span.active {
   -ms-transform: rotateZ(180deg);
   -o-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
+}
+#s6 .sandbox .cube .flat {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 #s6 .sandbox .cube .top.flat {
   -webkit-transform: rotateX(0deg);
