@@ -9,8 +9,13 @@ Watch in full-screen for best results.
 CSS in this presentation is generated using Sass and Compass. Make sure you
 install the required gems before trying to make changes to the source.
 
-    [sudo] gem install compass
-    [sudo] gem install animation --pre
+    gem install bundler
+    bundle install
+
+Bundler will install the right versions of all the gems that are needed. Now,
+when you fire up Compass append the bundler-specific commands:
+
+    bundle exec compass watch
 
 ## Presented at
 

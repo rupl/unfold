@@ -11,6 +11,7 @@
     position: absolute;
     top: 6em;
     left: 2em;
+    @include transition(none);
 
     // Transform properties
     &.translate {

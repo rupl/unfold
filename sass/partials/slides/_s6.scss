@@ -85,6 +85,7 @@
     //
 
     .cube {
+      @include transition(none);
       @include transform(translateY(2em));
       @include transform-origin(50%, 50%, ($cube-height / -2));
 
@@ -126,6 +127,10 @@
           @extend .it;
           @include transform(rotateZ(180deg));
         }
+      }
+
+      .flat {
+        @include transition(all .3s linear);
       }
 
       .top.flat {

@@ -1816,6 +1816,11 @@ span.active {
   transform-style: preserve-3d;
 }
 #s5 .sandbox .cube {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
   -webkit-transform: translateX(5em) translateY(10em) rotateY(24deg);
   -moz-transform: translateX(5em) translateY(10em) rotateY(24deg);
   -ms-transform: translateX(5em) translateY(10em) rotateY(24deg);
@@ -2275,6 +2280,11 @@ span.active {
   transform-style: preserve-3d;
 }
 #s6 .sandbox .cube {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
   -webkit-transform: translateY(2em);
   -moz-transform: translateY(2em);
   -ms-transform: translateY(2em);
@@ -2328,6 +2338,13 @@ span.active {
   -ms-transform: rotateZ(180deg);
   -o-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
+}
+#s6 .sandbox .cube .flat {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 #s6 .sandbox .cube .top.flat {
   -webkit-transform: rotateX(0deg);
@@ -2427,8 +2444,7 @@ span.active {
  * Slinky
  */
 #s7 {
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
   padding-left: 0;
   padding-right: 0;
   /* -- make sure to declare a default for every property that you want animated -- */
@@ -2447,9 +2463,16 @@ span.active {
 #s7 p.etwas-desc {
   position: absolute;
 }
+#s7 .sandbox {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
 #s7 .slinky {
   position: absolute;
-  top: 20em;
+  top: 14em;
   left: 14em;
   -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em);
   -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(54deg) translateX(15em);
@@ -3336,6 +3359,11 @@ body.wireframe #s8 div#floor {
   position: absolute;
   top: 6em;
   left: 2em;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 #s10 .de.translate {
   -webkit-animation: de-translate 5s ease-in-out infinite;
