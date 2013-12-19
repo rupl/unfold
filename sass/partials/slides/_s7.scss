@@ -3,21 +3,23 @@
  */
 
 #s7 {
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
   padding-left: 0;
   padding-right: 0;
+
   // background stuff is below near &.space
 
   // Text still needs padding.
   p {
     padding-left: 1em;
   }
-
-
   p.slinky-desc,
   p.etwas-desc {
     position: absolute;
+  }
+
+  .sandbox {
+    @include transform-style(preserve-3d);
   }
 
   /* -- make sure to declare a default for every property that you want animated -- */

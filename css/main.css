@@ -2444,8 +2444,7 @@ span.active {
  * Slinky
  */
 #s7 {
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
   padding-left: 0;
   padding-right: 0;
   /* -- make sure to declare a default for every property that you want animated -- */
@@ -2463,6 +2462,13 @@ span.active {
 #s7 p.slinky-desc,
 #s7 p.etwas-desc {
   position: absolute;
+}
+#s7 .sandbox {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 #s7 .slinky {
   position: absolute;
