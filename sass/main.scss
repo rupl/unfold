@@ -15,3 +15,25 @@
 /* Slides ------------------------------------------------------------------ */
 
 @import 'partials/slides/slides';
+
+/* Mobile waring ----------------------------------------------------------- */
+
+//
+// This presentation looks weird on mobile devices because it's a presentation
+// that was made for projection. No ill intent or neglect occurred, I assure you.
+//
+// Offer a warning to those who open on small stuff to decrease twitter h8
+//
+
+.js main {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .mobile-warning {
+    display: none;
+  }
+  .js main {
+    display: block;
+  }
+}

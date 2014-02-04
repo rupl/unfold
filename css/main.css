@@ -3550,3 +3550,18 @@ body.wireframe #s8 div#floor {
   margin: 0;
   padding: 0;
 }
+
+/* Mobile waring ----------------------------------------------------------- */
+.js main {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .mobile-warning {
+    display: none;
+  }
+
+  .js main {
+    display: block;
+  }
+}
