@@ -277,6 +277,7 @@
         <article id="s9">
 
           <p class="intro">You can combine transforms with other CSS to create interesting effects</p>
+          <p class="mouse"><small>(move your mouse around!)</small></p>
 
           <div class="back layer"><span contenteditable>Back</span></div>
           <div class="middle layer"><span contenteditable>Middle</span></div>
@@ -312,23 +313,17 @@
 
           <p class="intro" style="margin-top: 0em; ">Wall o' links 'n' resources:</p>
           <ul class="links demos">
-            <li><a href="http://www.youtube.com/watch?v=w9HeWBH_kvg">Maths-powered transforms for creating 3D shapes</a>
-            <li><a href="http://keithclark.co.uk/labs/css3-fps/">First-person shooter built with 3D transforms</a>
-            <li><a href="http://creativeguidebook.appspot.com/">A detailed pop-up book made with 3D transforms</a>
-            <li><a href="http://www.clicktorelease.com/code/css3dclouds/">Cool-looking clouds</a>
-            <li><a href="http://wellcaffeinated.net/articles/2013/01/12/creating-a-3d-histogram-with-css-3d-transforms/">3D historgram</a>
-            <li><a href="http://codepen.io/peterwestendorp/pen/wGECk">3D sphere-ish thing using border radius</a>
-            <li><a href="http://tridiv.com/">Tridiv - CSS 3D Transform editor UI</a>
-            <li><a href="http://css3playground.com">CSS3 Playground - 3D transforms and more.</a>
-          </ul>
-          <ul class="links resources">
-            <li><a href="http://desandro.github.com/3dtransforms/">Comprehensive intro to 3D transforms</a>
-            <li><a href="http://bartaz.github.com/meetjs/css3d-summit/">Short introduction to 3D transforms</a>
-            <li><a href="http://cubiq.org/building-a-pure-css-3d-city">Building a pure CSS city</a>
-            <li><a href="http://24ways.org/2010/intro-to-css-3d-transforms/">24-ways: Intro to CSS 3D Transforms</a>
-            <li><a href="http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/"><code>translate()</code> is better than position/top/left</a>
-            <li><a href="http://acko.net/blog/making-love-to-webkit/">Making love to WebKit</a>
-            <li><a href="http://acko.net/blog/this-is-your-brain-on-css/">This is your Brain on CSS</a>
+            <li><a href="https://www.youtube.com/watch?v=w9HeWBH_kvg">Maths-powered transforms for creating 3D shapes</a>
+            <li><a href="https://creativeguidebook.appspot.com/">A detailed pop-up book made with 3D transforms</a>
+            <li><a href="https://www.clicktorelease.com/code/css3dclouds/">Cool-looking clouds</a>
+            <li><a href="https://codepen.io/peterwestendorp/pen/wGECk">3D sphere-ish thing using border radius</a>
+            <li><a href="https://css3playground.com">CSS3 Playground - 3D transforms and more.</a>
+            <li><a href="https://desandro.github.io/3dtransforms/">Comprehensive intro to 3D transforms</a>
+            <li><a href="https://bartaz.github.io/meetjs/css3d-summit/">Short introduction to 3D transforms</a>
+            <li><a href="https://24ways.org/2010/intro-to-css-3d-transforms/">24-ways: Intro to CSS 3D Transforms</a>
+            <li><a href="https://acko.net/blog/making-love-to-webkit/">Making love to WebKit</a>
+            <li><a href="https://acko.net/blog/this-is-your-brain-on-css/">This is your Brain on CSS</a>
+            <li><a href="http://tridiv.com/">Tridiv - CSS 3D Transform editor (insecure origin)</a>
           </ul>
 
         </article>
@@ -355,10 +350,13 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
     <script src="js/main.js"></script>
     <script>
-      var _gaq=[['_setAccount','UA-432773-15'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-432773-15', 'auto');
+      ga('send', 'pageview');
     </script>
   </body>
 </html>

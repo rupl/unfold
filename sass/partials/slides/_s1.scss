@@ -15,7 +15,7 @@
     .fold {
       .un {
         @include transform-origin(100%, 100%);
-        @include transform(rotateZ(-180deg) translateX(-0.04em));
+        @include transform(rotateZ(-179deg) translateX(-0.04em));
       }
       .ing {
         @include transform-origin(0%, 100%);
@@ -26,7 +26,7 @@
     .the {
       .b {
         @include transform-origin(-6%, 94%);
-        @include transform(rotateZ(180deg));
+        @include transform(rotateZ(179deg));
 
         .ox {
           @include transform-origin(-43%, 48%);

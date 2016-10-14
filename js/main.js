@@ -64,7 +64,8 @@
       // Slide 4
       "scrollTo('#s4'); ",
       "$('#s4 .cube').toggleClass('hide'); ",
-      "$('#s4 .transform-style').toggleClass('hide'); ",
+      "$('#s4 .transform-style').toggleClass('hide'); "+
+      "$('#s4 .sandbox').toggleClass('preserve-3d'); ",
       "$('#s4 .transform-style').toggleClass('dim').next().next().toggleClass('hide'); "+
       "$('#s4 .sandbox').toggleClass('p-warp'); ",
       "$('#s4 .perspective').toggleClass('dim').next().next().toggleClass('hide'); "+
@@ -119,7 +120,7 @@
 
       // Slide 9
       "scrollTo('#s9'); ",
-      "$('#s9 .intro').toggleClass('show'); ",
+      "$('#s9 .mouse').toggleClass('show'); "+
       "$('#s9 .layer').toggleClass('show'); blurLayers(); ",
 
       // Slide 10
@@ -145,7 +146,8 @@
       "scrollTo('#s11'); ",
 
       // Slide 12
-      "scrollTo('#s12'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Finished']); "
+      "scrollTo('#s12'); "+
+      "ga('send', 'event', 'Slides', 'Progress', 'Finished');"
 
     ],
     'reverse': [
@@ -205,7 +207,8 @@
       // Slide 4
       "scrollTo('#s3'); ",
       "$('#s4 .cube').toggleClass('hide'); ",
-      "$('#s4 .transform-style').toggleClass('hide'); ",
+      "$('#s4 .transform-style').toggleClass('hide');"+
+      "$('#s4 .sandbox').toggleClass('preserve-3d'); ",
       "$('#s4 .transform-style').toggleClass('dim').next().next().toggleClass('hide'); "+
       "$('#s4 .sandbox').toggleClass('p-warp'); ",
       "$('#s4 .perspective').toggleClass('dim').next().next().toggleClass('hide'); "+
@@ -260,7 +263,7 @@
 
       // Slide 9
       "scrollTo('#s8'); ",
-      "$('#s9 .intro').toggleClass('show'); ",
+      "$('#s9 .mouse').toggleClass('show'); "+
       "$('#s9 .layer').toggleClass('show'); blurLayersStop(); ",
 
       // Slide 10

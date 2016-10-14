@@ -3,6 +3,8 @@
  */
 
 #s4 {
+  perspective: none;
+
   dl {
     width: 50%;
     margin: 0;
@@ -11,8 +13,6 @@
   .sandbox {
     width: 60%;
     float: right;
-    @include perspective(3600px);
-    @include transform-style(preserve-3d);
 
     .cube {
       @include transform(translateX(10em) translateY(6.5em) translateZ(0.1em));
@@ -22,23 +22,25 @@
       }
     }
 
-    &.p-warp {
-      @include animation(p-warp 3s ease-in-out infinite);
-    }
-    &.po-warp {
-      @include perspective(1400px);
-      @include animation(po-warp 5s ease-in-out infinite);
+    &.preserve-3d {
+      @include perspective(800px);
+      @include transform-style(preserve-3d);
     }
 
+    &.p-warp {
+      @include animation(p-warp 3s ease-in-out infinite alternate);
+    }
+
+    &.po-warp {
+      @include perspective(800px);
+      @include animation(po-warp 5s ease-in-out infinite);
+    }
   }
 }
 
 @include keyframes('p-warp') {
-  0%, 100% {
-    @include perspective(3600px);
-  }
   50% {
-    @include perspective(100px);
+    @include perspective(80px);
   }
 }
 
@@ -47,9 +49,9 @@
     @include perspective-origin(50% 50%);
   }
   33% {
-    @include perspective-origin(200% -200%);
+    @include perspective-origin(150% -150%);
   }
   66% {
-    @include perspective-origin(400% 250%);
+    @include perspective-origin(-75% -100%);
   }
 }

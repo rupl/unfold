@@ -12,7 +12,7 @@
   @include transform-style(preserve-3d);
   @include backface-visibility(visible);
   width: 1340px; // the tile illusion requires a fixed container size
-  
+
   a,
   p,
   #other ul li a {
@@ -22,7 +22,7 @@
   h1 a {
     color: #000; text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
   }
-  
+
   // Example of Modernizr and parent selector in Sass.
   // Only apply styles if the browser support transforms.
   .csstransforms3d & {
@@ -57,10 +57,10 @@
       @include transform-style(preserve-3d);
     }
   }
-  
+
   // These are the individual tiles, which are thin rectangular prisms
   .panel {
-    float: left; 
+    float: left;
     width: 457px;
     height: 142px;
     margin: 2px 4px;
@@ -74,10 +74,10 @@
   .panel .shadow {
     @include transition(.3s all ease-in-out);
   }
-  
+
   // These are the sides of the tiles
   .panel .left {
-    width: 124px;
+    width: 142px;
     height: 6px;
     background: #444;
     position: absolute;
@@ -88,7 +88,7 @@
     @include transform(rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0));
   }
   .panel .right {
-    width: 124px;
+    width: 142px;
     height: 6px;
     background: #444;
     position: absolute;
@@ -96,7 +96,7 @@
     box-shadow: 0 0 2px #444;
 
     @include transform-origin(bottom, right);
-    @include transform(rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0));
+    @include transform(rotateX(90deg) rotateY(90deg) translate3d(136px, 0, 0));
   }
   .panel .front {
     width: inherit;
@@ -175,10 +175,10 @@
   .panel.lift:nth-child(4n+1) .shadow {
     @include transform(translate3d(0, -122px,-25px) rotateY(3deg));
   }
-  
+
   /* debugging styles */
   body.wireframe & div#floor {
-    background: #f00; 
+    background: #f00;
   }
 
   /* -- Go Download Chrome - http://www.google.com/chrome -- */

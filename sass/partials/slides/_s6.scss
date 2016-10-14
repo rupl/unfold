@@ -14,7 +14,7 @@
   .folds {
     @include transform-origin(0%, 50%);
     @include transform-style(preserve-3d);
-    background: #fff;    
+    background: #fff;
     white-space: nowrap;
   }
 
@@ -123,7 +123,7 @@
         }
         .back:before {
           content: 'Back';
-          top: 95px;
+          top: 70px;
           @extend .it;
           @include transform(rotateZ(180deg));
         }

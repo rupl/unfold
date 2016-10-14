@@ -521,7 +521,7 @@ a {
 main {
   width: 100%;
   font-family: "Rambla", sans-serif;
-  font-size: 2.4em;
+  font-size: 2em;
 }
 main * {
   -webkit-transition: all 0.25s ease-in-out;
@@ -532,7 +532,7 @@ main * {
 }
 main article {
   width: 100%;
-  height: 960px;
+  height: 820px;
   padding: 1em;
   margin: 16% 0;
   box-shadow: 0 5px 10px rgba(51, 51, 51, 0.1);
@@ -753,7 +753,7 @@ span.active {
  * Title slide
  */
 #s1 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   line-height: .9em;
   position: absolute;
   top: 1em;
@@ -765,11 +765,11 @@ span.active {
   -ms-transform-origin: 100% 100%;
   -o-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
-  -webkit-transform: rotateZ(-180deg) translateX(-0.04em);
-  -moz-transform: rotateZ(-180deg) translateX(-0.04em);
-  -ms-transform: rotateZ(-180deg) translateX(-0.04em);
-  -o-transform: rotateZ(-180deg) translateX(-0.04em);
-  transform: rotateZ(-180deg) translateX(-0.04em);
+  -webkit-transform: rotateZ(-179deg) translateX(-0.04em);
+  -moz-transform: rotateZ(-179deg) translateX(-0.04em);
+  -ms-transform: rotateZ(-179deg) translateX(-0.04em);
+  -o-transform: rotateZ(-179deg) translateX(-0.04em);
+  transform: rotateZ(-179deg) translateX(-0.04em);
 }
 #s1 h1 .fold .ing {
   -webkit-transform-origin: 0% 100%;
@@ -789,11 +789,11 @@ span.active {
   -ms-transform-origin: -6% 94%;
   -o-transform-origin: -6% 94%;
   transform-origin: -6% 94%;
-  -webkit-transform: rotateZ(180deg);
-  -moz-transform: rotateZ(180deg);
-  -ms-transform: rotateZ(180deg);
-  -o-transform: rotateZ(180deg);
-  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(179deg);
+  -moz-transform: rotateZ(179deg);
+  -ms-transform: rotateZ(179deg);
+  -o-transform: rotateZ(179deg);
+  transform: rotateZ(179deg);
 }
 #s1 h1 .the .b .ox {
   -webkit-transform-origin: -43% 48%;
@@ -832,7 +832,7 @@ span.active {
   transform: rotateY(90deg);
 }
 #s1 h2 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   position: absolute;
   bottom: 32%;
   right: 19%;
@@ -865,7 +865,7 @@ span.active {
   height: 100%;
   color: #a00;
   text-align: center;
-  background: url('/unfold/img/bad-time.jpg?1359756760') no-repeat 10% 70%;
+  background: url('/unfold/img/bad-time.jpg?1395609370') no-repeat 10% 70%;
 }
 .no-csstransforms3d #s1 .warning.active {
   opacity: 1;
@@ -985,7 +985,6 @@ span.active {
  */
 #s3 {
   overflow: hidden;
-  overflow-y: visible;
 }
 #s3 .sandbox {
   -webkit-perspective: 600px;
@@ -1601,6 +1600,9 @@ span.active {
 /*
  * Perspective
  */
+#s4 {
+  perspective: none;
+}
 #s4 dl {
   width: 50%;
   margin: 0;
@@ -1608,16 +1610,6 @@ span.active {
 #s4 .sandbox {
   width: 60%;
   float: right;
-  -webkit-perspective: 3600px;
-  -moz-perspective: 3600px;
-  -ms-perspective: 3600px;
-  -o-perspective: 3600px;
-  perspective: 3600px;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 #s4 .sandbox .cube {
   -webkit-transform: translateX(10em) translateY(6.5em) translateZ(0.1em);
@@ -1631,19 +1623,31 @@ span.active {
   -moz-box-shadow: 0 0 2em rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.75);
 }
+#s4 .sandbox.preserve-3d {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
 #s4 .sandbox.p-warp {
-  -webkit-animation: p-warp 3s ease-in-out infinite;
-  -moz-animation: p-warp 3s ease-in-out infinite;
-  -ms-animation: p-warp 3s ease-in-out infinite;
-  -o-animation: p-warp 3s ease-in-out infinite;
-  animation: p-warp 3s ease-in-out infinite;
+  -webkit-animation: p-warp 3s ease-in-out infinite alternate;
+  -moz-animation: p-warp 3s ease-in-out infinite alternate;
+  -ms-animation: p-warp 3s ease-in-out infinite alternate;
+  -o-animation: p-warp 3s ease-in-out infinite alternate;
+  animation: p-warp 3s ease-in-out infinite alternate;
 }
 #s4 .sandbox.po-warp {
-  -webkit-perspective: 1400px;
-  -moz-perspective: 1400px;
-  -ms-perspective: 1400px;
-  -o-perspective: 1400px;
-  perspective: 1400px;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
   -webkit-animation: po-warp 5s ease-in-out infinite;
   -moz-animation: po-warp 5s ease-in-out infinite;
   -ms-animation: po-warp 5s ease-in-out infinite;
@@ -1652,60 +1656,36 @@ span.active {
 }
 
 @-moz-keyframes p-warp {
-  0%, 100% {
-    -moz-perspective: 3600px;
-    perspective: 3600px;
-  }
-
   50% {
-    -moz-perspective: 100px;
-    perspective: 100px;
+    -moz-perspective: 80px;
+    perspective: 80px;
   }
 }
 
 @-webkit-keyframes p-warp {
-  0%, 100% {
-    -webkit-perspective: 3600px;
-    perspective: 3600px;
-  }
-
   50% {
-    -webkit-perspective: 100px;
-    perspective: 100px;
+    -webkit-perspective: 80px;
+    perspective: 80px;
   }
 }
 
 @-o-keyframes p-warp {
-  0%, 100% {
-    -o-perspective: 3600px;
-    perspective: 3600px;
-  }
-
   50% {
-    -o-perspective: 100px;
-    perspective: 100px;
+    -o-perspective: 80px;
+    perspective: 80px;
   }
 }
 
 @-ms-keyframes p-warp {
-  0%, 100% {
-    -ms-perspective: 3600px;
-    perspective: 3600px;
-  }
-
   50% {
-    -ms-perspective: 100px;
-    perspective: 100px;
+    -ms-perspective: 80px;
+    perspective: 80px;
   }
 }
 
 @keyframes p-warp {
-  0%, 100% {
-    perspective: 3600px;
-  }
-
   50% {
-    perspective: 100px;
+    perspective: 80px;
   }
 }
 
@@ -1716,13 +1696,13 @@ span.active {
   }
 
   33% {
-    -moz-perspective-origin: 200% -200%;
-    perspective-origin: 200% -200%;
+    -moz-perspective-origin: 150% -150%;
+    perspective-origin: 150% -150%;
   }
 
   66% {
-    -moz-perspective-origin: 400% 250%;
-    perspective-origin: 400% 250%;
+    -moz-perspective-origin: -75% -100%;
+    perspective-origin: -75% -100%;
   }
 }
 
@@ -1733,13 +1713,13 @@ span.active {
   }
 
   33% {
-    -webkit-perspective-origin: 200% -200%;
-    perspective-origin: 200% -200%;
+    -webkit-perspective-origin: 150% -150%;
+    perspective-origin: 150% -150%;
   }
 
   66% {
-    -webkit-perspective-origin: 400% 250%;
-    perspective-origin: 400% 250%;
+    -webkit-perspective-origin: -75% -100%;
+    perspective-origin: -75% -100%;
   }
 }
 
@@ -1750,13 +1730,13 @@ span.active {
   }
 
   33% {
-    -o-perspective-origin: 200% -200%;
-    perspective-origin: 200% -200%;
+    -o-perspective-origin: 150% -150%;
+    perspective-origin: 150% -150%;
   }
 
   66% {
-    -o-perspective-origin: 400% 250%;
-    perspective-origin: 400% 250%;
+    -o-perspective-origin: -75% -100%;
+    perspective-origin: -75% -100%;
   }
 }
 
@@ -1767,13 +1747,13 @@ span.active {
   }
 
   33% {
-    -ms-perspective-origin: 200% -200%;
-    perspective-origin: 200% -200%;
+    -ms-perspective-origin: 150% -150%;
+    perspective-origin: 150% -150%;
   }
 
   66% {
-    -ms-perspective-origin: 400% 250%;
-    perspective-origin: 400% 250%;
+    -ms-perspective-origin: -75% -100%;
+    perspective-origin: -75% -100%;
   }
 }
 
@@ -1783,11 +1763,11 @@ span.active {
   }
 
   33% {
-    perspective-origin: 200% -200%;
+    perspective-origin: 150% -150%;
   }
 
   66% {
-    perspective-origin: 400% 250%;
+    perspective-origin: -75% -100%;
   }
 }
 
@@ -2332,7 +2312,7 @@ span.active {
 }
 #s6 .sandbox .cube.labels .back:before {
   content: 'Back';
-  top: 95px;
+  top: 70px;
   -webkit-transform: rotateZ(180deg);
   -moz-transform: rotateZ(180deg);
   -ms-transform: rotateZ(180deg);
@@ -2449,7 +2429,7 @@ span.active {
   padding-right: 0;
   /* -- make sure to declare a default for every property that you want animated -- */
   background-size: cover;
-  background: white url('/unfold/img/space-bg.jpg?1382325794') no-repeat 0 -40em;
+  background: white url('/unfold/img/space-bg.jpg?1395609370') no-repeat 0 -40em;
   -webkit-transition: background-position 1.2s ease-in-out;
   -moz-transition: background-position 1.2s ease-in-out;
   -ms-transition: background-position 1.2s ease-in-out;
@@ -2982,7 +2962,7 @@ span.active {
  * Stone tile
  */
 #s8 {
-  background: black url('/unfold/img/tile-bg.jpg?1359433508') no-repeat -10px top;
+  background: black url('/unfold/img/tile-bg.jpg?1395609370') no-repeat -10px top;
   color: #000;
   overflow: hidden;
   -webkit-perspective: 470px;
@@ -3089,7 +3069,7 @@ span.active {
   transition: 0.3s all ease-in-out;
 }
 #s8 .panel .left {
-  width: 124px;
+  width: 142px;
   height: 6px;
   background: #444;
   position: absolute;
@@ -3107,7 +3087,7 @@ span.active {
   transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
 }
 #s8 .panel .right {
-  width: 124px;
+  width: 142px;
   height: 6px;
   background: #444;
   position: absolute;
@@ -3118,11 +3098,11 @@ span.active {
   -ms-transform-origin: bottom right;
   -o-transform-origin: bottom right;
   transform-origin: bottom right;
-  -webkit-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
-  -moz-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
-  -ms-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
-  -o-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
-  transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+  -webkit-transform: rotateX(90deg) rotateY(90deg) translate3d(136px, 0, 0);
+  -moz-transform: rotateX(90deg) rotateY(90deg) translate3d(136px, 0, 0);
+  -ms-transform: rotateX(90deg) rotateY(90deg) translate3d(136px, 0, 0);
+  -o-transform: rotateX(90deg) rotateY(90deg) translate3d(136px, 0, 0);
+  transform: rotateX(90deg) rotateY(90deg) translate3d(136px, 0, 0);
 }
 #s8 .panel .front {
   width: inherit;
@@ -3163,7 +3143,7 @@ span.active {
 #s8 .panel .top {
   width: inherit;
   height: inherit;
-  background: url('/unfold/img/tile-4.jpg?1359433508');
+  background: url('/unfold/img/tile-4.jpg?1395609370');
   -webkit-transform: translate3d(0, 0, 1px);
   -moz-transform: translate3d(0, 0, 1px);
   -ms-transform: translate3d(0, 0, 1px);
@@ -3188,7 +3168,7 @@ span.active {
   background-position: 70% 80%;
 }
 #s8 .panel:nth-child(5n) .top {
-  background: url('/unfold/img/tile-2.jpg?1359435187') 50% 50%;
+  background: url('/unfold/img/tile-2.jpg?1395609370') 50% 50%;
 }
 #s8 .panel:hover,
 #s8 .panel.lift {
@@ -3272,22 +3252,24 @@ body.wireframe #s8 div#floor {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-#s9 .intro {
+#s9 .mouse {
   -webkit-transform: translateZ(10em) translateY(-1em);
   -moz-transform: translateZ(10em) translateY(-1em);
   -ms-transform: translateZ(10em) translateY(-1em);
   -o-transform: translateZ(10em) translateY(-1em);
   transform: translateZ(10em) translateY(-1em);
-  -webkit-filter: blur(0.2em);
+  -webkit-filter: blur(1em);
+  filter: blur(1em);
   opacity: 0;
 }
-#s9 .intro.show {
+#s9 .mouse.show {
   -webkit-transform: translateZ(0em) translateY(0em);
   -moz-transform: translateZ(0em) translateY(0em);
   -ms-transform: translateZ(0em) translateY(0em);
   -o-transform: translateZ(0em) translateY(0em);
   transform: translateZ(0em) translateY(0em);
   -webkit-filter: blur(0em);
+  filter: blur(0em);
   opacity: 1;
 }
 #s9 .layer {
@@ -3329,6 +3311,7 @@ body.wireframe #s8 div#floor {
   -o-transform: rotateY(0) translateY(0.2em) translateZ(11.5em);
   transform: rotateY(0) translateY(0.2em) translateZ(11.5em);
   -webkit-filter: blur(0.1em);
+  filter: blur(0.1em);
 }
 #s9 .front {
   -webkit-transform: rotateY(0) translateY(0.4em) translateZ(20em);
@@ -3337,6 +3320,7 @@ body.wireframe #s8 div#floor {
   -o-transform: rotateY(0) translateY(0.4em) translateZ(20em);
   transform: rotateY(0) translateY(0.4em) translateZ(20em);
   -webkit-filter: blur(0.3em);
+  filter: blur(0.3em);
 }
 
 /*

@@ -9,14 +9,16 @@ $layer-width: 12em;
   @include perspective-origin(50% -20%);
   @include transform-style(preserve-3d);
 
-  .intro {
+  .mouse {
     @include transform(translateZ(10em) translateY(-1em));
-    -webkit-filter: blur(.2em);
+    -webkit-filter: blur(1em);
+            filter: blur(1em);
     opacity: 0;
   }
-  .intro.show {
+  .mouse.show {
     @include transform(translateZ(0em) translateY(0em));
     -webkit-filter: blur(0em);
+            filter: blur(0em);
     opacity: 1;
   }
 
@@ -50,9 +52,11 @@ $layer-width: 12em;
   .middle {
     @include transform(rotateY(0) translateY(.2em) translateZ(11.5em));
     -webkit-filter: blur(.1em);
+            filter: blur(.1em);
   }
   .front {
     @include transform(rotateY(0) translateY(.4em) translateZ(20em));
     -webkit-filter: blur(.3em);
+            filter: blur(.3em);
   }
 }
